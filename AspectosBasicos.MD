@@ -17,3 +17,9 @@ La infraestructura física no restringe a la informática en la nube de TI.
 
 ### Resumen del video incluido
 
+Pagar por los servicios en la nube + alguien que lo mantenga.(Es como comprar un ordenador en la nube dice el video).
+Los servicios básicos de un proveedor nube son potencia de proceso y almacenamiento.
+Escalabilidad tanto en potencia de cómputo como en espacio de almacenamiento. "Solo se paga por lo que consumes"
+
+## Descripción del modelo de responsabilidad compartida. Unidad 4 de 8
+
