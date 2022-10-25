@@ -55,3 +55,32 @@ Los **híbridos** utilizan una mezcla de clouds privadas y públicas interconect
 El concepto de **multi-cloud** surge con la idea utilizar diferentes proveedores de nube, aprovechando las mejores características de cada uno. Esto tiene el inconveniente de que tienes que manejar varios sistemas al mismo tiempo, así como interconectarlos, lo cual presenta una sobrecarga añadida. 
 
 Por último, existen un par de productos de Azure denominados **Azure Arc** (gestión de entornos de clouds) y **Azure VMWare Solutions** (Máquinas de VMWare desplegadas en Azure)
+
+**Solución Azure VMware**
+
+Si tienes VMware en una nube privada con VMware Solution puedes usar tu WMware en Azure con integración y escalabilidad sin notarlo.
+
+## 1.6 Describir modelos basados en consumo
+
+**Capital expenditure (CapEx)** son referentes a los gastos de materiales o  recursos físicos que solo se compran una vez. Edificios, ordenadores, coches de empresa, etc...
+
+**Operational expenditure (OpEx)** referente al gasto en servicios y productos. Alquileres, pago de credenciales o pago de servicios en la nube.
+
+Los servicios en la nube estan dentro de OpEx, debido a que no se paga por una infraestructura ni sus gastos derivados sino que pagas por los recursos IT que se utilizan.
+
+Entre sus beneficios se incluyen:
+
+1. Sin coste
+2. Sin mantenimiento de infraestrucutras
+3. Pago solo por uso
+
+En el mododelo tradicional es necesario preveer el gasto y las capacidades de tu centro de datos y arreglar esos errores de potencia, temperatura o conexión puede requerir mucho tiempo y coste.
+
+En el mododelo de la nube no existen estos problemas ya que requiere solo añadir demanda e incrementar las máquinas virtuales.
+
+### Comparar precios de modelos de nube
+
+Debido a que en los modelos de nube solo pagas por lo usado permite la reducción de costes y de infraestructuras a la par que escalar tu negocia a necesidad.
+
+Ya que no necesitas realizar el mantemiento de las infraestructuras(lo hace el proveedor del servicio en la nube), pagas solo por el tiempo que uses sus servicios. Estos servicios ayudan a traer soluciones a problemas de gran tamaño y soluciones a los usuarios.
+
