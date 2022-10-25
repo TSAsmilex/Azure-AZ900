@@ -43,7 +43,12 @@ Con el **modelo de responsabilidad compartida**, la seguridad física, equipo, y
 
 **Híbridos :** utilización de nubes privadas y públicas interconectadas. Uso de una nube privada para suplir un incremente de demanda temporal, además posee una capa extra de protección. Los usuarios pueden escoger si desplegar en la nube privada o púlica.
 
-tabla
+| **Cloud pública**                                         | **Cloud privada**                                                                               | **Cloud híbrida**                                                               |
+|-----------------------------------------------------------|-------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------|
+| No hace falta invertir en bienes de capital para crecer.  | Control total sobre los recursos y la seguridad del sistema.                                    | Es la que proporciona mayor flexibilidad de todas.                              |
+| Se pueden aprovisionar aplicaciones rápidamente.          | No se mezclan los datos de una organización con cualquier otra (=> aislamiento de información). | Las organizaciones determinan dónde quieren correr sus aplicaciones.            |
+| Las organizaciones pagan por lo que usan.                 | Hace falta comprar hardware, instalarlo y mantenerlo.                                           | Control sobre la seguridad, cumplimiento de la normativa y requisitos legales.  |
+| No se tiene un control total sobre los recursos           |                                                                                                 |                                                                                 |
 
 **Multi-cloud :** uso de diferentes proveedores de nube( mismos y diferentes servicios que proveen cada uno) o en medio de una migración. Problema de gestion de recursos y de seguridad.
 
