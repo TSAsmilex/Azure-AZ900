@@ -8,6 +8,7 @@ Lecciones:
 
 ## Guides
 
-1. https://learn.microsoft.com/es-es/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/
+- [Conceptos fundamentales de Azure](https://learn.microsoft.com/es-es/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/). Los apuntes están basados en las lecciones que aparecen allí. 
+- [Landing de Microsoft](https://esi.microsoft.com/landing). 
 
 ## Videos
