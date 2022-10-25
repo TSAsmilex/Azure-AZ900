@@ -45,4 +45,8 @@ Con el **modelo de responsabilidad compartida**, la seguridad física, equipo, y
 
 tabla
 
-**Multi-cloud :** uso de diferentes proveedores de nube(diferentes ) o en medio de una migración. 
+**Multi-cloud :** uso de diferentes proveedores de nube( mismos y diferentes servicios que proveen cada uno) o en medio de una migración. Problema de gestion de recursos y de seguridad.
+
+**Solución Azure VMware**
+
+Si tienes VMware en una nube privada con VMware Solution puedes usar tu WMware en Azure con integración y escalabilidad sin notarlo.
