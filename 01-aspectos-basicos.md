@@ -34,3 +34,15 @@ Con el **modelo de responsabilidad compartida**, la seguridad física, equipo, y
 **On-premises** (es decir, el modelo tradicional) tiene la responsabilidad del 100%. Con IaaS (*Infraestructure as a Service*), PaaS (*Platform as a Service*), y SaaS (*Software as a Service*) estas resposabilidades empiezan a delegarse en la nube (de menor a mayor medida). Pero el cliente siempre será responsable de la información, quien tiene acceso a ella y que dispositivos pueden acceder. El proveedor nube siempre será responsable de la infraestructura física, la responsabilidad software depende del nivel del modelo de servicio de la nube.
 
 ![Tabla resumen de las diferentes responsabilidades.](https://learn.microsoft.com/en-us/training/wwl-azure/describe-cloud-compute/media/shared-responsibility-b3829bfe.svg)
+
+## 1.5 Definir modelos de la nube
+
+**Privados :**  evolución de los centros de dartos corporativos. Nube usada por una única entidad, compañía, que pese a un mayor coste le da más control. Puede estar alojado en su propio centro de datos, en otro o incluso ser de un tercero.
+
+**Públicos :** completamente gestionado por un tercero. Cualquiera puede acceder y usar sus recursos.
+
+**Híbridos :** utilización de nubes privadas y públicas interconectadas. Uso de una nube privada para suplir un incremente de demanda temporal, además posee una capa extra de protección. Los usuarios pueden escoger si desplegar en la nube privada o púlica.
+
+tabla
+
+**Multi-cloud :** uso de diferentes proveedores de nube(diferentes ) o en medio de una migración. 
