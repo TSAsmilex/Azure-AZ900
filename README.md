@@ -4,7 +4,7 @@ Recursos para la certificación AZ900
 
 Lecciones:
 
-1. [Aspectos básicos de la informática en la nube](./AspectosBasicos.md).
+1. [Aspectos básicos de la informática en la nube](./01-aspectos-basicos.md).
 
 ## Guides
 
