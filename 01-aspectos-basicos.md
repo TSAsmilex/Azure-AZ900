@@ -37,11 +37,13 @@ Con el **modelo de responsabilidad compartida**, la seguridad física, equipo, y
 
 ## 1.5 Definir modelos de la nube
 
-**Privados :**  evolución de los centros de dartos corporativos. Nube usada por una única entidad, compañía, que pese a un mayor coste le da más control. Puede estar alojado en su propio centro de datos, en otro o incluso ser de un tercero.
+Existen tres modelos principales de cloud: privado, público e híbrido.
 
-**Públicos :** completamente gestionado por un tercero. Cualquiera puede acceder y usar sus recursos.
+Los **privados** son una evolución de los centros de datos corporativos. Es un cloud usado por una única entidad o compañía, que pese a tener un mayor coste, le da más control. Puede estar alojado en su propio centro de datos, en otro o incluso ser de un tercero.
 
-**Híbridos :** utilización de nubes privadas y públicas interconectadas. Uso de una nube privada para suplir un incremente de demanda temporal, además posee una capa extra de protección. Los usuarios pueden escoger si desplegar en la nube privada o púlica.
+En contrapartida, los **públicos** están completamente gestionados por un tercero. Cualquiera puede acceder y usar sus recursos.
+
+Los **híbridos** utilizan una mezcla de clouds privadas y públicas interconectadas. Se usa una nube privada para suplir un incremente de demanda temporal, la cual posee una capa extra de protección. Los usuarios pueden escoger si desplegar en la nube privada o púlica.
 
 | **Cloud pública**                                         | **Cloud privada**                                                                               | **Cloud híbrida**                                                               |
 |-----------------------------------------------------------|-------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------|
@@ -50,8 +52,6 @@ Con el **modelo de responsabilidad compartida**, la seguridad física, equipo, y
 | Las organizaciones pagan por lo que usan.                 | Hace falta comprar hardware, instalarlo y mantenerlo.                                           | Control sobre la seguridad, cumplimiento de la normativa y requisitos legales.  |
 | No se tiene un control total sobre los recursos           |                                                                                                 |                                                                                 |
 
-**Multi-cloud :** uso de diferentes proveedores de nube( mismos y diferentes servicios que proveen cada uno) o en medio de una migración. Problema de gestion de recursos y de seguridad.
+El concepto de **multi-cloud** surge con la idea utilizar diferentes proveedores de nube, aprovechando las mejores características de cada uno. Esto tiene el inconveniente de que tienes que manejar varios sistemas al mismo tiempo, así como interconectarlos, lo cual presenta una sobrecarga añadida. 
 
-**Solución Azure VMware**
-
-Si tienes VMware en una nube privada con VMware Solution puedes usar tu WMware en Azure con integración y escalabilidad sin notarlo.
+Por último, existen un par de productos de Azure denominados **Azure Arc** (gestión de entornos de clouds) y **Azure VMWare Solutions** (Máquinas de VMWare desplegadas en Azure)
