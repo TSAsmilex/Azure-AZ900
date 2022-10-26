@@ -31,7 +31,7 @@
 
     b) Software como servicio (SaaS)
 
-    c) Plataforma como servicio (PaaS)
+    __c) Plataforma como servicio (PaaS)__
 
     __*Anotacion:__ IaaS sitúa la mayor responsabilidad en el consumidor y el proveedor de servicios en la nube es el responsable de los conceptos básicos de seguridad física, energía y conectividad.
 
@@ -112,7 +112,7 @@ ______________________
 
 3. ¿Qué característica de Azure replica los recursos entre regiones que están al menos a 300 millas de distancia entre sí?
 
-    a) Pares de región
+    a) __Pares de región__
 
     b) Availability Zones
 
