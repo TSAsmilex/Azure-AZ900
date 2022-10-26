@@ -27,11 +27,11 @@
 
 3. Según el modelo de responsabilidad compartida, ¿qué tipo de servicio en la nube sitúa la mayor responsabilidad en el cliente?
 
-    a) Infraestructura como servicio (IaaS)
+    __a) Infraestructura como servicio (IaaS)__
 
     b) Software como servicio (SaaS)
 
-    __c) Plataforma como servicio (PaaS)__
+    c) Plataforma como servicio (PaaS)
 
     __*Anotacion:__ IaaS sitúa la mayor responsabilidad en el consumidor y el proveedor de servicios en la nube es el responsable de los conceptos básicos de seguridad física, energía y conectividad.
 
