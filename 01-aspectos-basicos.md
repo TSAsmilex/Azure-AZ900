@@ -84,3 +84,8 @@ Debido a que en los modelos de nube solo pagas por lo usado permite la reducció
 
 Ya que no necesitas realizar el mantemiento de las infraestructuras(lo hace el proveedor del servicio en la nube), pagas solo por el tiempo que uses sus servicios. Estos servicios ayudan a traer soluciones a problemas de gran tamaño y soluciones a los usuarios.
 
+## 1.7 Preguntas
+
+[Respuestas](Recopilacion%20preguntas%20Azure.md).
+
+## 1.8 Recapitulación
