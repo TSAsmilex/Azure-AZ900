@@ -18,4 +18,4 @@ Existen dos tipos de escalabilidad, vertical (añadir más CPU y RAM) y horizont
 
 ## 2.3 Describir los beneficios de la fiabilidad y la previsibilidad en la nube
 
-**Fiabilidad :** 
+**Fiabilidad :** es la habilidad para recuperarse de los fallos
