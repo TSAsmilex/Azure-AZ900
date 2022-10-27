@@ -70,11 +70,11 @@ Los servicios en la nube estan dentro de OpEx, debido a que no se paga por una i
 
 Entre sus beneficios se incluyen:
 
-1. Sin coste
-2. Sin mantenimiento de infraestrucutras
-3. Pago solo por uso
+1. Sin coste de entrada.
+2. No es necesario comprar infraestructuras innecesarias dependiendo del uso de tus usuarios.
+3. Pago solo por uso.
 
-En el mododelo tradicional es necesario preveer el gasto y las capacidades de tu centro de datos y arreglar esos errores de potencia, temperatura o conexión puede requerir mucho tiempo y coste.
+En el modelo tradicional es necesario preveer el gasto y las capacidades de tu centro de datos y arreglar esos errores de potencia, temperatura o conexión puede requerir mucho tiempo y coste.
 
 En el mododelo de la nube no existen estos problemas ya que requiere solo añadir demanda e incrementar las máquinas virtuales.
 
