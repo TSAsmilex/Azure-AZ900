@@ -23,7 +23,7 @@ Existen dos tipos de escalabilidad: **vertical** (añadir más CPU y RAM) y **ho
 
 ## 2.4 Describir los beneficios de la seguridad y la gestion en la nube
 
-El uso de templates ayuda al cumplimiento de estandares o al cambiio de esto. Las audiciones basadas en nube permiten marcar recursos que no cumplen los estandares. Puedes encontrar soluciones nube que se acomoden a tus necesidades, con infraestructura como servicio puedes establecer el sistema operativo, parches y mantenimiento estableciendo el nivel de seguridad. Si quieres que sea de manera automática, software as a service es tu elección.
+El uso de templates ayuda al cumplimiento de estándares o a la renovación de éstos. Las audiciones basadas en nube permiten marcar recursos que no cumplen los estándares. Puedes encontrar soluciones nube que se acomoden a tus necesidades, y con IaaS (_Infrastructure as a Service_) puedes establecer el sistema operativo, parches y mantenimiento, estableciendo el nivel de seguridad. Si quieres que sea de manera automática, SaaS (software as a service) es tu elección.
 
 ## 2.5 Describir los beneficios de la administración en la nube
 
