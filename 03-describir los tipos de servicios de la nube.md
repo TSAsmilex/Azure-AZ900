@@ -18,4 +18,14 @@ Es el paso intermiedio, el proveedor de la nube mantiene la infraestructura fís
 
 Escenarios de PaaS son, **framework de desarrollo** ya que las aplicaciones de desarrollo estan controladas por la nube y permite reducir la cantidad de codigo a hacer por los desarrolladores. **Análisis o inteligencia empresarial** ya que el servicio de la nube permite analizar los datos y encontrar patros ayudando a la toma de decisiones, inversiones o direcciones a tomar por la empresa.
 
+## 3.4 Describir software como servicio (SaaS)
 
+Consiste en alquilar o usar una aplicacion finalizada como emails, software financiero o aplicaciones de mensajerío o conectividada. Aunque SaaS sea el menos flexible es tambien el más sencillo de utilizar.
+
+Escenarios como email, mensajería, aplicaciones de negocio, finanzas y seguimiento de gastos.
+
+## 3.5 Preguntas
+
+[Respuestas](Recopilacion%20preguntas%20Azure.md).
+
+## 3.6 Recapitulación
