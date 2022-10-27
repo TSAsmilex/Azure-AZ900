@@ -19,7 +19,7 @@ Existen dos tipos de escalabilidad: **vertical** (añadir más CPU y RAM) y **ho
 
 **Fiabilidad :** es la habilidad para recuperarse de los fallos y continuar. La nube por su diseño descentralizado permite una infraestructura confiable y resistente. En algunos casos el sistema de la nube se recuperará automáticamente cambiando a una region diferente para ti.
 
-**Previsibilidad :** puede ser previsibilidad en rendiminto o coste, ambas influenciadas por Azure. Preveer un **rendimiento**(se centra en predecir los recuros para dar una experiencia positiva al usuario usando, autoescalado, balanceo de carga y alta disponibilidada) y un **coste**(se centra en el coste de la nube monitoreando el uso de recursos y aplicando análisis de datos. Así se predicen futuros costes usando herramientas como Total Cost of Ownership TCO).
+**Previsibilidad :** puede ser previsibilidad en rendiminto o coste, ambas influenciadas por Azure. Preveer un **rendimiento** (se centra en predecir los recuros para dar una experiencia positiva al usuario, usando autoescalado, balanceo de carga y alta disponibilidada) y un **coste** (se centra en el coste de la nube monitoreando el uso de recursos y aplicando análisis de datos. Así, se predicen futuros costes usando herramientas como _Total Cost of Ownership_, TCO).
 
 ## 2.4 Describir los beneficios de la seguridad y la gestion en la nube
 
