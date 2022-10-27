@@ -82,7 +82,7 @@ En el mododelo de la nube no existen estos problemas ya que requiere solo añadi
 
 Debido a que en los modelos de nube solo pagas por lo usado permite la reducción de costes y de infraestructuras a la par que escalar tu negocia a necesidad.
 
-Ya que no necesitas realizar el mantemiento de las infraestructuras(lo hace el proveedor del servicio en la nube), pagas solo por el tiempo que uses sus servicios. Estos servicios ayudan a traer soluciones a problemas de gran tamaño y soluciones a los usuarios.
+Ya que no necesitas realizar el mantemiento de las infraestructuras (lo hace el proveedor del servicio en la nube), pagas solo por el tiempo que uses sus servicios. Estos servicios ayudan a traer soluciones a problemas de gran tamaño y soluciones a los usuarios.
 
 ## 1.7 Preguntas
 
