@@ -2,7 +2,7 @@
 
 ## 2.1 Introducción 
 
-Explicar como funciona la nube y que ofrece. Se aprenderá sobre los beneficiós de: su alta disponibilidad,  escalabilidad, fiabilidad, previsibilidad, seguridad y manejabilidad.
+Explicar como funciona la nube y que ofrece. Se aprenderá sobre los beneficiós de: su alta disponibilidad,  escalabilidad, fiabilidad, previsibilidad, seguridad y administración.
 
 ## 2.2 Describir los beneficios de una alta disponibilidad y escalabilidad
 
@@ -25,3 +25,14 @@ Existen dos tipos de escalabilidad: **vertical** (añadir más CPU y RAM) y **ho
 
 El uso de templates ayuda al cumplimiento de estandares o al cambiio de esto. Las audiciones basadas en nube permiten marcar recursos que no cumplen los estandares. Puedes encontrar soluciones nube que se acomoden a tus necesidades, con infraestructura como servicio puedes establecer el sistema operativo, parches y mantenimiento estableciendo el nivel de seguridad. Si quieres que sea de manera automática, software as a service es tu elección.
 
+## 2.5 Describir los beneficios de la administración en la nube
+
+**Administración de la nube :**administrar los recursos con, escalado de recursos automático, configuración con templates, monitorización de recursos automática y alertas basadas en métricas configuradas.
+
+**Administración en la nube :** administrar el entorno nube a traves de, APIs, PowerShell, linea de comandos o el portal web.
+
+## 2.6 Preguntas
+
+[Respuestas](Recopilacion%20preguntas%20Azure.md).
+
+## 2.7 Recapitulación
