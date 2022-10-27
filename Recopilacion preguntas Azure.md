@@ -211,3 +211,104 @@ ______________________
 
     __*Anotacion:__ El control de acceso basado en rol, mediante un modelo de permiso, concede todos los permisos asignados en todos los roles asignados.
 
+______________________
+______________________
+
+## 3. Azure Fundamentals: Describe Azure management and governance
+
+### 3.1. Descripción de la administración de costos en Azure
+
+1. ¿Qué característica de Azure puede ayudar a mantener la organización y a realizar el seguimiento del uso en función de los metadatos asociados a los recursos?
+
+    __a) Etiquetas__
+    
+    b) Seguimientos
+    
+    c) Valores
+    
+    __*Anotacion:__ Las etiquetas permiten asociar metadatos a un recurso para ayudar a realizar el seguimiento de la administración de recursos, los costos y la optimización, la seguridad, etc.
+
+
+2. ¿Cuál es el mejor método para calcular el costo de la migración a la nube mientras se incurre en costos mínimos?
+
+    a) Migrar una pequeña muestra a la nube y realizar el seguimiento de los costos en el tiempo.
+    
+    __b) Usar la calculadora de costo total de propiedad para calcular los costos esperados.__
+    
+    c) Migrar a la nube, pero realizar el seguimiento del uso estrechamente mediante etiquetas para comprender rápidamente los costos.
+    
+    __*Anotacion:__ La calculadora de costo total de propiedad permite introducir la infraestructura y los requisitos actuales, y proporciona una estimación para la ejecución en la nube.
+
+______________________
+
+### 3.2. Descripción de las características y herramientas de Azure para la gobernanza y el cumplimiento
+
+1. ¿Cuántos parámetros necesita un artefacto de Azure Blueprints para ser válido?
+
+    __a) 0__
+    
+    b) 1
+    
+    c) 2
+    
+    __*Anotacion:__ Es posible que los artefactos no tengan parámetros adicionales. Un ejemplo es la directiva Implementar la detección de amenazas en servidores SQL Server, que no requiere ninguna configuración adicional.
+
+2.  ¿Cómo puede impedir que se creen recursos no compatibles, sin tener que evaluar manualmente cada recurso a medida que se crea?
+
+    __a) Azure Policy__
+    
+    b) Azure Blueprint
+    
+    c) Azure Resource Monitor
+    
+    __*Anotacion:__  Azure Policy le permite crear directivas e iniciativas (grupos de directivas) que impiden la creación de recursos no compatibles.
+    
+______________________
+
+### 3.3. Descripción de las características y herramientas para administrar e implementar recursos de Azure
+
+1. ¿Qué servicio le ayuda a administrar los entornos de Azure, locales y de varias nubes?
+
+    __a) Azure Arc__
+    
+    b) Azure Policy
+    
+    c) Azure Cloud Manager
+    
+    __*Anotacion:__ Azure Arc, junto con Azure Resource Manager, le permite ampliar el cumplimiento y la supervisión de Azure a las configuraciones híbridas y de varias nubes
+
+2.  ¿Qué dos componentes podría usar para implementar una implementación de "infraestructura como código"?
+
+    __a) Azure Blueprints y plantillas de ARM__
+    
+    b) Azure Policy y Azure Arc
+    
+    c) Azure Monitor y Azure Arc
+    
+    __*Anotacion:__ Azure Blueprints aplica directivas de forma automatizada y las plantillas de ARM le permiten implementar el recurso como código. El uso conjunto de los dos ayuda a garantizar que se implementen recursos coherentes y compatibles.
+    
+______________________
+
+### 3.4. Descripción de las herramientas de supervisión de Azure
+
+1. ¿Cuál no es una de las categorías de recomendación de Azure Advisor?
+
+    a) Confiabilidad
+    
+    __b) Capacity__
+    
+    c) Coste
+    
+    __*Anotacion:__  Las cinco categorías de recomendación de Azure Advisor son: Confiabilidad, Seguridad, Rendimiento, Excelencia operativa y Costo.
+
+2. Recibirá una notificación por correo electrónico de que las máquinas virtuales (VM) de una región de Azure donde tiene máquinas virtuales implementadas están experimentando una interrupción. ¿Qué componente de Azure Service Health le indicará si la aplicación se ha visto afectada?
+
+    a) Estado de Azure
+    
+    b) Estado del servicio
+    
+    __c) Estado de los recursos__
+    
+    __*Anotacion:__ Resource Health es una vista personalizada de los recursos reales de Azure. Proporciona información sobre el estado de los recursos en la nube individuales.
+
+    
