@@ -27,7 +27,7 @@ El uso de templates ayuda al cumplimiento de estándares o a la renovación de �
 
 ## 2.5 Describir los beneficios de la administración en la nube
 
-**Administración de la nube :**administrar los recursos con, escalado de recursos automático, configuración con templates, monitorización de recursos automática y alertas basadas en métricas configuradas.
+**Administración de la nube :** administrar los recursos con, escalado de recursos automático, configuración con templates, monitorización de recursos automática y alertas basadas en métricas configuradas.
 
 **Administración en la nube :** administrar el entorno nube a traves de, APIs, PowerShell, linea de comandos o el portal web.
 
