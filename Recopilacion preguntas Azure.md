@@ -328,9 +328,7 @@ ______________________
 
     __*Anotacion:__ That’s correct. A hybrid cloud is a combination of a private cloud and a public cloud. With a hybrid cloud, you can continue to use the on-premises servers while adding new servers in the public cloud. Adding new servers in Azure minimizes the capital expenditure costs
 
-2. Tradewind Traders is planning to migrate to Azure cloud services. The company currently operates multiple MySQL database solutions on-premises. Management has asked you to spend some time researching the MySQL features available in Azure specifically the ability to perform automatic backups and point in time restores. You have determined that these features are available for MySQL in Azure. 
-
-For how many days are point-in-time restores supported for MySQL in Azure?
+2. Tradewind Traders is planning to migrate to Azure cloud services. The company currently operates multiple MySQL database solutions on-premises. Management has asked you to spend some time researching the MySQL features available in Azure specifically the ability to perform automatic backups and point in time restores. You have determined that these features are available for MySQL in Azure. For how many days are point-in-time restores supported for MySQL in Azure?
 
     a) 15
 
@@ -649,3 +647,462 @@ For how many days are point-in-time restores supported for MySQL in Azure?
     c) Hot storage tier 
 
     __*Anotacion:__ Cool storage tier is optimized for data that is infrequently accessed and stored for at least 30 days.
+
+
+## Semana 2
+1. Tailwind Traders have recently migrated to Azure cloud services from a Linux-based on-premises environment. The existing administrators want to continue using scripting to configure and create resources. Which of the following tools would you recommend to administrators as the easiest environment for them to use based on their current knowledge?
+
+    a) Azure Portal (ESTA NO)
+
+    b) ARM Templates
+
+    c) Azure CLI
+
+    d) Azure PowerShell (ESA NO)
+
+2. Tradewind Traders has recently migrated to Azure cloud services and management wants to start benefiting from DevOps. DevOps is a new approach that helps to align technical teams to work towards their common goal. Which of the following provides a suite of services that address each stage of the software development lifecycle (SDL)?
+
+    __a) Azure DevOps Services__
+
+    b) GitHub and GitHub Actions
+
+    c)Azure DevTest Labs
+
+    __*Anotacion:__ Azure DevOps is a suite of services that address every stage of the Software Development Lifecycle (SDL).
+
+3. Tailwind Traders has recently moved to Azure cloud services. Management is concerned that they may be spending too much and are also concerned about how well their new environment meets security best practices. They would like to analyze their use of the cloud against industry best practices. Which monitoring tool would you recommend using for this?
+
+    __a) Azure Advisor__
+
+    b) Azure Monitor
+
+    c) Azure Service Health
+
+    __*Anotacion:__ Azure Advisor evaluates your Azure resources and makes recommendations to help you improve reliability, security, and performance, achieve operational excellence, and reduce costs.
+
+4. Tradewind Traders has recently migrated to Azure cloud services and management wants their developers to start utilizing solutions such as using shared source code repositories and tools that enable developers to perform code reviews by adding comments and questions in a web-view of the source code before it is merged into the main codebase. Which of the following solutions would be most suitable?
+
+    a) Azure DevTest Labs 
+
+    b) Azure DevOps Services
+
+    __c) GitHub and GitHub Actions__
+
+5. Tailwind Traders has recently migrated to Azure cloud services. Management requires alerts to be generated that will send notifications to the IT department whenever Azure outages occur. Which Azure monitoring tool would you recommend for this?
+
+    a) Azure Service Health
+
+    __b) Azure Monitor__
+
+    c) Azure Advisor
+
+    __*Anotacion:__ Azure Monitor is a platform for collecting, analyzing, visualizing, and potentially acting based on the metric and logging data from your entire Azure and on-premises environment.
+
+6. Tradewind Traders has recently migrated some of its data and resources to Azure cloud services. The company requires a solution that will allow for automation of the deployment of similar resources across multiple business units. Which of the following solutions should you recommend?
+
+    a) Azure Resource Manager templates
+
+    b) Azure API Management service (ESTA NO)
+
+    c) Management groups
+
+    d) Virtual machine scale sets
+
+7. Tradewind Traders has recently migrated to Azure cloud services and management wants to start developing AI solutions. Management requires the development of an app that will include both a virtual agent that interfaces with humans through natural language and understands the content and meaning of images, video, audio. What two Azure Services do you think are most suitable for developing this app? Select all options that apply.
+
+    __a) Azure Cognitive Services__
+
+    __*Anotacion:__ Azure Cognitive Services provides pre-built machine learning models that enable applications to see, hear, speak, understand, and even begin to reason.
+
+    b) Azure Machine Learning
+
+    __c) Azure Bot Service__
+
+    __*Anotacion:__ The Azure Bot Service and Bot Framework is a platform for creating virtual agents that understand and reply to questions just like a human.
+
+8. Tradewind Traders has recently migrated to Azure cloud services. Their software development teams work on many different projects. The company wants to publish an open-source API that allows third-parties to integrate their inventories of new and used items. They also want to use the API to offer a wider variety of products directly from their e-commerce site. They will need a platform to share example code, collect feedback on the API, allow contributors to report issues, and build communities around feature requests. Which of the following would you recommend they implement?
+
+    __a) GitHub and GitHub Actions__
+
+    b) Azure DevOps Services
+
+    c) Azure DevTest Labs
+
+    __*Anotacion:__ With GitHub, your company can publish its code, accept community contributions to improve the code examples, accept feedback, and bug reports. Because this scenario involves open-source code, GitHub is a leading candidate.
+
+9. Tradewind Traders has recently migrated some of its data and resources to Azure cloud services. The company is very proactive in IoT (Internet of Things) and they require a solution that will allow millions of IoT sensors to upload and store data in Azure. This solution must support very large quantities of data. Which of the following Azure resources should be deployed to support the planned solution? Select 2 options.
+
+    a) Azure Queue storage
+
+    __b) Azure Data Lake__
+
+    __*Anotacion:__ There are two storage services IoT Hub can route messages to Azure Blob Storage and Azure Data Lake Storage Gen2. Azure Data Lake Storage accounts are hierarchical namespace-enabled storage accounts built on top of blob storage. Both use blobs for their storage.
+
+    c) Azure Notification Hubs
+
+    d) Azure File Storage
+
+    __e) Azure IoT Hub__
+
+    __*Anotacion:__ IoT Hub is a managed service, hosted in the cloud, that acts as a central message hub for bi-directional communication between your IoT application and the devices it manages. You can use Azure IoT Hub to build IoT solutions with reliable and secure communications between
+
+10. Tradewind Traders is planning to migrate to Azure cloud services. Management has asked you to spend some time researching the big data and analytic solutions available in Azure. Based on your research, which of the following provides a fully managed, open-source analytics service for enterprises that makes it easier and more cost-effective to process massive amounts of data while running popular open-source frameworks?
+
+    a) Azure Synapse Analytics
+
+    __b) Azure HDInsight__
+
+    c) Azure Data Lake Analytics
+
+    d) Azure Databricks
+
+    __*Anotacion:__ Azure HDInsight is a fully managed, open-source analytics service for enterprises. It is a cloud service that makes it easier, faster, and more cost-effective to process massive amounts of data. HDInsight allows you to run popular open-source frameworks and create cluster types.
+
+11. Tradewind Traders has recently migrated some of their data and resources to Azure cloud services, Management is concerned about external attacks against their websites, they also want you to generate reports that will provide information on attempted attacks. Which of the following should you include when implementing this solution?
+
+    a) Azure Firewall
+    
+    __b) DDoS protection__
+
+    c) Network security groups (NSG) 
+
+    d) Azure Information Protection
+
+    __*Anotacion:__ DDoS is a type of attack that tries to exhaust application resources. Azure has two DDoS service offerings that protect from network attacks: DDoS Protection Basic and DDoS Protection Standard. DDoS Basic protection is integrated into the Azure platform by default and at no extra cost. You have the option of paying for DDoS Standard. It has several advantages over the basic service, including logging, alerting, and telemetry. 
+
+12. Tradewind Traders is planning to migrate to Azure cloud services and management wants to start developing AI solutions. You have been asked to research what AI features are available with Azure with specific emphasis on using existing data to train and test a model and then apply that model to new data to forecast future behaviors, outcomes, and trends. Which of the following terms best describe this?
+
+    a) Deep Learning
+    
+    __b) Machine Learning__
+
+    __*Anotacion:__ Machine learning is a data science technique that uses existing data to train and test a model, then apply that model to new data to forecast future behaviors, outcomes, and trends.
+
+13. Tradewind Traders has recently migrated some of its data and resources to Azure cloud services. Management now plans on deploying additional virtual machines, however, they are concerned about locking down the ports on these machines to prevent access from devices on the internet. Which of the following can be used to help protect access to the ports on these machines?
+
+    a) Azure Active Directory (Azure AD) roles
+
+    b) Azure Active Directory groups 
+
+    __c) Network security groups (NSG)__
+
+    d) Azure key vault 
+
+    __*Anotacion:__ A network security group works like a firewall. You can attach a network security group to a virtual network and/or individual subnets within the virtual network. A network security group contains security rules that allow or deny inbound network traffic to, or outbound network traffic from, several types of Azure resources. Try going back and reviewing General Security and Network Security in Microsoft Azure.
+
+14. Tradewind Traders has recently migrated some of its data and resources to Azure cloud services. Management requires that users can create virtual machines by using their Android tablets. You recommend that they use the PowerShell feature in Azure Cloud Shell. Will this recommendation work?
+
+    __a) Yes__
+
+    b) No
+
+15. Tradewind Traders has recently migrated some of its data and resources to Azure cloud services. Management wants to allow HTTP access from the internet to a specific virtual machine. You configure a Network Security Group. Does this meet the goal?
+
+    __a) Yes__
+
+    b) No
+
+    __*Anotacion:__ A network security group works like a firewall. You can attach a network security group to a virtual network and/or individual subnets within the virtual network. In this question, we need to add a rule to the network security group to allow the connection to the virtual machine on port 80 (HTTP).
+
+16. Tradewind Traders has recently migrated to Azure cloud services. Their software development teams work on many different projects and they are required to provide project sponsors and managers with reports, progress tracking, bug reports, etc. Management now wants to ensure that individuals will only have access to information they need to do their work. Which of the following in your opinion would be the most suitable solution to meet this requirement?
+
+    a) Azure DevTest Labs
+
+    __b) Azure DevOps Services__
+
+    c) GitHub and GitHub Actions
+
+    __*Anotacion:__ Azure DevOps has a much more granular set of permissions that allow organizations to refine who can perform most operations across the entire toolset. Also, Azure DevOps is highly customizable, allowing an administrator to add custom fields to capture metadata and other information alongside each work item. By contrast, GitHub Issues uses tags as its primary means of helping a team categorize issues.
+
+17. Tradewind Traders has recently migrated some of its data and resources to Azure cloud services. The company has developed an Azure web app. They require that the settings for the app be configurable if needed from an iPhone. What are two Azure management tools that you can use from the iPhone? Select all options that apply.
+
+    __a) Azure portal__
+
+    __*Anotacion:__ The Azure portal is a web-based portal for managing Azure. Being web-based, you can use the Azure portal on an iPhone.
+
+    b) Azure CLI (Command Line Interface)
+
+    __c) Azure Mobile App__
+
+    __*Anotacion:__ With Azure Mobile App you can monitor the health and status of your Azure resources. Quickly diagnose and fix issues. Run commands to manage your Azure resources. Data is secure and encrypted. Try going back and reviewing Microsoft AI Services and Solutions.
+
+    d) Windows PowerShell
+
+18. Tradewind Traders has recently migrated to Azure cloud services. Management requires you to research the available monitoring solutions available to them within Azure. A specific requirement is the ability to be able to evaluate the Azure resources and make recommendations that could improve reliability, security, and performance. Which of the following would you recommend to do this?
+
+    a) Azure Monitor
+ 
+    b) Azure Service Health
+
+    __c) Azure Advisor__
+
+19. Tradewind Traders has recently migrated some of their data and resources to Azure cloud services, you are familiarising yourself with the various mechanisms to create resources in Azure. You have been asked to create some resources in Azure using PowerShell. You currently have a Windows 10 computer that has the Azure PowerShell module installed. Does this configuration support the creation of resources in Azure?
+
+    __a) Yes__
+
+    b) No
+
+    __*Anotacion:__ A PowerShell script is a file that contains PowerShell cmdlets and code and needs to be run in PowerShell. The computer is running a compatible OS and the information states that it has the Azure PowerShell module installed. Therefore, this configuration will support the creation of resources in Azure.
+
+20. Tradewind Traders is planning to migrate to Azure cloud services and management wants to start developing AI solutions. You have been asked to research what AI features are available with Azure with specific emphasis on Azure Cognitive Services. Which of the following features are offered by Cognitive Services? Select all options that apply.
+
+    __a) The ability to add recognition and identification capabilities when analyzing pictures, videos, and other visual content.__
+
+    __*Anotacion:__ Azure Cognitive Services includes vision services that allow recognition and identification capabilities when analyzing pictures, videos, and other visual content. Try going back and reviewing Microsoft Azure Serverless Technology and IoT.
+
+    __b) The ability to convert speech into text and text into natural-sounding speech. Translate from one language to another and enable speaker verification and recognition.__
+
+    __*Anotacion:__ Azure Cognitive Services includes speech services that can convert speech into text and text into natural-sounding speech. It can translate one language into another and enable speaker verification and recognition.
+
+    c) The ability to create virtual agents that understand and reply to questions just like a human.
+
+    d) The ability to train and evaluate predictive models using tools and programming languages familiar to data scientists.
+
+21. Tradewind Traders has recently migrated some of its data and resources to Azure cloud services. Management plans to automate the deployment of new servers to Azure but is concerned that this process may expose administrative credentials during the deployment. Which of the following can be used to encrypt the credentials that will be used in the automated process?
+
+    a) Azure Information Protection
+
+    b) Azure Security Center
+
+    c) Azure Multi-Factor Authentication (MFA) (ESTA NO)
+ 
+    d) Azure Key Vault
+
+22. Tradewind Traders has migrated its data and resources to Azure cloud services. They currently have multiple subscriptions and virtual networks in place. Management has asked you to research the ability to filter traffic across subscriptions and virtual networks. Based on your research, which of the following will assist with this filtering?
+
+    a) Application Security Group 
+ 
+    b) Azure DDoS Protection 
+
+    __c) Azure Firewall__
+
+    d) Network Security Group (NSG)
+
+    __*Anotacion:__ You can restrict traffic to multiple virtual networks in multiple subscriptions with a single Azure firewall. Azure Firewall is a managed, cloud-based network security service that protects your Azure Virtual Network resources.
+
+23. Tradewind Traders has migrated its data and resources to Azure cloud services. They currently have multiple subscriptions and virtual networks in place. Management has asked you to research the ability to securely store certificates in Azure. Which of the following services should you configure to enable this feature?
+
+    a) Azure Security Center
+
+    b) Azure Information Protection (ESTA NO)
+
+    c) Azure Key Vault
+
+    d) Azure Storage account (ESTA NO)
+
+24. Tailwind Traders has recently migrated to Azure cloud services. The development departments are currently working on a new IoT application that will be used to capture and transmit personal data back to a cloud service. Management is concerned that this personal data may be exposed in transit. Which of the following services can the company implement to ensure the highest level of security?
+
+    a) IoT Hub
+
+    b) IoT Central (ESTA NO)
+
+    c) Azure Sphere
+
+25. Tradewind Traders is planning to migrate to Azure cloud services and management wants to start developing AI solutions. You have been asked to research what AI features are available in Azure. Based on your research, what service can you use to build a virtual agent that can understand and reply to questions just like a human?
+
+    a) Azure Bot Service
+
+    b) Azure Cognitive Services
+
+    c) Azure Machine Learning (ESTA NO)
+
+26. Tradewind Traders has recently migrated some of its data and resources to Azure cloud services. Management is planning on implementing an Apache Spark engine for large-scale data processing. Which of the following will provide a compatible analytics platform the Apache Spark engine?
+    
+    a) Azure DevOps
+
+    b) Azure Data Factory (ESTA NO)
+
+    c) Azure HDInsight
+
+    d) Azure Databricks.
+
+27. Tradewind Traders has recently migrated some of its data and resources to Azure cloud services. As part of their future planning, management has requested information on cloud services that will provide a set of version control tools to manage the developer’s code. Which of the following will satisfy this requirement?
+
+    a) Azure Cosmos DB (ESTA NO)
+
+    b) Azure DevTest Labs
+
+    c) Azure DevOps Repos
+
+    d) Azure Storage
+
+## Semana 3
+1. Tradewind Traders has recently migrated to Azure cloud services. The company has several departments and management has decided that the departmental administrators will be responsible for managing the resources related to their department. Which of the following will allow for the segmentation of the departments? Select all options that apply.
+
+    a) Multiple Regions
+
+    __b) Multiple resource groups__
+
+    __*Anotacion:__ A resource group is a container that holds related resources for an Azure solution. The resource group can include all the resources for the solution, or only those resources that you want to manage as a group.
+
+    __c) Multiple subscriptions__
+
+    __*Anotacion:__ An Azure subscription is a container for Azure resources. It is also a boundary for permissions to resources and billing. You are charged monthly for all resources in a subscription. A single Azure tenant (Azure Active Directory) can contain multiple Azure subscriptions.
+
+    d) Multiple Azure Active Directory (Azure AD) directories
+
+2. Tradewind Traders is planning to migrate its data and resources to Azure cloud services. As part of this migration, you have been asked to research the purpose of Azure Advisor. Based on this research, which of the following can be performed by using Azure Advisor?
+
+    a) Estimate the costs of an Azure solution.
+
+    b) Integrate Active Directory and Azure Active Directory (Azure AD). (ESTA NO)
+
+    c) Evaluate which on-premises resources can be migrated to Azure. (ESTA NO)
+
+    d) Confirm that Azure subscription security follows best practices.
+
+3. Tradewind Traders is planning to migrate its data and resources to Azure cloud services. The company has asked you to research the differences between Authorisation and Authentication in Azure. Based on your research, which of the following is the process of establishing the identity of a person or service that wants to access a resource known as?
+
+    __a) Authentication__
+
+    b) Authorisation
+
+4. Tradewind Traders has recently migrated to Azure cloud services. Management has asked you to research Azure Blueprints which are composed of artifacts. Which of the following resources as artifacts are currently supported by Azure Blueprints? Select all options that apply.
+
+    a) Management Groups
+
+    __b) ARM Templates__
+
+    __*Anotacion:__ Azure Blueprints currently supports Resource Groups, ARM template, Policy Assignment, and Role Assignment as artifacts.
+
+    __c) Policy Assignment__
+
+    __*Anotacion:__ Azure Blueprints currently supports Resource Groups, ARM template, Policy Assignment, and Role Assignment as artifacts.
+
+    __d) Role Assignment__
+
+    __*Anotacion:__ Azure Blueprints currently supports Resource Groups, ARM template, Policy Assignment, and Role Assignment as artifacts.
+
+5. Tradewind Traders has recently migrated to Azure cloud services. Management wants clarification on their legal agreement between themselves and Microsoft that details the obligations by both parties concerning the processing and security of customer data and personal data. Which of the following should you refer management to? 
+
+    a) Microsoft Privacy Statement
+
+    __b) Online Services Terms__
+
+    __*Anotacion:__ The Online Services Terms (OST) is a legal agreement between Microsoft and the customer that details the obligations by both parties concerning the processing and security of customer data and personal data. The OST applies specifically to Microsoft's online services that you license through a subscription including Azure, Dynamics 365, Office 365, and Bing Maps.
+
+6. Tradewind Traders is planning to migrate its data and resources to Azure cloud services. The company has multiple offices around the world. Management wants to be able to generate multiple billing reports from the Azure Portal that will contain the resource utilization from each office. Which feature should you use before you generate the reports?
+
+    a) Templates
+
+    __b) Tags__
+
+    c) Locks
+
+    d) Policies
+
+    __*Anotacion:__ You can use resource tags to label Azure resources. Tags are metadata elements attached to resources made up of key/value pairs. strings. When all Azure resources are tagged, you can generate reports to list all resources based on the value of the tag.
+
+7. True or False? Azure China is operated by 21Vianet and is a physically separated instance of cloud services located in China.
+
+    __a) True__
+
+    b) False
+
+    __*Anotacion:__ Azure China is operated by 21Vianet is a physically separated instance of cloud services located in China. It is independently operated and transacted by Shanghai Blue Cloud Technology Co., Ltd. (“21Vianet”), a wholly-owned subsidiary of Beijing 21Vianet Broadband Data Center Co., Ltd.
+
+8. Tradewind Traders has recently migrated to Azure cloud services. Management wants their users to have access to a unified console that provides an alternative to command-line tools where you can build, manage, and monitor everything from simple web apps to complex cloud deployments. Which tool would you recommend they use?
+
+    a) Azure Advisor
+
+    b) Azure Portal
+
+    c) Microsoft Trust Center (ESTA NO)
+
+    d) Azure Monitor
+
+9. Tradewind Traders is planning to migrate its data and resources to Azure cloud services. As part of this migration, the company wants to create a support plan that will provide its users with access to Azure support engineers by phone and email. You have been asked to research the available support plans and recommend one that will provide this service. You recommend the Professional Direct support plan. Does this meet the company’s requirements?
+
+    __a) Yes__
+
+    b) No
+
+    __*Anotacion:__ The Basic support plan does not have any technical support for engineers. The Developer support plan has only technical support for engineers via email. The Standard, Professional Direct, and Premier support plans have technical support for engineers via email and phone. The Standard support plan would be the cheapest plan to implement however this was not stated as a requirement in the question
+
+10. Tradewind Traders has recently migrated to Azure cloud services. The company’s development team creates virtual machines for testing regularly. These test machines are only used during certain times. In your opinion what is the most efficient way to save costs on virtual machines when they are not in use?
+
+    a) Use virtual machines that are only chargeable when accessed remotely. Try going back and Managing Costs and SLA Service Cycles.
+
+    __b) Deallocate the virtual machines when they are not in use.__
+
+    c) Delete the virtual machines when they are not in use because once they are deleted, they will not incur any charges.
+
+    __*Anotation:__ When you deallocate virtual machines, the associated hard disks and data are kept in Azure. But you don't pay for CPU or network consumption, which can help save costs.
+
+11. Tradewind Traders has recently migrated to Azure cloud services. The company is reviewing its support plans. You have been asked to determine which support plan will provide best practice information, health status and notifications, and 24/7 access to billing information at the lowest possible cost. Which support plan should you choose?
+
+    a) Basic
+
+    b) Premier (ESTA NO)
+
+    c) Developer (ESTA NO)
+
+    d) Standard support plan
+
+12. Tradewind Traders has recently migrated to Azure cloud services. The company is reviewing its support plans. You have been asked to identify the lowest-cost support plan that allows 24x7 access to support engineers by phone. Which of the following support options allow this at a low cost?
+
+    a) Azure Basic support plan 
+
+    b) Azure Developer support plan
+
+    __c) Azure Standard support plan__
+
+    d) Azure Professional Direct support plan
+
+    __*Anotation:__ The Basic support plan is free so is, therefore, the cheapest. The Developer support plan is the cheapest paid-for support plan. The order of support plans in terms of cost ranging from the cheapest to most expensive is Basic, Developer, Standard, Professional Direct, Premier. However, 24/7 access to technical support by email and phone is only available for Standard, Professional Direct, Premier plans.
+
+13. Tradewind Traders has recently migrated to Azure cloud services. The company is reviewing its support plans. The company requires their users to be able to open new support requests and you have been asked to determine which support plan will provide this feature. Which of the following statements is correct?
+
+    a) Premier and Professional Direct only (ESTA NO)
+
+    b) Premier, Professional Direct, and Standard only
+
+    c) Premier, Professional Direct, Standard, Developer, and Basic (ESTA NO)
+
+    d) Premier, Professional Direct, Standard, and Developer only
+
+14. Tradewind Traders is planning to migrate its data and resources to Azure cloud services. As part of this migration, you have been asked to research the Modern Lifecycle Policy for Azure services. Based on your research Which of the following statements do you think most accurately defines Modern Lifecycle Policy for Azure services?
+
+    a) After a service is made generally available, Microsoft provides support for the service for a minimum of four years.
+
+    __b) Microsoft provides a minimum of 12 months’ notice before ending support for a service.__
+
+    c) Microsoft provides mainstream support for a service for five years.
+
+    d) When a service is retired, you can purchase extended support for the service for up to five years.
+
+    __*Anotacion:__ For products governed by the Modern Lifecycle Policy, Microsoft will provide a minimum of 12 months' notification before ending support if no successor product or service is offered, excluding free services or preview releases. 
+
+15. Tradewind Traders has recently migrated to Azure cloud services and management is in the process of setting up an SLA with Microsoft. They want clarification on the time duration that the service is unavailable based on the percentages listed. How much cumulative downtime per year will an SLA percentage of 99.95 give?
+
+    a) 3.65 days
+
+    __b) 4.38 hours__
+
+    c) 52.56 minutes 
+
+    d) 8.76 hours
+
+    __*Anotacion:__ An SLA percentage of 99.95 will give an annual cumulative downtime of 4.38 hours.
+
+16. Tradewind Traders is planning to migrate its data and resources to Azure cloud services. The company has asked you to research multi-factor authentication. A code that's sent to a mobile phone is an example of which type of multi-factor authentication?
+
+    a) something you are
+
+    b) Something you know
+
+    __c) Something you have__
+
+    __*Anotacion:__ Something you have might be a code that's sent to your mobile phone.
+
+17. Tradewind Traders has recently migrated to Azure cloud services. Management wants access to in-depth information about security, privacy, compliance offerings, policies, features, and practices across Microsoft cloud products. Which tool should you recommend for them to use?
+
+    a) Azure Advisor
+
+    __b) Microsoft Trust Center__
+
+    c) Azure Monitor
+
+    d) Azure Portal
+
+    __*Anotacion:__The Trust Center provides in-depth information about security, privacy, compliance offerings, policies, features, and practices across Microsoft cloud products including links to the security, privacy, and compliance blogs.
