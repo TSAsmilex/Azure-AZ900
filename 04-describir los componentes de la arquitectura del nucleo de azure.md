@@ -24,6 +24,8 @@ Puedes usar 10 sandboxes de 1 hora al día. Usan azure con poweshell, Azure esta
 
 ## 4.5 Describir la infraestructura física de Azure
 
+Empieza con centros de datos de gran tamaño, preparados en potencia, refrigeración y conexión. Se dividen estos centros en regiones (geográficas para mejor rendimiento y conexión). Dentro de cada Región existen zonas disponibles, que son centros de datos dentro de la misma región. Es posible replicar tu aplicacion en diferentes zonas diponibles pero con un coste asociado. Existen 3 categorías, servicio de zona (solo en una zona), servicios de zona redundantes(se puede replicar entre zonas) y servicios no regionales( sin zona asociada y siempre disponible). Existen pares de regiones dentro de la misma zona geográficas, que permiten tener más seguridad y mantenimiento de servicios. Existen regiones no en pares que se encuentran aisladas, llamadas regiones sobrenas.
+
 
 
 
