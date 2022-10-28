@@ -311,4 +311,152 @@ ______________________
     
     __*Anotacion:__ Resource Health es una vista personalizada de los recursos reales de Azure. Proporciona información sobre el estado de los recursos en la nube individuales.
 
-    
+______________________
+______________________
+______________________
+
+# Curso coursera: Introduction to Microsoft Azure Cloud Services
+
+## Semana 1
+
+### 1.2. Introduction to Microsoft Azure fundamentals
+
+1. You have been given the task to determine what solutions or services best suit your business needs. You need to provision end-to-end solutions quickly and reliably, hosted in your own Azure environment. Which Azure solution would best suit your business goal?
+
+    a) Azure Portal
+
+    __b) Azure Marketplace__
+
+    c) Azure Virtual Machines
+
+    __Anotación:__ In the Azure Marketplace you can find, try, buy, and deploy the software and services you need to build new solutions and manage your cloud infrastructure. You can provision end-to-end solutions quickly and reliably, hosted in your own Azure environment.
+
+2. Cloud computing is the delivery of computing services using a pay-as-you-go pricing model. Which of the following statements are true of the pay-as-you-go pricing model? *Select all options that apply.*.   (__0.75 / 1 punto__, falta alguna opcion mas)
+
+    a) You must pay a fixed fee in advance for all Cloud services.
+
+    b) You rent compute power and storage from someone else's datacenter. 
+
+    c) You rent physical hardware such as compute power and storage and maintain them within your own datacenter. (Esta NO)
+
+    __d) You can immediately stop paying for resources that are no longer needed.__
+
+    __Anotación:__ (__d__)You can treat cloud resources like you would resources in your own datacenter. When you are finished using them, you give them back. You are only billed for what you use. (__c__) The cloud provider takes care of maintaining the underlying infrastructure for you. 
+
+3. Cloud Computing provides several benefits over a physical environment. Which of the following are benefits of cloud computing? *Select all options that apply.* (__1 / 1 punto__)
+
+    __a) Elasticity__
+
+    __b) High availability__
+
+    __c) Agility__
+
+    d) Full control 
+
+    __Anotación:__ (__a__) Cloud-based applications can be configured to take advantage of autoscaling, so your applications will always have the resources they need.(__b__) Depending on the service-level agreement (SLA) that you choose, your cloud-based applications can provide a continuous user experience with no apparent downtime even when things go wrong. (__c__) Cloud-based resources can be deployed and configured quickly as your application requirements change.
+
+4. Which of the following options is not defined as a type of cloud deployment model? (__1 / 1 punto__)
+
+    a) Hybrid cloud
+
+    b) Private cloud
+
+    c) Public cloud
+
+    __d) Distributed cloud__
+
+    __Anotación:__ A distributed cloud is not a valid type of cloud computing. Distributed computing divides a single task among multiple computers that are connected via a network to achieve the task faster.
+
+5. True or False? The Azure Portal updates continuously and requires no downtime for maintenance activities. (__1 / 1 punto__)
+
+    __a) True__
+
+    b) False
+
+    __Anotación:__ The Azure portal updates continuously and requires no downtime for maintenance activities. This configuration makes the Azure portal resilient to individual datacenter failures and avoids network slowdowns by being close to users.
+
+6. True or False? Serverless computing enables developers to build applications faster by eliminating the need for them to manage infrastructure. (__1 / 1 punto__)
+
+    __a) True__
+
+    b) False
+
+    __Anotación:__ Serverless computing enables developers to build applications faster by eliminating the need for them to manage infrastructure. With serverless applications, the cloud service provider automatically provisions, scales, and manages the infrastructure required to run the code.
+
+7. True or False? The Azure Marketplace is a service on Azure specific to Microsoft Products. (__1 / 1 punto__)
+
+    a) True
+
+    __b) False__
+
+    __Anotación:__ The Azure Marketplace is a service on Azure that helps connect end-users with Microsoft partners, independent software vendors (ISVs), and start-ups that are offering their solutions and services, which are optimized to run on Azure.
+
+8. Azure provides four main types of storage services. One of these services Azure Blob storage provides for which of the following. (__1 / 1 punto__)
+
+    __a) Storage service for very large objects such as video files or bitmaps.__
+
+    b) A NoSQL store that hosts unstructured data independent of any schema
+
+    c) A data store for queuing and reliably delivering messages between applications.
+
+    d) File shares that you can access and manage like a file server.
+
+    __Anotación:__ Azure Blob storage provides storage service for very large objects such as video files or bitmaps.
+
+9. Which tool can you use to assist in creating custom Dashboards that will help in graphically organizing your resources in Azure? (__1 / 1 punto__)
+
+    a) Azure Marketplace
+
+    __b) Azure Portal__
+
+    __Anotación:__ With the Azure portal, you can build, manage, and monitor everything from simple web apps to complex cloud deployments. Create custom dashboards for an organized view of resources and configure accessibility options for an optimal experience.
+
+10. True or False? To create and use Azure services, you need an Azure subscription. (__1 / 1 punto__)
+
+    __a) True__
+
+    b) False
+
+    __Anotación:__ To create and use Azure services, you need an Azure subscription. 
+
+11. Cloud computing provides computing services over the internet using a pay-as-you-go pricing model. With this model you typically only pay for the cloud services you use. Which of the following are benefits of the pay-as-you-go pricing model?*Select all that apply.* (__1 / 1 punto__, falta alguna opcion mas)
+
+    __a) Lower operating costs.__
+
+    __b) You can run your infrastructure more efficiently.__ 
+
+    __c) You can scale as your business needs to change.__
+
+    __Anotación:__ (__a__)That’s partially correct. One feature of Cloud services is that you typically pay only for cloud services you use, which helps you lower your operating costs. (__b__)That’s partially correct. One feature of Cloud services is that you can run your infrastructure more efficiently, and scale as your business needs change. (__c__)That’s partially correct. One feature of Cloud services is that you can scale as your business needs change. 
+
+12. In your opinion which of the following statements is true? (__1 / 1 punto__)
+
+    a) You need to create an Azure subscription and an account will be created for you. Once you've created an Azure subscription you are free to create additional Accounts.
+
+    __b) You need to create an Azure account, and a subscription will be created for you. Once you've created an Azure account, you are free to create additional subscriptions.__
+
+    __Anotación:__ Once you create an Azure account, a subscription will be created for you and you are then free to create additional subscriptions.
+
+11. Microsoft offers an Azure Free Account to allow customers to test out various features of their cloud services. To sign up for a free account you are required to provide which of the following? *Select all options that apply.* (__1 / 1 punto__)
+
+    a) A non-refundable deposit
+
+    __b) Phone number__
+
+    __c) A valid credit card__
+
+    __d) GitHub or Microsoft account username__
+
+    __Anotación:__ (__b__)One of the requirements to sign up for a free Azure account is a telephone number. (__c__)One of the requirements to sign up for a free Azure account is a valid Credit Card. (__d__)One of the requirements to sign up for a free Azure account is either a GitHub or Microsoft account username.
+
+11. Cloud computing provides computing services over the internet using a pay-as-you-go pricing model. Typically, you only pay for the cloud services you use. This pricing model can benefit a company in which of the following ways? *Select all options that apply.* (__1 / 1 punto__)
+
+    __a) Lower their operating costs__
+
+    __b) Dynamically scale as your business requirement change__
+
+    c) Provides a guaranteed annual fixed cost
+
+    __d) Operate a more efficient infrastructure__
+
+    __Anotación:__ (__a__)In cloud computing you typically pay only for cloud services you use, which helps you lower your operating costs. (__b__)In cloud computing you typically pay only for cloud services you use, which can help you scale as your business needs change. (__d__)In cloud computing you typically pay only for cloud services you use, which can help you run your infrastructure more efficiently.
