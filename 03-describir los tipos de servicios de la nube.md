@@ -2,7 +2,7 @@
 
 ## 3.1 Introducción
 
-Explicar los tipos de serivicios psoibles en la nube como infraestructura(IaaS), plataforma(PaaS) o software(SaaS) e identificar cada caso para una de ellas.
+Explicar los tipos de serivicios posibles en la nube como infraestructura (IaaS), plataforma (PaaS) o software (SaaS) e identificar cada caso para una de ellas.
 
 ## 3.2 Describir infraestructura como servicio (IaaS)
 
