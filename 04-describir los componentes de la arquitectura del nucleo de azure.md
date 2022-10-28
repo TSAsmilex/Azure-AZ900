@@ -8,19 +8,22 @@ Este módulo contiene describir, regiones de Azure, pares de regiones, regiones 
 
 Servicio de nube de Microsoft con Iaas, Paas y SaaS. Sigue los principios de la nube y sus funcionamientos, da más facilidades y configuración premontadas, tambien da acceso a docker y cubenetes. IA, IoT, base de datos, machine learning. Usan Azure portal, su web de control para azure.
 
-**Que puedo hacer Azure** ofrece más de 100 servicios que pueden permitirte hacer todo lo que necesites e incluso más, como bots inteligentes. Puedes incluir tus aplicaciones en máquinas virtuales Azure.
+**Que puedo hacer con azure?** Azure ofrece más de 100 servicios que te permiten ejecutar tus aplizaciones para explorar nuevos paradigmas como bots inteligentes. Mucha gente mueve sus programas a una máquina virtual en Azure, aunque Azure es mucho más, ya que ofrece IA o ML(machine learning)
 
-## 4.3 Cuentas Azure
+## 4.3 Comienza con Azure accounts
 
-Para poder acceder a los serivicios de Azure debes tener una cuenta con subscripción. Puedes controlar esta subscripción con una cuenta de empresa y ofrecer a tus trabajadores las subscripciones que ellos necesiten de manera independiente.
+Necesitas uan subscripción Azure para para poder usar sus recursos, pero puedes usar un grupo "Azure sandbox" durante el periodo de aprendizaje con módulo. Puedes tener cuenta de empresa y separar subscripciones de empleados segun sus necesitades.
 
-[Resumen de una subscripción](https://learn.microsoft.com/en-us/training/wwl-azure/describe-core-architectural-components-of-azure/media/account-scope-levels-9ceb3abd.png)
+[Resumen de cuentas Azure](https://learn.microsoft.com/en-us/training/wwl-azure/describe-core-architectural-components-of-azure/media/account-scope-levels-9ceb3abd.png)
 
-Existen 3 tipos de cuentas, la gratuita, la de estudiante (ambas ofrecen 12 meses de prueba de las aplicaciones Azure más populares) y Azure sandbox que se da durante los módulos de aprendizaje y te permite aprender con ella.
+**Crear cuenta** en su web tienes la versión gratis con 12 meses y las aplicaciones mas populares. Tambien existe una cuenta estudiante con el nivel similar a la gratuita. 
 
-## 4.4 Ejercicios
+## 4.4 Ejercicios de Learn Sandbox
 
-Todo mal y todo peta =D, aunque esta escrito en phyton y eso al menos te ries un poco.
+Puedes usar 10 sandboxes de 1 hora al día. Usan azure con poweshell, Azure esta hecho en python, la mitad de los comandos que te dicen probar no fufan 👍
 
-## 4.5 Describir la infraestructura de Azure
+## 4.5 Describir la infraestructura física de Azure
+
+
+
 
