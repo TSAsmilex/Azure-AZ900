@@ -34,7 +34,13 @@ Por otra parte, algunas regiones no pareadas se encuentran aisladas. A estas se 
 
 ## 4.6 Describir la gestion de la infraestructura de Azure
 
-**Recursos Azure y grupos de recursos**, los grupos de recursos son recursos que puedes agrupar en un paquete(si, literalmente es una mierda de explicacion pero así aparece),puedes mover recursos entre paquetes, un recurso no puede estar en más de un grupo. Puedes aplocar acciones a un grupo y se aplicará a todos los recursos, ejecutar, borrar, quitar acceso, dar acceso. 
+### Recursos Azure y grupos de recursos
+
+Los recursos son las partes fundamentales de Azure. Todo lo que se pueda crear, provisionar es un recurso. Por ejemplo, las VMs, una red virtual...
+
+Los grupos de recursos son recursos que puedes agrupar en un paquete. Puedes mover recursos entre paquetes, pero un recurso no puede estar en más de un grupo. 
+
+Se pueden aplicar acciones a un grupo, lo cual ejecutará la misma acción en todos los recursos: ejecutar, borrar, dar o quitar acceso a un recurso, entre otras. De esta idea surge la utilidad de los grupos de recursos.
 
 **Subscripciones Azure** 
 
