@@ -802,3 +802,16 @@ For how many days are point-in-time restores supported for MySQL in Azure?
     c) Hot storage tier 
 
     __*Anotacion:__ Cool storage tier is optimized for data that is infrequently accessed and stored for at least 30 days.
+   
+32. Tradewind Traders has recently migrated to Azure cloud services and management wants to start benefiting from DevOps. DevOps is a new approach that helps to align technical teams to work towards their common goal. Which of the following provides a suite of services that address each stage of the software development lifecycle (SDL)?
+
+    __a) Azure DevOps Services__
+
+    b) Azure DevTest Labs
+
+    c) GitHub and GitHub Actions
+    
+    __*Anotacion:__Azure DevOps is a suite of services that address every stage of the Software Development Lifecycle (SDL).
+   
+
+
