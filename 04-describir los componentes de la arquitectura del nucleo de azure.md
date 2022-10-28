@@ -26,6 +26,26 @@ Puedes usar 10 sandboxes de 1 hora al día. Usan azure con poweshell, Azure esta
 
 Empieza con centros de datos de gran tamaño, preparados en potencia, refrigeración y conexión. Se dividen estos centros en regiones (geográficas para mejor rendimiento y conexión). Dentro de cada Región existen zonas disponibles, que son centros de datos dentro de la misma región. Es posible replicar tu aplicacion en diferentes zonas diponibles pero con un coste asociado. Existen 3 categorías, servicio de zona (solo en una zona), servicios de zona redundantes(se puede replicar entre zonas) y servicios no regionales( sin zona asociada y siempre disponible). Existen pares de regiones dentro de la misma zona geográficas, que permiten tener más seguridad y mantenimiento de servicios. Existen regiones no en pares que se encuentran aisladas, llamadas regiones sobrenas.
 
+## 4.6 Describir la gestion de la infraestructura de Azure
 
+**Recursos Azure y grupos de recursos**, los grupos de recursos son recursos que puedes agrupar en un paquete(si, literalmente es una mierda de explicacion pero así aparece),puedes mover recursos entre paquetes, un recurso no puede estar en más de un grupo. Puedes aplocar acciones a un grupo y se aplicará a todos los recursos, ejecutar, borrar, quitar acceso, dar acceso. 
 
+**Subscripciones Azure** 
 
+![Cuenta azure](https://learn.microsoft.com/en-us/training/wwl-azure/describe-core-architectural-components-of-azure/media/subscriptions-d415577b.png)
+
+Una cuenta azure se identifica en Azure Active Directry, cada cuenta puede tener multiples subscrupciones para manejar las cuentas de diversoso usuarios, puedes separarlos por foma de pago o establecer diferentes niveles de política de acceso para restringir el uso de los productos.
+
+**Crear subscripciones adicionales de Azure** Igual que los grupos de recuros  puedes dividir por funciones o acceso, se dividen en 3 tipos, por entorno(subscripciones con desarrollo, testeo y seguridad), por organización estructural(puedes dar a un departamento pocos recursos y al departamente IT todos) y por facturación(separando costes y para tener un mejor control de los posibles costes).
+
+![Gerarquía de grupos](https://learn.microsoft.com/en-us/training/wwl-azure/describe-core-architectural-components-of-azure/media/management-groups-subscriptions-dfd5a108.png)
+
+La gerarquía de grupos permite tener un arbol de hasta seis niveles de profundidad sin incluir el Root. Cada grupo gestionado solo permite un padre del que heredan su subscripción.
+
+## 4.7 Ejercicio crear recurso azure
+
+## 4.8 Preguntas
+
+[Respuestas](./Recopilacion%20preguntas%20Azure.md)
+
+## 4.9 Recapitulación
