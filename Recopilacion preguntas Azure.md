@@ -311,4 +311,341 @@ ______________________
     
     __*Anotacion:__ Resource Health es una vista personalizada de los recursos reales de Azure. Proporciona información sobre el estado de los recursos en la nube individuales.
 
+
+______________________
+
+### 3.5 Coursera:  Introduction to Azure Core Concepts and Service
+
+1. Tradewind Traders current on-premises datacenter has several hundred servers and available resources in the datacenter are currently very low. Management has asked you to research a solution that will allow for increased resources but will keep expenditure such as capital expenditure and operational expenditure at a minimum. What solution should you recommend?
+
+    a) Create an additional Datacente
+
+    b) A complete migration to the public cloud
+
+    __c) Create a Hybrid cloud__
+
+    d) Create a new Private cloud
+
+    __*Anotacion:__ That’s correct. A hybrid cloud is a combination of a private cloud and a public cloud. With a hybrid cloud, you can continue to use the on-premises servers while adding new servers in the public cloud. Adding new servers in Azure minimizes the capital expenditure costs
+
+2. Tradewind Traders is planning to migrate to Azure cloud services. The company currently operates multiple MySQL database solutions on-premises. Management has asked you to spend some time researching the MySQL features available in Azure specifically the ability to perform automatic backups and point in time restores. You have determined that these features are available for MySQL in Azure. 
+
+For how many days are point-in-time restores supported for MySQL in Azure?
+
+    a) 15
+
+    b) 25
+
+    __c) 35__
+
+    d) 45
+
+    __*Anotacion:__ Azure database for MySQL supports Automatic backups and point-in-time-restore for up to 35 days. Try going back and reviewing Introduction to Microsoft Azure Fundamentals.
+
+3. Tradewind Traders is planning to migrate to Azure cloud services. Management has asked you to research some of the main features of cloud services. Based on your research, which of the following statements is correct?
+
+    a) An Azure region can be found in every country in Europe and the Americas only.
+
+    b) An Azure region contains one or more datacenters that are connected by using a high-latency network.
+
+    c) An Azure region is found in each country where Microsoft has a subsidiary office.
+
+    __d) An Azure region contains one or more datacenters that are connected by using a low-latency network.__
+
+    __*Anotacion:__ An Azure region is a set of data centers deployed within a latency-defined perimeter and connected through a dedicated regional low-latency network. Try going back and reviewing Introduction to Microsoft Azure Fundamentals.
+
+4. Tradewind Traders is planning to migrate some of their data and resources to Azure cloud services and will make use of Azure’s pay-as-you-go subscription. What type of expenditure is the pay-as-you-go subscription?
+
+    a) Capital Expenditure (CapEx)
+
+    __b) Operational Expenditure (OpEx)__
+
+    __*Anotacion:__ One of the major changes that you will face when you move from an on-premises cloud to the public cloud is the switch from capital expenditure (buying hardware) to operating expenditure (paying for service as you use it). 
+
+5. Tradewinds Traders is planning to migrate to Azure cloud services however management has questions concerning management and responsibilities once resources are migrated. You have identified three cloud service models. In which cloud service model is the cloud provider responsible for managing the virtual machines, the operating system, and networking resources that the cloud tenant deploys their applications into?
     
+    a) SaaS (ESTA NO)
+
+    b) IaaS
+
+    c) Paas
+
+6. Tradewind Traders is planning to migrate some of their data and resources to Azure cloud services, Management has decided to only make use of the Platform as a Service (PaaS) offerings in Azure. You have been asked to design a migration plan. As part of this design, you have included the creation of Azure App Services and Azure virtual machines that will run MySQL Databases. Does this design meet the requirements of the Organisation?
+
+    a) Yes
+
+    __b) No__
+
+    __*Anotacion:__ Azure App Service is a PaaS (Platform as a Service) service. However, Azure virtual machines are an IaaS (Infrastructure as a Service) service. Therefore, this design does not meet the requirements.
+
+7. Tradewind Traders is planning to migrate some of their custom in-house applications to Azure cloud services. These custom applications provide various services to the organization's customers and have specific prerequisites and services. Which cloud solution should you recommend that will satisfy the organization's requirements?
+
+    __a) Infrastructure as a Service (laaS)__
+
+    b) Software as a Service (SaaS)
+
+    c) Platform as a Service (PaaS)
+
+    __*Anotacion:__ Infrastructure as a service (IaaS) is an instant computing infrastructure, provisioned and managed over the internet. The IaaS service provider manages the infrastructure, while you purchase, install, configure, and manage your software.
+
+
+8. Tradewind Traders is planning to migrate to Azure cloud services but before they do management has asked you to spend some time researching the Database solutions available in Azure with specific regard to schema-less data and always-on applications. Based on your research, which of the following cloud database solutions is most suitable to provide this feature?
+
+    a) Azure Database for PostgreSQL 
+
+    b) Azure Database for MySQL 
+
+    c) Azure SQL Database
+
+    __d) Cosmos DB__
+
+    __*Anotacion:__ Azure Cosmos DB supports schema-less data, which lets you build highly responsive and Always-On applications to support constantly changing data. You can use this feature to store data that is updated and maintained by users around the world.
+
+
+9. Tradewinds Traders is planning to migrate to Azure cloud services but before they do you have been asked to do some research on cloud deployment models. Based on your research which of the following deployment models will provide the ability to share data, applications, and resources on-premises and in the Cloud
+
+    a) Private Cloud
+
+    b) Public Cloud 
+
+    __c) Hybrid Cloud__
+
+    __*Anotacion:__ A hybrid cloud is a computing environment that combines a public cloud and a private cloud by allowing data and applications to be shared between them.
+
+10. Tradewind Traders are in the process of migrating their resources to Azure cloud services. Currently, they have several VMs deployed to their Azure subscription. Management has asked you to research how their on-premises users will be able to securely access the resources that have been migrated to Azure. Based on that research, which of the following will you need to create to implement this solution? Select all options that apply.
+
+    __A Virtual Network Gateway__
+
+    __*Anotacion:__ To implement a solution that enables the client computers on your on-premises network to communicate to the Azure virtual machines, you need to configure a VPN (Virtual Private Network) to connect the on-premises network to the Azure virtual network. The Azure VPN device is known as a Virtual Network Gateway. 
+
+    __A Gateway Subnet__
+
+    __*Anotacion:__ The virtual network gateway needs to be located in a dedicated subnet in the Azure virtual network. This dedicated subnet is known as a gateway subnet. Try going back and reviewing Microsoft Azure Database, Analytics, and Compute Services.
+
+    A Virtual network
+
+    An Application Gateway (ESTA NO)
+
+    A Load Balancer
+
+11. Tradewinds Traders is planning to migrate to Azure cloud services. Management has asked you to research the main benefits of cloud services. Based on your research you have identified scalability as one of the main benefits. Scalability includes horizontal and vertical scaling. Which of the following is characteristic of vertical scaling?
+
+    __a) Computing capacity can be increased by adding additional RAM or CPUs to a virtual machine.__
+
+    b) Computing capacity can be increased by adding instances of a resource
+
+
+12. Tradewind Traders is planning to migrate to Azure cloud services but before they do, management has asked you to spend some time researching the Database solutions available in Azure with specific regard to the use of multiple APIs. Based on your research, which of the following cloud database solutions is most appropriate to provide this feature?
+
+    __a) Azure Cosmos DB__
+
+    b) Azure Database for PostgreSQL 
+
+    c) Azure SQL Database 
+
+    d) Azure Database for MySQL 
+
+13. Tradewind Traders is planning to migrate some of their data and resources to Azure cloud services, Management has decided to only make use of the Platform as a Service (PaaS) offerings in Azure. You have been asked to design a migration plan. As part of this design, you have included the creation of Azure App Services and Azure Storage accounts.Does this design meet the requirements of the Organization?
+
+    a) Yes
+
+    __b) No__
+
+    __*Anotacion:__ Azure App Service is a PaaS (Platform as a Service) service. However, Azure Storage accounts are an IaaS (Infrastructure as a Service) service. Therefore, this design does not meet the requirements.
+
+14. Tradewind Traders have recently migrated to Azure cloud services however the development team has expressed frustration at the amount of time it takes to create new virtual machines for test purposes as these machines are created and destroyed on a regular basis. Which of the following would you recommend to minimize the effort required to deploy and remove the virtual machines?
+
+    a) Azure Availability Zones
+
+    __b) Azure DevTest Labs__
+
+    c) Azure Reserved Virtual Machine (VM) Instances 
+
+    d) Azure virtual machine scale sets 
+
+    __*Anotacion:__ DevTest Labs allows for the creation of labs consisting of pre-configured bases or Azure Resource Manager templates.
+
+15. Tradewind Traders is planning to migrate to Azure cloud services however management has asked you to research connectivity features between your on-premises environment and Cloud resources. In your research, you learn that Azure virtual networks enable you to link resources in your on-premises environment with your Azure subscription. In effect, you can create a network that spans both your local and cloud environments. There are three mechanisms for you to achieve this connectivity. Which of the following is not a valid mechanism?
+
+    __a) Service endpoints__ 
+
+    b) Site-to-site Virtual Private Networks 
+
+    c) Azure ExpressRoute 
+
+    d) Point-to-site Virtual Private Networks 
+
+    __*Anotacion:__ You use service endpoints to connect to other Azure resource types, such as Azure SQL databases and storage accounts. This approach enables you to link multiple Azure resources to virtual networks, thereby improving security and providing optimal routing between resources.
+
+16. Tradewind Traders is planning to migrate to Azure cloud services. The majority of their IT department is more familiar with Linux environments than Windows. Will these users be able to continue using Bash commands to create resources such as Virtual Machines once the organization has migrated? 
+
+    __a) Yes__
+
+    b) No
+
+    __*Anotacion:__ With Azure Cloud Shell, you can create virtual machines using Bash or PowerShell.
+
+17. Tradewinds Traders is planning to migrate to Azure cloud services. Management has asked you to research the main benefits of cloud services. Based on your research you have identified scalability as one of the main benefits. Scalability includes horizontal and vertical scaling. Which of the following is characteristic of horizontal scaling?
+
+    a) Computing capacity can be increased by adding additional RAM or CPUs to a virtual machine.
+
+    __b) Computing capacity can be increased by adding instances of a resource__
+
+18. Tradewinds Traders is planning to migrate to Azure cloud services. Management has asked you to research the main benefits of cloud services. Your research has shown that cloud service providers operate on a consumption-based model. Which of the following are characteristics of a consumption-based model? Select all options that apply.
+
+    Resources will be charged for, even when they are not in use.
+
+    __You only pay for additional resources when they are needed.__
+
+    __*Anotacion:__ In a consumption-based model, you only pay for additional resources when they are needed.
+
+    __There is no need for companies to purchase and manage a costly infrastructure that they may or may not use to its full capacity.__
+
+    __*Anotacion:__ In a consumption-based model, you don’t need to purchase and manage a costly infrastructure that they may or may not use to its full capacity.
+
+    Consumers must pay the costs upfront.
+
+19. Tradewind Traders is planning to migrate to Azure cloud services. The company currently operates multiple database solutions on-premises including PostgreSQL databases. Management has asked you to spend some time researching the high availability features and support levels available for Azure Database for PostgreSQL. Based on your research, what level of SLA is available for single-server deployments of PostgreSQL in Azure?
+
+    a) 90.00%
+
+    b) 99.00%
+
+    c) 99.90%
+
+    __d) 99.99%__
+
+    __*Anotacion:__ Azure Database for PostgreSQL - Single Server deployment option delivers built-in high availability with no additional cost of 99.99% SLA.
+
+20. Tradewind Traders is planning to migrate to Azure cloud services. The majority of their IT department is more familiar with Linux environments than Windows. Will these users be able to continue using Bash commands to create resources such as Virtual Machines once the organization has migrated? 
+
+    __a) Yes__
+
+    b) No
+
+    __*Anotación:__ With Azure Cloud Shell, you can create virtual machines using Bash or PowerShell.
+
+21. Tradewind Traders is planning to migrate to Azure cloud services however management has asked you to research some of the main benefits of cloud services. Which of the following do you think are some of the benefits of cloud services? Select 2 options.
+
+    Limited storage
+
+    Dedicated hardware
+
+    Unsecured connections
+
+    __Self-service management__
+
+    __*Anotacion:__ With the public cloud, you have self-service management. You are responsible for the deployment and configuration of the cloud resources such as virtual machines or websites. The underlying hardware that hosts the cloud resources is managed by the cloud provider.
+
+    __Metered pricing__
+
+    __*Anotacion:__ With the public cloud, you get pay-as-you-go pricing, you pay only for what you use, there are no CapEx costs.
+
+22. Tradewind Traders is planning to migrate to Azure cloud services but before they do management has asked you to spend some time exploring Azure features and solutions. Which of the following should be your first step?
+
+    __a) Create a subscription__
+
+    b) Create a management group 
+    
+    c) Create a virtual network
+
+    d) Create a resource group 
+
+23. Tradewind Traders is planning to migrate to Azure cloud services however management has asked you to research some of the main features of cloud storage. Which of the following offers fully managed file shares in the cloud that are accessible via the industry standard Server Message Block (SMB) protocol? 
+
+    __a) Azure Files Storage__
+
+    b) Azure Blob Storage
+
+    c) Azure Storage Tiers
+
+    d)Azure Disk Storage
+
+    __*Anotacion:__ Azure Files offers fully managed file shares in the cloud that are accessible via the industry standard Server Message Block (SMB) protocol. Azure file shares can be mounted concurrently by cloud or on-premises deployments of Windows, Linux, and macOS. Diagnostic logs, metrics, and crash dumps are just three examples of data that can be written to a file share and processed or analyzed later. Try going back and reviewing Microsoft Azure Fundamental Concepts & Architectural Components.
+
+24. Tradewind Traders is planning to migrate to Azure cloud services, and you have been asked to do some research on Infrastructure as a Service. Which of the following is an example of IaaS?
+
+    a) Azure web app
+
+    b) Azure logic app 
+    
+    c) Azure SQL database 
+
+    __d) Azure virtual machine__
+
+    __*Anotacion:__ An Azure virtual machine is an example of Infrastructure as a Service (IaaS).
+
+
+25. Tradewind Traders is planning to migrate to Azure cloud services. Management has asked you to spend some time researching the big data and analytic solutions available in Azure. Based on your research, which of the following provides a fully managed, open-source analytics service for enterprises that makes it easier and more cost-effective to process massive amounts of data while running popular open-source frameworks?
+
+    __a) Azure HDInsight__
+
+    b) Azure Data Lake Analytics
+
+    c) Azure Databricks 
+ 
+    d) Azure Synapse Analytics 
+
+    __*Anotacion:__ Azure HDInsight is a fully managed, open-source analytics service for enterprises. It is a cloud service that makes it easier, faster, and more cost-effective to process massive amounts of data. HDInsight allows you to run popular open-source frameworks and create cluster types.
+
+26. Tradewind Traders is planning to migrate some of their data and resources to Azure cloud services, Management has decided to only make use of the Platform as a Service (PaaS) offerings in Azure. You have been asked to design a migration plan. As part of this design, you have included the creation of Azure App Services and Azure Storage accounts. Does this design meet the requirements of the Organization?
+
+    a) Yes
+    
+    __b) No__
+
+    __*Anotacion:__ Azure App Service is a PaaS (Platform as a Service) service. However, Azure Storage accounts are an IaaS (Infrastructure as a Service) service. Therefore, this design does not meet the requirements.
+
+27. Tradewind Traders is planning to migrate some of their data and resources to Azure cloud services, Management has asked you to design a deployment plan that will guarantee services running on virtual machines will continue to operate in the event a single datacenter fails. As part of this design, you will deploy virtual machines to two or more scale sets. Does this design meet the requirements of the organization?
+
+    a) Yes
+
+    __b) No__
+
+    __*Anotacion:__ Azure virtual machine scale sets let you create and manage a group of load-balanced VMs. The number of VM instances can automatically increase or decrease in response to demand or a defined schedule. Scale sets provide high availability to your applications and allow you to centrally manage, configure, and update many VMs. However, this question does not specify that the scale set will be configured across multiple datacenters so this solution does not meet the goal.
+
+28. Tradewind Traders is planning to migrate to Azure cloud services however management has asked you to research some of the main benefits of cloud services. Which of the following do you think are some of the benefits of cloud services? Select 2 options.
+
+    Dedicated hardware
+
+    Unsecured connections
+
+    __Self-service management__
+
+    __*Anotacion:__ With the public cloud, you have self-service management. You are responsible for the deployment and configuration of the cloud resources such as virtual machines or websites. The underlying hardware that hosts the cloud resources is managed by the cloud provider.
+
+    __Metered pricing__
+
+    __*Anotacion:__ With the public cloud, you get pay-as-you-go pricing, you pay only for what you use, there are no CapEx costs.
+
+    Limited storage
+
+29. Tradewind Traders is investigating a possible migration of their data and resources to Azure cloud services. Which of the following is true in respect of the Public Cloud?
+
+    a) All public cloud resources can be freely accessed by every member of the public
+
+    b) The public cloud is owned by the public, NOT a private corporation
+
+    c) The public cloud is a crowd-sourcing solution that provides corporations with the ability to enhance the cloud
+
+    __d) The public cloud is a shared entity whereby multiple corporations each use a portion of the resources in the cloud__
+
+    __*Anotacion:__ The public cloud is a shared entity whereby multiple corporations each use a portion of the resources in the cloud. The hardware resources (servers, infrastructure, etc.) are managed by the cloud provider.
+
+30. Tradewinds Traders is planning to migrate to Azure cloud services however management has questions concerning management and responsibilities once resources are migrated. You have identified three cloud service models. In which model does the cloud provider keep the hardware up to date but the operating system maintenance and network configuration are left to the cloud tenant? 
+
+    a) PaaS
+
+    b) IaaS
+
+    c) SaaS (ESTA NO)
+
+31. Tradewind Traders is planning to migrate to Azure cloud services however management has asked you to research some of the main features of cloud storage. In your research, you discover that Azure storage offers different access tiers for blob and file storage. This allows you to store object data most cost-effectively. Based on your research, which is the most cost-effective tier to optimize storage for data that is infrequently accessed and stored for at least 30 days?
+
+    __a) Cool storage tier__
+
+    b) Archive storage tier
+
+    c) Hot storage tier 
+
+    __*Anotacion:__ Cool storage tier is optimized for data that is infrequently accessed and stored for at least 30 days.
