@@ -20,15 +20,27 @@ Necesitas uan subscripción Azure para para poder usar sus recursos, pero puedes
 
 ## 4.4 Ejercicios de Learn Sandbox
 
-Puedes usar 10 sandboxes de 1 hora al día. Usan azure con poweshell, Azure esta hecho en python, la mitad de los comandos que te dicen probar no fufan 👍
+Puedes usar 10 sandboxes de 1 hora al día. Usan azure con poweshell, Azure esta hecho en python, la mitad de los comandos que te dicen probar no fufan 👍.
 
 ## 4.5 Describir la infraestructura física de Azure
 
-Empieza con centros de datos de gran tamaño, preparados en potencia, refrigeración y conexión. Se dividen estos centros en regiones (geográficas para mejor rendimiento y conexión). Dentro de cada Región existen zonas disponibles, que son centros de datos dentro de la misma región. Es posible replicar tu aplicacion en diferentes zonas diponibles pero con un coste asociado. Existen 3 categorías, servicio de zona (solo en una zona), servicios de zona redundantes(se puede replicar entre zonas) y servicios no regionales( sin zona asociada y siempre disponible). Existen pares de regiones dentro de la misma zona geográficas, que permiten tener más seguridad y mantenimiento de servicios. Existen regiones no en pares que se encuentran aisladas, llamadas regiones sobrenas.
+La infraestructura se asemeja mucho a la de servidores tradicionales. Los centros de datos son prácticamente iguales a los de otros servidores corporativos clásicos. 
+
+Empieza con centros de datos de gran tamaño, preparados en potencia, refrigeración y conexión. Se dividen estos centros en regiones (geográficas para mejor rendimiento y conexión). Dentro de cada Región existen zonas disponibles, que son centros de datos dentro de la misma región. Es posible replicar tu aplicacion en diferentes zonas diponibles pero con un coste asociado.
+
+Existen 3 categorías: servicio de zona (solo en una zona), servicios de zona redundantes (se puede replicar entre zonas) y servicios no regionales (sin zona asociada y siempre disponible). Existen pares de regiones dentro de la misma zona geográficas, que permiten tener más seguridad y mantenimiento de servicios. 
+
+Por otra parte, algunas regiones no pareadas se encuentran aisladas. A estas se les denomina llamadas regiones sobrenas.
 
 ## 4.6 Describir la gestion de la infraestructura de Azure
 
-**Recursos Azure y grupos de recursos**, los grupos de recursos son recursos que puedes agrupar en un paquete(si, literalmente es una mierda de explicacion pero así aparece),puedes mover recursos entre paquetes, un recurso no puede estar en más de un grupo. Puedes aplocar acciones a un grupo y se aplicará a todos los recursos, ejecutar, borrar, quitar acceso, dar acceso. 
+### Recursos Azure y grupos de recursos
+
+Los recursos son las partes fundamentales de Azure. Todo lo que se pueda crear, provisionar es un recurso. Por ejemplo, las VMs, una red virtual...
+
+Los grupos de recursos son recursos que puedes agrupar en un paquete. Puedes mover recursos entre paquetes, pero un recurso no puede estar en más de un grupo. 
+
+Se pueden aplicar acciones a un grupo, lo cual ejecutará la misma acción en todos los recursos: ejecutar, borrar, dar o quitar acceso a un recurso, entre otras. De esta idea surge la utilidad de los grupos de recursos.
 
 **Subscripciones Azure** 
 
