@@ -95,24 +95,22 @@ Existen los diferentes tipos de servicios en App Service:
 
 ## 5.8 Describir Azure Virtual Networking
 
-Son un recurso de Azure, que puede ser como una extensión de tu propia red de tus ordenadores clientes. Te permite:
+> Nota del editor: hasta ahora, no hemos traducido propiamente *on premise*. A partir de ahora, se denominarán "in situ", haciéndose referencia a los servidores que una propia empresa posee.
 
-**Aislamiento y segmentación** ya que puedes crear multiples redes virtuales aisladas, puedes definir rangos de IP publicas y privadas o configurar un DNS.
+Son un recurso de Azure, que puede ser como una extensión de tu propia red de tus ordenadores clientes.
 
-**Comunicaciones de internet** Puedes habilitar el recibir comunicaciones desde intener usando una IP pública a un recurso Azure.
-
-**Comunicación entre recursos Azure** permite comunicar de manera segura dos servicios Azure, ya que puedes conectar con _App Service_ dos recursos diferentes. O utiizando Azure SQL o cuentas de almacenamiento.
-
-**Comunicación con recursos del dispositivio físico** usando:
-1. Point-to-site usando una VPN encriptada si es un ordenadore fuera de la organización.
-2. Site-to-site conecta tu VPN a la VPN de Azure, lo que permite que se reconozcan como si estuviesen en una red local.
-3. Azure EspressRoute conectividad privada de Azure que no pasa a través de internet.
-
-**Dirigir el tráfico de la red** puedes establer reglas sobre como este tráfico debe ser redirigido. Tamben puedes establez Border Gateway Protocol que funiona con todas las redes Azure.
-
-**Filtrado de tráfico** puedes filtrar el tráfico pro tus subredes usando grupos de seguridad donde puedes establecer reglas sobre permitir o no el trábico, segun IP, puerto o protocolo. Redes virtuales de MV similar a una red física.
-
-**Conectar redes virtuarles** se puede hacer _Peering_ entre dos redes virtuales lo que permite conectarlas entre ellas, usando el red de Microsoft. Puedes tambien definir rutas de usuario  para tener mejor control de tu red virtual.
+- **Aislamiento y segmentación**: se pueden crear múltiples redes virtuales, siendo capaces así de definir rangos de IP publicas y privadas o configurar un DNS.
+- **Comunicaciones de internet**: puedes proporcionar una IP pública a un recurso de Azure para así poder recibir comunicaciones desde internet.
+- **Comunicación entre recursos Azure**: se puede habilitar la comunicación entre dos recursos de Azure mediante dos mecanismos:
+  - Las redes virtuales se pueden conectar a otros recursos Azure, así como a otras VMs.
+  - Los endpoints de los servicios se pueden conectar a otro tipo de recursos. Esto te permite cnectar DB de Azure al servicio de almacenamento de cuentas de usuarios.
+- **Comunicaciones con recursos in-situ**: enlaza los propios servidores de la empresa con los de Azure. Mecanismos:
+  1. Conexión point-to-site: ordenadores de fuera de tu organización hacia la red corporativa. En este caso, se abre una VPN encriptada a la red de Azure.
+  2. Las site-to-site conectan tu VPN tus VPN in-situ a las de Azure, o una pasarela a la de Azure.
+  3. Azure EspressRoute: conectividad privada de Azure que no pasa a través de internet. Seguridad más estricta.
+- **Dirigir el tráfico de la red** puedes establer reglas sobre como este tráfico debe ser redirigido. Tamben puedes establez Border Gateway Protocol que funiona con todas las redes Azure.
+- **Filtrado de tráfico** puedes filtrar el tráfico pro tus subredes usando grupos de seguridad donde puedes establecer reglas sobre permitir o no el trábico, segun IP, puerto o protocolo. Redes virtuales de MV similar a una red física.
+- **Conectar redes virtuarles** se puede hacer _Peering_ entre dos redes virtuales lo que permite conectarlas entre ellas, usando el red de Microsoft. Puedes tambien definir rutas de usuario  para tener mejor control de tu red virtual.
 
 ## 5.9 Ejercicios
 
@@ -138,10 +136,10 @@ Cuando estableces una puerta de enlace VPN debes establecer si estara basada en 
 
 Es una conexión de tus dispositivos físicos con Microsoft Cloud y sus servicios, puede ser una conexión any-to-any, point-to-point o conexión cruzada virtual. Al no ir por redes públicas ofrece mayor velocidad y seguridad.
 
-**Beneficios de ExpressRoute** 
+**Beneficios de ExpressRoute**
 1. Conexión de los servicios de Microsoft cloud en todas las regiones
 2. Conectividad global entre todas las regiones y sericios gracias a ExpressRoute Global
-3. Enlazado dinámico 
+3. Enlazado dinámico
 4. Redundacia integrada
 
 **Modelos de conexión ExpressRoute**
@@ -159,9 +157,9 @@ La descripción es tan increible como DNS de Azure y ya, puedes hacer cosas que 
 **Beneficios de Azure DNS**
 1. Fidelidad y rendimiento
 2. Seguridad con logs, restricción de recursos y control de acceso por roles
-3. Facilidad de uso 
+3. Facilidad de uso
 4. Customización de redes virtuales con dominios privados
-5. Registro de _Alias_ 
+5. Registro de _Alias_
 
 Azure DNS no ofrece un nombre de dominio, debes de comprarlo desde la aplicación correspondiente y poder usarlo en Azure
 
