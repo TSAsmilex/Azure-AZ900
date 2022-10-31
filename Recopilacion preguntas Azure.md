@@ -585,6 +585,7 @@ ______________________
 
     b) Computing capacity can be increased by adding instances of a resource
 
+    __*Anotacion:__ With vertical scaling, computing capacity can be increased by adding additional RAM or CPUs to a virtual machine. 
 
 12. Tradewind Traders is planning to migrate to Azure cloud services but before they do, management has asked you to spend some time researching the Database solutions available in Azure with specific regard to the use of multiple APIs. Based on your research, which of the following cloud database solutions is most appropriate to provide this feature?
 
@@ -871,13 +872,15 @@ ______________________
 
 6. Tradewind Traders has recently migrated some of its data and resources to Azure cloud services. The company requires a solution that will allow for automation of the deployment of similar resources across multiple business units. Which of the following solutions should you recommend?
 
-    a) Azure Resource Manager templates
+    __a) Azure Resource Manager templates__
 
-    b) Azure API Management service (ESTA NO)
+    b) Azure API Management service 
 
-    c) Management groups (ESTA NO)
+    c) Management groups 
 
     d) Virtual machine scale sets
+
+    __*Anotacion:__ You can use Azure Resource Manager templates to automate the creation of the Azure resources. Deploying resources through templates is known as Infrastructure as code.
 
 7. Tradewind Traders has recently migrated to Azure cloud services and management wants to start developing AI solutions. Management requires the development of an app that will include both a virtual agent that interfaces with humans through natural language and understands the content and meaning of images, video, audio. What two Azure Services do you think are most suitable for developing this app? Select all options that apply.
 
@@ -1398,9 +1401,9 @@ ______________________
 
     a) Assume that the cost of running workloads on Azure is similar to running workloads on-premises. 
 
-    b) Setup some resources in Azure as this is a free service. (ESTA NO)
+    b) Setup some resources in Azure as this is a free service. 
 
-    c) Run the Total Cost of Ownership Calculator.
+    __c) Run the Total Cost of Ownership Calculator.__
 
 25. Tradewind Traders has recently migrated to Azure cloud services. The company has just completed a review of its current configuration and has discovered that there is a selection of unused resources currently in existence including multiple AD accounts, multiple groups, multiple public IP addresses, and multiple network interfaces. The company wants to reduce costs to a minimum. You recommend removing the unused user accounts. Will this reduce the monthly costs?
 
@@ -1430,6 +1433,8 @@ ______________________
 
     d) 6 months
 
+    __*Anotacion:__ The Modern Lifecycle Policy covers products and services that are serviced and supported continuously. For products governed by the Modern Lifecycle Policy, Microsoft will provide a minimum of 12 months' notification before ending support if no successor product or service is offered.
+
 28. Tradewind Traders has recently migrated to Azure cloud services. The company has just completed a review of its current configuration and has discovered that there is a selection of unused resources currently in existence including multiple AD accounts, multiple groups, multiple public IP addresses, and multiple network interfaces. The company wants to reduce costs to a minimum. You recommend removing the network interfaces. Will this reduce the monthly costs?
 
     a) Yes
@@ -1447,6 +1452,8 @@ ______________________
     c) Bandwidth
 
     __d) Uptime__
+
+    __*Anotacion:__ The SLA for virtual machines guarantees "uptime". The amount of uptime guaranteed depends on factors such as whether the VMs are in an availability set or availability zone.
 
 ## Semana 4 (Examen completo con preguntas de todos las semanas)
 1. Tradewind Traders has recently migrated to Azure cloud services. The company is reviewing its support plans. You have been asked to determine from where support requests can be created. Which of the following statements is correct?
@@ -1627,9 +1634,9 @@ ______________________
 
 18. Tailwind Traders has recently migrated to Azure cloud services. Management now requires ongoing analysis of how well they are using their services compared to industry best practices. Which monitoring tool would you recommend using for this?
  
-    a) Azure Service Health (ESTA NO)
+    a) Azure Service Health
 
-    b) Azure Advisor
+    __b) Azure Advisor__
 
     c) Azure Monitor
 
@@ -1850,3 +1857,152 @@ ______________________
     c) A Blobs service in a storage account
 
     d) A Files service in a storage account
+
+40. Tradewind Traders operate a successful ecommerce site. Recent customer feedback has shown that response times at certain times during the month can be very slow. Which feature of Azure cloud services could improve response times while also providing cost management?
+
+    a) High Availability
+
+    b) Load Balancing (ESTA NO)
+
+    c) Elasticity
+
+    d) High Latency
+
+41. Tradewind Traders has recently migrated some of their data and resources to Azure cloud services, Management has asked you to research specific tools to assist with securing their environment. Which of the following would be the simplest way to monitor your resources and perform automatic security assessments to identify potential vulnerabilities?
+
+    a) Azure Key Vault
+
+    __b) Azure Security Center__
+
+    c) Azure Sentinel
+
+    __*Anotacion:__ Azure Security Center is a monitoring service that provides visibility of your security posture across all your services on Azure and on-premises.
+
+42. Tradewind Traders is planning to migrate some of its data and resources to Azure cloud services. Management has asked you to design a deployment plan that will guarantee services running on virtual machines will continue to operate in the event a single datacenter fails. As part of this design, you will deploy virtual machines to two or more resource groups. Does this design meet the requirements of the organization?
+
+    a) Yes
+
+    __b) No__
+
+43. Tradewind Traders has recently migrated some of its data and resources to Azure cloud services. As part of their ongoing migration, management has requested information on the storage of encryption keys and secrets like certificates, connection strings, and passwords. You have spent some time researching this topic. Based on your research, which of the following can be used to store encryption keys and secrets in Azure?
+
+    a) Azure Key Vault
+
+    b) Personally Identifiable Information (PII) (ESTA NO)
+
+    c) Azure Active Directory (Azure AD) administrative accounts
+
+
+## AZ-900 Exam simulation
+
+1. The Nutex Corporation plans to provide app management and monitoring services to some companies. The management wants you to discover ways to obtain customer-level usage and billing details. Which of the following statements about options available with Azure Subscriptions are TRUE? (Choose three.)
+
+    __A)Existing key vaults are inaccessible when a subscription is added to an Active Directory tenant.__
+
+    B)Credit entitlements from one subscription can be moved to another.
+
+    C)Azure subscriptions must always be purchased in $ (USD).
+
+    __D)The registered Azure Stack must be re-registered after adding a subscription to an Active Directory tenant.__
+
+    __E)Multiple Azure subscriptions can exist within a tenant.__
+
+__*Anotacion:__
+
+The following statements are true:
+
+    - Multiple Azure subscriptions can exist within a tenant.
+    - Existing key vaults are inaccessible when a subscription is added to an Azure Active Directory tenant.
+    - The registered Azure Stack must be re-registered after adding a subscription to an Active Directory tenant.
+
+Each subscription can independently fuel a different set of resources within the same customer tenant. Subscriptions can come from different purchase channels and can co-exist independent of each other.
+
+The following occurs when you add a subscription to an Azure Active Directory tenant:
+
+    - Users with RBAC roles lose their access.
+    - Service Administrators and Co-Administrators lose their access.
+    - Existing key vaults are inaccessible until the key vault tenant ID is changed.
+    - Managed identities for resources such as Virtual Machines or Logic Apps must be re-enabled or recreated.
+    - A registered Azure Stack must be re-registered.
+
+Credit entitlements in one subscription cannot be moved to another subscription. Resources can be migrated from one subscription to another, but not the credit entitlements.
+
+Azure subscriptions can be bought by the designated currency based on the channel through which one procures, and all major currencies can be used.
+
+2. The Nutex Corporation plans to comply with all the privacy, compliance, and data protection standards. You are asked to investigate the security, compliance, and privacy offerings and commitments from Microsoft. Which of the following statements about the Azure Service Trust Portal are TRUE? (Choose three.)
+
+    __A)The Azure Service Trust Portal provides Security and Compliance Blueprints to assist customers with building applications that comply with compliance regulations and standards.__
+    __B)Microsoft’s privacy principle states that Microsoft will not use your email, chat, files, or other personal content to target ads to you.__
+    __C)If an Azure tenant is deactivated, Microsoft permanently deletes all data for that tenant in the Service Trust Portal within 24 hours of tenant deactivation.__
+    D)All transactions to Azure Storage through the Azure portal occur via HTTPS.
+    E)If a customer’s cloud subscription expires, Microsoft will delete the data in the subscription in 90 days without any notice.
+
+__*Anotacion:__ 
+
+Microsoft’s privacy principle states that Microsoft will not use your email, chat, files, or other personal content to target ads to you. Microsoft’s privacy principle also states that:
+
+    - You are in control of your privacy with easy-to-use tools and clear choices.
+    - Microsoft will be transparent about data collection and use so that you can make informed decisions.
+    - Microsoft protects your data with strong security and encryption.
+    - Microsoft will respect your local privacy laws and fight for legal protection of your privacy as a right.
+    - When Microsoft collects data, Microsoft will use it to benefit you and to make your experiences better.
+
+If an Azure tenant is deactivated, Microsoft permanently deletes all data for that tenant in the Service Trust Portal (e.g., user information and data uploaded to Compliance Manager) within 24 hours of tenant deactivation.
+
+The Azure Service Trust Portal provides Security and Compliance Blueprints to assist customers with building applications that comply with compliance regulations and standards.
+
+Azure Security and Compliance Blueprints include industry-specific overviews and guidance, customer responsibilities matrix, reference architectures with threat models, control implementation matrices, and automation to deploy reference architectures.
+
+If a customer’s cloud subscription expires, Microsoft will not delete the data in the subscription in 90 days without notice. If you terminate a cloud subscription or it expires (except for free trials), Microsoft will store your customer data in a limited-function account for 90 days (the “retention period”) to give you time to extract the data or renew your subscription. During this period, Microsoft provides multiple notices so you will be amply forewarned of the upcoming deletion of data.
+
+3. The Nutex Corporation wants to build and use chunks of code to integrate the apps they have deployed on Azure. They expect the integrations to be made within a short turnaround time. Match the attribute or setting of the Azure Functions feature with its purpose.
+
+Durable Functions -> Write stateful functions in a serverless compute environment
+dynamicThrottlesEnabled -> Check system performance counters like connections, threads, processes, memory, and CPU
+matchCondition -> Define a single API surface for multiple function apps
+Schedule -> Triggers the function to using a CRON expression with six fields
+Binding -> Fetch data from external services
+
+__*Anotacion:__
+A Durable Function is an extension of Azure Functions that can be used to write stateful functions in a serverless compute environment. Customers can define custom stateful workflows by writing orchestrator functions and define stateful entities by creating entity functions using the Azure Functions programming model. Behind the scenes, these functions manage state, checkpoints, and restarts.
+
+The hosts file in the function app can be modified for HTTP concurrency and, as a result, scale the function app.
+
+dynamicThrottlesEnabled is an option available in the hosts file. When the dynamicThrottlesEnabled option is enabled to scale the functions, the request processing pipeline periodically checks system performance counters such as connections, threads, processes, memory, and CPU. If any of those counters are over a high threshold (80%), requests are rejected with a 429 "Too Busy" response until the counter(s) return to normal levels.
+
+Azure Functions Proxies can be used to break a large API into multiple function apps (as in a microservice architecture), while still presenting a single API surface for clients. The proxies are stored in a proxies.json file, located in the root of a function app directory. This file can be edited. matchCondition is one of the options that can be edited and is an object that defines the requests that trigger the execution of this proxy.
+
+Schedule is a setting that runs the functions at specified time intervals. The input to schedule is a six field CRON expression that denotes a schedule using an NCronTab library.
+
+Azure Functions use input and output bindings to make data from external services available to the code.
+
+4. You plan to store historical tax information from 2015 to 2021 in Azure. Users in the tax department must mount a network drive to access the tax information from their Windows 11 and Linux devices. Your solution is to implement Azure Information Protection (AIP). Does your solution meet the needs of the tax department?
+
+    A)Yes
+    B)No
+
+__*Anotacion:__
+
+Azure Information Protection (AIP) will not meet the needs of the tax department. Azure Information Protection (AIP) will not allow tax department users from Linux or Windows devices to map a drive to access the historical tax information. You will need to use an Azure file share. You can use a storage account key to access the file share. You can have the file share accessed with either Server Message Blocks (SMB) or Network File System (NFS) protocol. With the Azure Files service, you can mount file shares can be mounted by cloud or on-premises deployments. Windows clients can access SMB Azure file shares. Linux or macOS clients can access SMB Azure file shares and NFS Azure Files shares.
+
+Azure Information Protection (AIP) is a cloud-based solution that is part of the Microsoft Information Protection (MIP) solution. It uses labels to classify assets and apply tags.
+
+5. You are planning to host a business application on the Azure cloud. After some research, you plan to use Azure Container Instances because it enables you to run multiple instances of an application on a single host machine. Which of the following statements are correct? Select “Yes” else “No” for the given statements.
+The following table shows the correct answers for the given statements.
+
+Azure Container Services is a Platform as a Service (PaaS) in which you can upload containers that run on the platform. -> Yes
+Azure Container Services is a Software as a Service (SaaS) platform in which you can upload containers that run on the platform. -> No
+Azure Container Services is an Infrastructure as a Service (IaaS) in which you can upload containers that run on the platform. -> No
+You can manage both Docker and Microsoft-based containers using Azure Container Instances and Azure Kubernetes Service (AKS). -> Yes
+You can manage both Docker and Microsoft-based containers using only Azure Container Instances. -> No
+Azure Container Instances is a quick and easy way to run a container without using any virtual machines and without having to use a higher-level service. -> Yes
+
+__*Anotacion:__ 
+
+Containers are becoming the popular and preferred way to deploy and manage cloud applications. Azure Container Instances is the best choice to run multiple instances of an application on a single host machine.
+
+Azure Container Services is a Platform as a Service (PaaS) offering that allows you to upload containers that run on the platform. It offers the quickest and easiest way to run a container without using any virtual machines and without using a higher-level service.
+
+You can manage both Docker and Microsoft-based containers using Azure Container Instances and Azure Kubernetes Service (AKS). Containers are a virtual environment that allow you to host multiple virtual machines on a single physical host. In the same manner, you can run multiple containers on a single physical or virtual host. Containers enable you to respond to changes on demand. You can quickly restart the containers in case of a crash or hardware interruption. Docker is the most popular container engine, which is supported by Azure.
+
+You can use the same API to schedule both Windows and Linux containers. Azure Container Instances provide optimum utilization by allowing exact specifications of CPU cores and memory. With Azure Container Instances, you can execute a command in a running container by providing the interactive shell to help with application development and troubleshooting.
