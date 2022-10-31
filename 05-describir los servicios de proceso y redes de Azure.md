@@ -140,3 +140,22 @@ Es una conexión de tus dispositivos físicos con Microsoft Cloud y sus servicio
 4. Directamente desde lugares ExpressRoute
 
 Además se garantiza la seguridad desde todoas esta comunicaciones.
+
+## 5.12 Describir DNS Azure
+
+La descripción es tan increible como DNS de Azure y ya, puedes hacer cosas que hace una DNS.
+
+**Beneficios de Azure DNS**
+1. Fidelidad y rendimiento
+2. Seguridad con logs, restricción de recursos y control de acceso por roles
+3. Facilidad de uso 
+4. Customización de redes virtuales con dominios privados
+5. Registro de _Alias_ 
+
+Azure DNS no ofrece un nombre de dominio, debes de comprarlo desde la aplicación correspondiente y poder usarlo en Azure
+
+## 5.13 Preguntas
+
+[Respuestas](./Recopilacion%20preguntas%20Azure.md)
+
+## 5.14 Sumario
