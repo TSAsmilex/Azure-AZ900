@@ -52,5 +52,25 @@ Si quieres hospedar tu aplicacion en Azure debes escoger si quieres contenedor o
 
 **Aplicaciones móviles** que permiten crear para iOS y Android con base de datos SQL en la nube, Autentificaciones como google, twiter, etc. Notificaciones push y back-end en C# y Node.js
 
-## 5.8 DEscribir Azure Virtual Networking
+## 5.8 Describir Azure Virtual Networking
+
+Son un recurso de Azure, que puede ser como una extensión de tu propia red de tus ordenadores clientes. Te permite:
+
+**Aislamiento y segmentación** ya que puedes crear multiples redes virtuales aisladas, puedes definir rangos de IP publicas y privadas o configurar un DNS.
+
+**Comunicaciones de internet** Puedes habilitar el recibir comunicaciones desde intener usando una IP pública a un recurso Azure.
+
+**Comunicación entre recursos Azure** permite comunicar de manera segura dos servicios Azure, ya que puedes conectar con _App Service_ dos recursos diferentes. O utiizando Azure SQL o cuentas de almacenamiento.
+
+**Comunicación con recursos del dispositivio físico** usando:
+1. Point-to-site usando una VPN encriptada si es un ordenadore fuera de la organización.
+2. Site-to-site conecta tu VPN a la VPN de Azure, lo que permite que se reconozcan como si estuviesen en una red local.
+3. Azure EspressRoute conectividad privada de Azure que no pasa a través de internet.
+
+**Dirigir el tráfico de la red** puedes establer reglas sobre como este tráfico debe ser redirigido. Tamben puedes establez Border Gateway Protocol que funiona con todas las redes Azure.
+
+**Filtrado de tráfico** puedes filtrar el tráfico pro tus subredes usando grupos de seguridad donde puedes establecer reglas sobre permitir o no el trábico, segun IP, puerto o protocolo. Redes virtuales de MV similar a una red física. 
+
+**Conectar redes virtuarles** se puede hacer _Peering_ entre dos redes virtuales lo que permite conectarlas entre ellas, usando el red de Microsoft. Puedes tambien definir rutas de usuario  para tener mejor control de tu red virtual.
+
 
