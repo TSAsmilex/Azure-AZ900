@@ -1990,11 +1990,11 @@ ______________________
 
     B)No
 
-__*Anotacion:__
+    __*Anotacion:__
 
-Azure Information Protection (AIP) will not meet the needs of the tax department. Azure Information Protection (AIP) will not allow tax department users from Linux or Windows devices to map a drive to access the historical tax information. You will need to use an Azure file share. You can use a storage account key to access the file share. You can have the file share accessed with either Server Message Blocks (SMB) or Network File System (NFS) protocol. With the Azure Files service, you can mount file shares can be mounted by cloud or on-premises deployments. Windows clients can access SMB Azure file shares. Linux or macOS clients can access SMB Azure file shares and NFS Azure Files shares.
+    Azure Information Protection (AIP) will not meet the needs of the tax department. Azure Information Protection (AIP) will not allow tax department users from Linux or Windows devices to map a drive to access the historical tax information. You will need to use an Azure file share. You can use a storage account key to access the file share. You can have the file share accessed with either Server Message Blocks (SMB) or Network File System (NFS) protocol. With the Azure Files service, you can mount file shares can be mounted by cloud or on-premises deployments. Windows clients can access SMB Azure file shares. Linux or macOS clients can access SMB Azure file shares and NFS Azure Files shares.
 
-Azure Information Protection (AIP) is a cloud-based solution that is part of the Microsoft Information Protection (MIP) solution. It uses labels to classify assets and apply tags.
+    Azure Information Protection (AIP) is a cloud-based solution that is part of the Microsoft Information Protection (MIP) solution. It uses labels to classify assets and apply tags.
 
 5. You are planning to host a business application on the Azure cloud. After some research, you plan to use Azure Container Instances because it enables you to run multiple instances of an application on a single host machine. Which of the following statements are correct? Select “Yes” else “No” for the given statements.
 The following table shows the correct answers for the given statements.
@@ -2020,3 +2020,521 @@ The following table shows the correct answers for the given statements.
     You can manage both Docker and Microsoft-based containers using Azure Container Instances and Azure Kubernetes Service (AKS). Containers are a virtual environment that allow you to host multiple virtual machines on a single physical host. In the same manner, you can run multiple containers on a single physical or virtual host. Containers enable you to respond to changes on demand. You can quickly restart the containers in case of a crash or hardware interruption. Docker is the most popular container engine, which is supported by Azure.
 
     You can use the same API to schedule both Windows and Linux containers. Azure Container Instances provide optimum utilization by allowing exact specifications of CPU cores and memory. With Azure Container Instances, you can execute a command in a running container by providing the interactive shell to help with application development and troubleshooting.
+
+6. Your company needs to protect their application and data from datacenter failures. The company plans to move to Azure. You want to ensure that applications and data are stored in availability zones. Which of the following statements best describes availability zones?
+
+    A)A way for you to ensure your application remains online if a high-impact maintenance event is required or a hardware failure occurs
+    
+    B)A geographical area containing at least one, but potentially multiple, datacenters that are in close proximity and networked together with a low-latency network
+    
+    C)Physically separate locations within an Azure region
+    
+    D)A discrete market typically containing two or more regions that preserves data residency and compliance boundaries
+    
+    __*Anotacion:__
+
+    Availability zones are physically separate locations within an Azure region. Each availability zone has one or more datacenters. Each datacenter is equipped with independent power, cooling, and networking. Availability zones protect your applications and data from datacenter failures.
+
+    An availability zone is not a discrete market typically containing two or more regions that preserves data residency and compliance boundaries. That describes a geography. A geography is a unique market that contains two or more regions that stores data in the regions according to the compliance boundaries of the regions.
+
+    An availability zone is not a geographical area containing at least one, but potentially multiple, datacenters that are in close proximity and networked together with a low-latency network. That describes a region. A region is a geographical area containing one or more datacenters networked together with a low-latency network and are in close proximity.
+
+    An availability zone is not a way for you to ensure that your application remains online if a high-impact maintenance event is required, or a hardware failure occurs. That can be done with an availability set. Availability sets logically group resources so that Azure can ensure that VM resources are isolated from each other when they are in an Azure datacenter. Availability sets allow your application to remain online if a hardware failure occurs or a maintenance event is required.
+
+7. You need to monitor the VMs running in your department’s resource group. These VMs run several applications that query a backend database. Department members create spreadsheets from the data that is queried from the database. You need to respond quickly to alerts and take action on those alerts by using Azure CLI or PowerShell commands. You will be attending a two-day music festival over the weekend. You plan to take only your Android phone. However, there are no team members that can take over your monitoring activities. What can you do to ensure that monitoring activities continue?
+
+    A)Download the Microsoft 365 Admin app
+    
+    B)Download the Azure mobile app
+    
+    C)Download the Microsoft tunnel app
+    
+    D)Download the Remote Desktop app
+    
+    __*Anotacion:__
+
+    You should download the Azure mobile app. This app will allow you to monitor VMs, respond to alerts and take corrective actions for those alerts. You can also use this app to run Azure PowerShell commands, or Azure CLI commands.
+
+    You should not use the Remote Desktop app. This app will allow you to connect via RDP to a VM. While you can connect to a VM, you are not alerted if there are issues with the VM.
+
+    You should not use the Microsoft 365 Admin app. This app will allow you to manage all the apps in Microsoft 365. While the developers use the spreadsheets, the monitoring should be on the VMs, not on the spreadsheets.
+
+    You should not download the Microsoft tunnel app. This app is used to ensure that you can securely connect to Azure resources. This app by itself will not notify of issues with Azure resources.
+
+8. You have been tasked to create a solution to monitor network security groups within the Dream Suites Azure subscription. Diagnostic logging for network security groups has been enabled. You need to review the logs and show details for network security group blocked flows in the last hour.(Image) What solution below will meet the requirements?
+
+    A)Azure Security Center
+
+    B)Azure Application Insights
+
+    C)Azure Log Analytics
+
+    D)Azure Service Health
+
+    __*Anotacion:__ 
+
+    Azure Log Analytics is a service that is used to collect log data from Azure and on-premises. Insights can be derived from this log repository and stored in a single workspace. A powerful expressive query language is available to transform log data into actionable insight. When turning on diagnostic logging for a network security group you have the option to send to log analytics to obtain further insight. This option will provide the ability to show details for network security group blocked flows in the last hour.
+
+    The Azure Security Center feature is a robust management platform that allows monitoring of threats within on-premises and Azure workloads and to fix discovered vulnerabilities quickly. This security platform provides the visibility to visually manage the security posture of your on-premises and Azure assets. This option will not provide the ability to show details for network security group blocked flows in the last hour.
+
+    The Azure Service Health dashboard is the centralized place to track planned maintenance schedules, health advisories, and health alert notifications. This option will not provide the ability to show details for network security group blocked flows in the last hour.
+
+    The Azure Application Insights solution provides the information required to understand how an app is performing and how it is being used. This solution can be used to monitor web applications to quickly detect performance bottlenecks, diagnose issues and to help improve usability. A common use case of the Azure Application Insights solution is integrating into Visual Studio to help automate the DevOps process to provide continuous improvement. This option will not provide the ability to show details for network security group blocked flows in the last hour.
+
+9. Your company needs to select the appropriate cloud model and category to deploy. Match the cloud model or category with its appropriate description.
+
+    __*Anotacion:__ 
+
+    The cloud models and categories should be matched with the descriptions in the following manner:
+
+        Public cloud – Each organization shares the cloud service provider’s infrastructure with the other companies that have subscribed to the cloud.
+
+        Private cloud – The organization deploys its own cloud infrastructure, usually behind a firewall.
+
+        Hybrid cloud – The organization’s deployment is split between resources deployed on the cloud service provider’s infrastructure and resources deployed in its own cloud infrastructure.
+
+        Community cloud – A group of related organizations share infrastructure provided by the cloud service provider for software and development tools that are designed to meet community needs.
+
+        SaaS (software as a service) – The cloud service provider hosts the applications on the cloud servers.
+
+        IaaS (infrastructure as a service) – The cloud service provider maintains all the hardware required for the cloud.
+
+        PaaS (platform as a service) – The organization hosts the deployment platform, including the operating system and application services.
+
+        NaaS (network as a service) – The cloud service provider provides network services over the Internet.
+
+        DSaaS (data science as a service) – The cloud service provider hosts analytics resources for data-driven applications
+
+10. The Nutex Corporation has an on-premises datacenter and plans to move some of their applications, servers, and databases to the Azure cloud. Before migrating, management wants to understand how much money would be saved over the next five years by moving to the cloud versus remaining on-premises. You need to consider all of the hidden costs involved with operating on-premises and in the Azure Cloud. What is the BEST way to achieve the objective?
+
+    A)Use the Total Cost of Ownership (TCO) calculator as a starting point.
+
+    B)Use historical financial records to ascertain the TCO.
+
+    C)Use manual calculations to ascertain the hidden costs involved.
+
+    D)Use the Azure Pricing Calculator as a starting point.
+
+    E)Ask similar organizations to provide their TCO and do a cost comparison using the TCO calculator.
+
+    __*Anotacion:__
+
+    You should use the Total Cost of Ownership (TCO) calculator as a starting point in the given scenario. You do not need an Azure subscription to use it.
+
+    Working with the TCO calculator involves three steps:
+
+    - Define your workloads – You should provide the specifications of your on-premises infrastructure to the TCO calculator based on the below four categories:
+        - Servers – this includes operating systems, virtualization methods, CPUs, and memory.
+        - Databases – this includes database types, server hardware, and the Azure services you want to use.
+        - Storage – this includes storage type and capacity.
+        - Networking – this includes the amount of network bandwidth you are currently consuming in the on-premises environment.
+    - Adjust assumptions – In this step, you specify the license information you use in your on-premises environment. You can save money by reusing those licenses in Azure. You can also determine if you need storage in another Azure region for redundancy. You can then specify the electricity price per kilowatt (KWh), hourly rate for IT administration, and network maintenance cost as a percentage of network hardware and software costs.
+    - View the report – Choose the timeframe, for example five years as in the given scenario. The TCO calculator will generate the report based on the information you have provided.
+    
+    You should not use manual calculations to ascertain the hidden costs involved with operating on-premises and in the Azure cloud because there is a high chance of forgetting some factors and miscalculating the results. It is best to use the TCO calculator.
+
+    You should not use the Azure pricing calculator because it will not account for the hidden costs involved in running an on-premises data center. Hidden costs are included in the Assumptions step of the TCO calculator. The Azure pricing calculator will provide up-front and monthly costs associated with the specific Azure resources you choose to purchase, including the costs of technical support and licensing.
+
+    You should not use historical financial records to ascertain the TCO. This is not the BEST option to choose and would be part of the manual calculations to ascertain the hidden costs. While using manual calculations, you can use historical financial records to ascertain the TCO.
+
+    You should not ask similar organizations to provide their TCO and perform a cost comparison using the Microsoft TCO calculator. You can ask other organizations to learn how much they have saved over the period of switching from on-premises to Azure cloud. This option can help you make a decision to some extent.
+
+11. Which of the following is the proper use of an Azure ARM template?
+
+    A)To organize resources and subscriptions
+    
+    B)To deploy predictive analytics
+    
+    C)The automatic creation of Azure resources
+
+    D)To act as a broker with message queues and publish-subscribe topics (in a namespace).
+    
+    __*Anotacion:__ 
+
+    Azure Resource Manager templates are JavaScript Object Notation (JSON) files that specify the infrastructure and configuration for your project. They can be used to automate the creation of resources. An ARM template can create identical resources in multiple locations.
+
+    Organizing resources and subscriptions is better done through the use of management groups. Azure Management Groups can be used to create an effective and efficient hierarchy to manage Azure subscriptions and resources.
+
+    The Azure Service bus, not an ARM template, is a broker with message queues and publish-subscribe topics (in a namespace).
+
+    Deploying predictive analytics is better done with the Azure Machine Learning Studio. This is a drag and drop tool that allows you to build, test, and deploy predictive analytics using AI.
+
+12. Your organization has offices in multiple locations in France. Teams are distributed across the country. Your organization uses a private cloud storage solution to synchronize work-related data and make it available to employees across locations. Employees must manually synchronize the data on the cloud with that on their computers. You are asked to plan for a solution that automatically synchronizes data, reduces costs and eliminates the dependency on Internet speeds to synchronize data. You plan to use Azure File Storage. Which of the following are mandatory requirements to implement Azure File Storage and accomplish the goal of the plan? (Select all that apply.)
+
+    A)Prep on-premises servers that meet the requirements to deploy Azure File Sync.
+
+    B)Deploy Azure File Sync on the on-premises servers.
+
+    C)Install Windows Deployment Services on-premises
+
+    D)Create an Azure File Share on the Azure portal.
+
+    E)Register the on-premises servers with the Storage Sync Service.
+
+    F)Create ExpressRoute circuit(s) for the Azure File Sync solution.
+
+    G)Create a Sync Group and add the on-premises servers as Server Endpoints on the Azure portal.
+
+    __*Anotacion:__
+
+    The following are mandatory requirements:
+
+    - Deploy Azure File Sync on the on-premises servers.
+    - Create an Azure File Share on the Azure portal.
+    - Prep on-premises servers that meet the requirements to deploy Azure File Sync.
+    - Register the on-premises servers with the Storage Sync Service.
+    - Create a Sync Group and add the on-premises servers as Server Endpoints on the Azure portal.
+    
+    One of the purposes of Azure File Storage is for file shares in the cloud. You can use Azure File Storage to create file shares without worrying about overhead of a physical server, device, or appliance. The following are the steps you must perform to set up Azure File Storage and the planned solution:
+
+    - Create a File Share by using the Azure portal, PowerShell, or CLI and specify the maximum limit of the File Share.
+    - Identify servers or on-premises virtual machines that will synchronize and download the files to the on-premises locations by using Azure File Sync.
+    
+    Although Azure File Sync is not a mandatory requirement to use Azure File Storage effectively, in the desired solution for this question, automatic synchronization, caching and reducing bandwidth costs, and eliminate dependency on Internet speeds. So, Azure File Sync must be used.
+
+    First, deploy Azure File Sync agent on the on-premises resources you’ve prepped. Next, register the on-premises servers with the Storage Sync service to establish a trust relationship. Lastly, create a Sync Group to define the sync topology for a set of files. Endpoints within a sync group are kept in sync with each other.
+
+    A sync group must contain one cloud endpoint, which represents an Azure file share and one or more server endpoints. Also, add the on-premises servers as the Server Endpoints.
+
+    Azure ExpressRoute is not a mandatory requirement. Azure ExpressRoute is a feature that allows you to extend your on-premises networks into the Microsoft cloud over a private connection facilitated by a connectivity provider. So, this is NOT a mandatory requirement to make Azure File Storage and Azure File Sync.
+
+    Windows Deployment Services (WDS) is not a mandatory requirement. WDS is a server role that allows you to deploy Windows operating systems remotely.
+
+13. The Nutex Corporation wants to build apps on Azure. You are part of a Software Development operations team that must manage the operational aspects of developing apps. Which of the following statements about Azure App Service are TRUE? (Choose two)
+
+    A)Only apps hosted in the Dedicated Computer Premium pricing tier or higher can be restored from snapshots.
+
+    B)The Dedicated Compute Premium pricing tier of App Service runs dedicated Azure VMs on dedicated Azure Virtual Networks.
+
+    C)If an app’s Memory quota is exceeded, the app is stopped.
+
+    D)The auto swap feature is supported in web apps running in a Linux or Windows environment.
+
+    E)The per-app scaling setting is available only for Shared, Premium, Premium V2, and Isolated pricing tiers.
+
+    F)The Dedicated Compute Premium pricing tier of App Service can host up to 100 Hybrid connections.
+
+    __*Anotacion:__
+
+    The following statements are true:
+
+    - The Dedicated Compute Premium pricing tier of App Service can host up to 100 hybrid connections.
+    - Only apps hosted in the Dedicated Computer Premium pricing tier or higher can be restored from snapshots.
+    
+    Hybrid connections provide access from the app to an application endpoint in another network. They do not enable an alternate capability to access the application. Each hybrid connection corresponds to a single TCP host and port combination, which means that the hybrid connection endpoint can be on any application and any operating system when a single TCP listening port is accessed.
+
+    The maximum allowed hybrid connections are as follows: Basic (5), Standard (10), Premium (100), and Isolated (200).
+
+    Apps can be restored to the previous state based on one of the apps’ snapshots. Azure saves a snapshot of all apps automatically. Snapshots are incremental shadow copies and are more beneficial than regular backups. Snapshots eliminate issues such as storage size limitations, file copy errors due to file locks, and backup configuration issues.
+
+    The following statements are not true:
+
+    - If an app’s Memory quota is exceeded, the app is stopped.
+    - The Dedicated Compute Premium pricing tier of App Service runs dedicated Azure VMs on dedicated Azure Virtual Networks.
+    - The auto swap feature is supported in web apps running on a Linux or Windows environment.
+    - The per-app scaling setting is available only in Shared, Premium, Premium V2, and Isolated pricing tiers.
+    
+    All Dedicated Compute pricing tiers run apps on dedicated Azure VMs. Apps in the same App Service plan share compute resources for that plan. The higher tiers can scale-out more VM instances than lower tiers.
+
+    The Isolated pricing tier provides network isolation by running dedicated Azure VMs on dedicated Azure Virtual Networks. It provides compute isolation to the apps and the maximum scale-out capabilities.
+
+    The auto swap feature is supported in web apps running in a Windows environment only. Auto swap should be used where the app is to be deployed continuously with zero cold starts and zero downtime for app users. Auto swap is enabled from a slot into production every time the code changes are pushed to that slot. App Service automatically swaps the app into production after it has warmed up in the source slot.
+
+    The per-app scaling setting is available for Standard, Premium, Premium V2, and Isolated pricing tiers, not Shared or Free tier. Per-app scaling can be enabled at the level of an App Service plan to allow for scaling an app independently from the App Service plan that hosts it. This way, an App Service plan can be scaled to six instances, for example, but an app can be set to use only three.
+
+    If an app’s Memory quota is exceeded, the app is only restarted. The quotas for apps are CPU (short), CPU (Day), Memory, Bandwidth, and Filesystem. If an app exceeds the CPU (short), CPU (Day), or Bandwidth quota, the app is stopped until the quota resets and all incoming requests result in an HTTP 403 error. If the Filesystem quota is exceeded, any write operation fails. Write operation failures include writes to logs.
+
+14. You are part of the IT team at the Nutex Corporation. Your management has triggered an initiative to reduce the costs with Azure resources. You need to reduce storage costs for blob data. You propose using Azure Hybrid Benefit. Which of the following are true regarding Azure Hybrid Benefit? Choose two.
+
+    A)Eligible licenses are SQL Server, Exchange Server, and Windows Server with active Software Assurance
+
+    B)Allows you to use Azure cloud licenses with on-premises servers.
+
+    C)Allows you to use on-premises licenses with servers in Azure.
+
+    D)Eligible licenses are SQL Server, and Windows Server with active Software Assurance
+
+    E)End-of-support software versions are not eligible
+    
+    __*Anotacion:__
+
+    The following are correct:
+
+    - Eligible licenses are SQL Server, Exchange Server, and Windows Server with active Software Assurance
+    - Allows you to use on-premises licenses with servers in Azure.
+    
+    Azure Hybrid Benefit saves you money by using existing on-premises licenses with active Software Assurance on a virtual machine in Azure. Azure Hybrid Benefit does allow you to use a cloud-based license with an on-premises server.
+
+    Windows Server and SQL Server licenses with active Software Assurance are eligible for Azure Hybrid Benefit. Exchange Server is not eligible. However, RedHat and SuSe Linux subscriptions are eligible.
+
+    End-of-support software versions are eligible for Azure Hybrid Benefit.
+
+15. The Nutex Corporation plans to add a large amount of data from a company that it purchased. It plans on using Azure Blob storage. Match the Attribute or Setting for Azure Blob storage with its appropriate description.
+
+    Blobfuse -> A virtual file systems driver that accesses the block blob data in the Storage account through the Linux file system
+
+    Azure Data Box -> A service used to transfer on-premises dara ro Blob storage when large datasets or network constrains do not allow to upload data over the wire
+
+    Page -> A type of Blob that stores VHD files and serve as disks for Azure virtual machines
+
+    Cool -> An Access tier that stores Blobs of dara that is NOT accessed frequently and stored for at least 30 days.
+
+    AzCopy -> A command-line tool for Windows and Linux to copy data to and from Blob storage, across containers, or accross storage accounts
+
+    __*Anotacion:__ 
+    Blobfuse is a virtual file system driver for Azure Blob storage. You can use Blobfuse to access your existing block blob data in your Storage account through the Linux file system. Blobfuse can be installed on Ubuntu 14.04, 16.04, and 18.04 editions.
+
+    Azure Data Box transfers on-premises data to Blob storage when large datasets or network constraints make uploading data over the wire unrealistic. One of Azure Data Box Disk, Azure Data Box, or Azure Data Box Heavy devices from Microsoft can be used, depending on the size of data to be transferred. You can then copy your data to those devices and ship them back to Microsoft to be uploaded into Blob storage.
+
+    The three types of Blobs in Azure Blob Storage are Block, Append, and Page. Block blobs store text and binary data, up to about 4.7 TB. Block blobs are made up of blocks of data that can be managed individually. Append blobs are made up of blocks like block blobs but are optimized for append operations. Page blobs store random access files up to 8 TB in size. Page blobs store virtual hard drive (VHD) files and serve as disks for virtual machines.
+
+    The three Access tiers available with Azure Blob storage are Hot, Cool, and Archive. Hot is optimized for storing data that is accessed frequently. Cool is optimized for storing data that is infrequently accessed and stored for at least 30 days. Archive is optimized for storing data that is rarely accessed and stored for at least 180 days with flexible latency requirements.
+
+    AzCopy is a command-line tool that copies data to and from Blob storage, across containers, or across storage accounts. AzCopy executable files are available for Windows, Linus, and macOS computers.
+
+16. The Nutex Corporation plans to provide app management and monitoring services to some companies. The management wants you to discover ways to obtain customer-level usage and billing details. Which of the following statements about Azure Subscriptions are TRUE? (Choose three.)
+
+    A)Azure subscriptions help customers monitor the billing and usage of data granularly.
+    B)Each subscription can trust up to three Azure AD directories.
+    C)Multiple subscriptions can trust the same Azure AD directory, but each subscription can only trust a single directory.
+    D)The accidental deletion of an Azure subscription by an admin user cannot be reversed.
+    E)An Azure subscription can be transferred to an Azure account in another country.
+    F)An Azure subscription cannot contain multiple resource groups.
+    Explanation
+
+    The following statements are true:
+
+    Azure subscriptions help customers monitor the usage and billing data granularly.
+    Multiple subscriptions can trust the same Azure AD directory. However, each subscription can only trust one Azure AD directory.
+    An Azure subscription can be transferred to an Azure account in another country.
+    To monitor the usage and billing data granularly, customers can obtain usage and billing data by resource groups as well as others. The following shows you the different properties that can be used to segment costs.
+
+    (Property -> When to use)
+    
+    - Availability zones	Break down AWS costs by availability zone.
+
+    - Billing period	Break down PAYG costs by the month they were (or will be) invoiced.
+
+    - Charge type -> Break down usage, purchase, refund, and unused reservation costs.
+
+    - Department -> Break down costs by EA department.
+
+    - Enrollment account -> Break down costs by EA account owner.
+
+    - Frequency -> Break down usage-based, one-time, and recurring costs.
+
+    - Invoice ID -> Break down costs by billed invoice.
+
+    - Meter -> Break down costs by usage meter.
+
+    - Operation -> Break down AWS costs by operation.
+
+    - Pricing model -> Break costs down by on-demand, reservation, or spot usage.
+
+    - Provider -> Break down costs by AWS and Azure.
+
+    - Publisher type -> Break down AWS, Azure, and Marketplace costs.
+
+    - Reservation -> Break down costs by reservation.
+
+    - Resource -> Break down costs by resource.
+
+    - Resource group -> Break down costs by resource group.
+
+    - Resource type -> Break down costs by resource type.
+
+    - Resource location -> Break down costs by location or region.
+
+    - Service name or Meter category -> Break down cost by Azure service.
+
+    - Service tier or Meter subcategory -> Break down cost by Azure usage meter subclassification.
+
+    - Subscription -> Break down costs by Azure subscription and AWS linked account.
+
+    - Tag -> Break down costs by tag values for a specific tag key.
+    
+    An Azure subscription has a trust relationship with Azure Active Directory (Azure AD). Azure AD authenticates users, services, and devices of the Azure subscriptions that are added to the AD directory.
+
+    Cross-country transfers cannot be performed in the Azure portal. To transfer a subscription across countries, customers must contact the Microsoft Support team.
+
+    Azure subscriptions allow multiple resource groups to be added. Azure provides four levels of scope: management groups, subscriptions, resource groups, and resources. Management settings can be applied at any of these levels of scope. The level you select determines how widely the setting is used. Lower levels inherit settings from higher levels. For example, when you apply a policy to the subscription, the policy is applied to all resource groups and resources in your subscription. When you apply a policy on the resource group, that policy is applied to the resource group and all its resources.
+
+    Azure subscriptions can be reactivated if they are deleted by another admin user. If you are the Account Administrator and accidentally delete an individual subscription with pay-as-you-go rates, you can reactivate it in the Account Center.
+
+17. The Nutex Corporation wants to migrate its on-premises applications and services to Azure. You are the analyst tasked to investigate the benefits of this migration to Azure. Which of the following statements about the Azure TCO Calculator is TRUE?
+
+    A)Azure TCO Calculator calculates on-premises infrastructure costs based on three criteria: hardware, software, and networking costs.
+
+    B)The Azure TCO Calculator application can be downloaded from the Azure website.
+
+    C)Customers interested in migrating from on-premises deployments to Azure must focus their calculations on the Compute, Storage, and Network requirements on Azure in order to evaluate the costs accurately.
+
+    D)The Azure Pipelines service is not available with the Azure Government offering.
+
+    E)Azure TCO Calculator primarily evaluates the total cost incurred to migrate on-premises application workloads to Microsoft Azure.
+    
+    __*Anotacion:__
+
+    Customers interested in migrating from on-premises deployments to Azure must focus their calculations on the Compute, Storage, and Network requirements on Azure in order to evaluate the costs accurately.
+
+    Unfortunately, not all cloud TCO calculations are accurate enough to let you make an informed decision. Many are ballpark estimates because they have failed to account for all performance metrics essential for rightsizing, and they may rely on metrics that have been averaged instead of considering peaks and valleys. These imprecise assessment methods may cause you to estimate a configuration scenario that is not suited to your performance requirements.
+
+    Metrics such as peak CPU utilization, allocated and peak RAM usage, observed storage on-premises (capacity and current occupancy), disk IOPS and bandwidth, throughput, and usage patterns must be analyzed. This approach focuses on three areas: Compute, Storage, and Network.
+
+    The following statements are not true:
+
+    - Azure TCO Calculator primarily evaluates the total cost incurred to migrate on-premises application workloads to Microsoft Azure.
+    - Azure TCO Calculator calculates on-premises infrastructure costs based on three criteria: hardware, software, and networking costs.
+    - The Azure TCO Calculator application can be downloaded from the Azure website.
+    
+    Microsoft’s Azure Total Cost of Ownership (TCO) Calculator allows you to evaluate potential cost savings if you migrate on-premises application workloads to Microsoft Azure. You must specify the details of your existing infrastructure and various cost assumptions that you want the tool to work with. You receive a report that shows your on-premises costs compared to Microsoft Azure costs. While you may get a report of cost savings, TCO will NOT give you the total costs incurred to migrate on-premises application workloads to Microsoft Azure. TCO may allow you to compare costs on databases, storage, and networking, but does NOT calculate the labor rate that may be involved with the migration.
+
+    The Azure TCO Calculator calculates the on-premises infrastructure costs based on more than three criteria. It takes the following costs into consideration:
+
+    - Hardware
+    - Software (for Windows as an OS)
+    - Electricity
+    - Data center
+    - Networking
+    - Disk storage
+    - IT labor
+    - Virtualization
+    - Azure TCO Calculator is an online calculator that can be accessed on the Azure website. Customers can use it to check their TCO but only the results can be downloaded.
+
+    At the time of this writing, Azure Pipelines service is not available with the Azure Government offering.
+
+18. Which of the following are examples of SaaS? (Choose two.)
+
+    A)Google Compute Engine
+
+    B)Microsoft Azure
+
+    C)Google Apps
+
+    D)Salesforce
+
+    E)Amazon Web Services Elastic Beanstalk
+
+    __*Anotacion:__ 
+
+    Google Apps and Salesforce are examples of Software as a Service (SaaS). With SaaS, the customer uses software for a fee from a cloud provider. Google Apps and Salesforce run in the cloud and do not require software installed on the client. Other examples of SaaS are web-based mail services, such as Hotmail or Yahoo Mail.
+
+    Microsoft Azure and Amazon Web Service Elastic Beanstalk are example of Platform as a Service (PaaS). PaaS is a cloud category that a customer uses to create their own applications and manage those applications.
+
+    Google Compute Engine is an example of Infrastructure as a Service (IaaS). IaaS is a cloud category that provides customers with network infrastructure, physical computing resources, data partitioning, scaling, security, and backup.
+
+19. Your organization has an on-premises infrastructure. You have recently deployed Windows virtual file servers in an Azure virtual network. You want to import 50 TB of data from an on-premises file server and plan to use Azure Data Box. In which of the following scenarios can you use Azure Data Box to import data to Azure? (Choose three.)
+
+    A)Periodic Uploads
+
+    B)Security requirements
+
+    C)Onetime Migration
+
+    D)Initial Bulk Transfer
+
+    E)Disaster Recovery
+
+    F)Migrate back to on-premises or to another cloud service provider
+
+    __*Anotacion:__
+
+    Azure Data Box is a cloud solution that allows you to send terabytes of data into and out of Azure in a quick and reliable way. Azure Data Box is a Microsoft proprietary solution that imports and exports data from Azure. You can set up the device using the local web user interface.
+
+    Data Box is best suited to transfer data larger than 40 TB in scenarios with no to limited network connectivity. Below are some of the scenarios where Data Box can be used to import data to Azure.
+
+    - Onetime Migration – when you want to move a large amount of on-premises data to Azure. For example, migrating offline tape media to create an online media library, migrating your SQL Servers, VMs, and applications, and moving historical data for in-depth analysis and reporting using HDInsight.
+    - Initial Bulk Transfer – when you want to move an initial large historical backup to Azure. Once the process is complete, the incremental data is transferred via network to Microsoft Azure Storage.
+    - Periodic Uploads – when you want to move a large amount of data periodically to Azure.
+    
+    Disaster Recovery, security requirements, and migrating back to on-premises or to another cloud service provider are not the scenarios that use Data Box to import data to Azure. These are useful when using Data Box to export data from Azure.
+
+    - Disaster Recovery – when you need to move data from Azure to an on-premises network. In a typical scenario, a large amount of Azure data is exported to a data box, which is shipped to an on-premises datacenter where the data is restored.
+    - Security requirements – when you have to move data out of Azure due to government or security requirements. For example, Azure Storage is available in Secret and Top Secret clouds, and you want to export data out of Azure.
+    - Migrate back to on-premises or to another cloud service provider – when you no longer need data in Azure or change cloud service providers.
+
+20. Your company hosts a website. Due to web traffic spikes that were caused by ads which typically ran for three days, the company has over-purchased capacity in advance of running ads for the next month. Which benefit of Azure Cloud Services supports cost management for this type of usage pattern?
+
+    A)high availability
+
+    B)elasticity
+
+    C)load balancing
+
+    D)high latency
+
+    __*Anotacion:__
+
+    Elasticity in Azure could allow the website to scale rapidly, commensurate with demand, due to traffic spikes caused by ads. Microsoft Azure could allocate resources when the spike occurs and deallocate the resources when the traffic spike passes. The elasticity feature makes the capabilities of the cloud appear unlimited and can be allocated in any quantity for any time length.
+
+    High latency would not be a feature that would be used in this scenario. Network latency is the time it takes for a packet to traverse the network from the sender to the receiver. The issue in the scenario is a spike in traffic, not a delay in traffic traversing the network.
+
+    Load balancing would not be a feature that would be used in this scenario. Load balancing distributes incoming network traffic across a group of servers known as a server pool. Load balancing can increase performance by decreasing the burden that is placed on a server. Load balancing is designed to increase reliability over time, but it would not be as effective in this scenario as elasticity, which allocates resources on demand.
+
+    High availability would not be a feature that would be used in this scenario. The high-availability feature allows groups of computers to support applications with little or no downtime. High availability may not protect against spikes, but elasticity can.
+
+21. During your research to move from an on-premises setup to the Azure cloud, you learn that Microsoft's physical infrastructure spans 60 regions across 140 countries and consists of hardware and systems located across multiple datacenters. Which approach does Microsoft use in its datacenters to be carbon negative, create a resilient supply chain, and anticipate growth?
+
+    A)Azure Security and Resiliency Architecture (ASRA)
+
+    B)Digital twins
+
+    C)Blockchain
+
+    D)Circular Centers
+
+    __*Anotacion:__
+
+    In the Microsoft Circular Centers program, when the hardware’s life cycle is complete, it is decommissioned and repurposed. This action allows the servers and server components to be reused elsewhere in the Microsoft organization or donated to other organizations. Circular Centers allows Microsoft to reuse 90% of the servers and their components, ensuring that Microsoft can achieve its goal of being carbon negative. It also allows parts to be available, which improves the supply chain.
+
+    You should not choose blockchain. The blockchain is an accounting of transactions in an electronic ledger. The ledger is duplicated and distributed by the computer systems on the blockchain to ensure that it makes it impossible to corrupt or modify. While blockchain can ensure that resources are used and accounted for, it has a substantial carbon footprint as currently practiced and is not a carbon-negative technology.
+
+    You should not choose digital twins. A digital twin is a virtual representation of a physical object or process that serves as the real-time digital counterpart. You could create a virtual machine of a server in the cloud that represents a physical server located on-premises. While digital twins help a datacenter with the supply chain and anticipate growth, they do not help a datacenter to become carbon negative.
+
+    You should not choose Azure Security and Resiliency Architecture (ASRA). This is the approach that Microsoft uses to ensure resiliency consistently and to provide high security across the Microsoft cloud infrastructure supply chain. This approach will improve the supply chain, but it does not help a datacenter become carbon negative.
+
+22. You plan to deploy an Azure cloud with the following divisions:
+    - Two divisions in North America, one located in Atlanta, GA, and the other in Montreal, Québec.
+    - Two divisions in Europe, one located in London and the other in Paris.
+    Each division will have its own administrator. Each division administrator can manage the Azure resources used by their respective division. How many Azure Active Directory (Azure AD) directories will this solution require?
+
+    A)2
+    
+    B)4
+
+    C)3
+
+    D)1
+    
+    __*Anotacion:__ 
+
+    While it is possible to create separate Azure Active Directory (Azure AD) directories for each division, there is no need for all that extra administrative effort. A single Azure AD can support the creation of multiple Azure administrative domains. A domain can be created for each division. The central administrator could:
+
+    1. Create an administrative unit for each division.
+    2. Populate the administrative unit with only students and staff within the division.
+    3. Create a role with administrative permissions over only Azure AD users in each administrative unit.
+    4. Add the division IT team to the role, along with its scope.
+
+23. You are a system administrator for Nutex Corporation. Your business-critical web application is experiencing intermittent errors. You are unable to find the cause of the issue. You plan to use Azure Monitor to determine the root cause of the issue. Which of the following should you use for this?
+
+    A)Azure Log Analytics
+
+    B)Azure Databricks
+
+    C)Azure Functions
+
+    D)Azure Advisor
+
+    __*Anotacion:__
+
+    Azure Log Analytics will help you drill into the monitoring data for troubleshooting and deep diagnostics. It is a tool located in the Azure portal used for editing log queries and interactively analyzing their results. You can get a set of given records by running a simple query and then sort, filter, and analyze them. You can also use advanced queries to perform statistical analyses and visualize the results in a chart to identify a particular trend.
+
+    Azure Databricks will not help you drill into the monitoring data for troubleshooting and deep diagnostics. Azure Databricks is a data analytics platform provided by Microsoft for the Azure cloud services platform. It has three environments for developing data-intensive applications:
+
+    - Databricks Machine Learning
+    - Databricks SQL
+    - Databricks Data Science and Engineering
+    
+    Azure Functions will not help you drill into the monitoring data for troubleshooting and deep diagnostics. An Azure function is a serverless solution where you have to write less code, maintain less infrastructure, and save on costs. Azure Functions provides "compute on-demand" in two ways. First, it helps you to implement your system's logic into readily available blocks of code. Second, as there is an increase in requests, it meets the necessary demand with the needed resources and function instances.
+
+    Azure Advisor will not help you drill into the monitoring data for troubleshooting and deep diagnostics. Azure Advisor is a Microsoft-provided cloud consultant that enables you to follow best practices to optimize your Azure deployments. It analyzes your resource configurations and provides recommendations for solutions that can help you improve the cost-effectiveness, performance, reliability, and security of Azure resources.
