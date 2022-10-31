@@ -40,3 +40,17 @@ Servicio _serverles computing_ que se encarga de mantener las MV y los contenedo
 
 ## 5.7 Describir las opciones de hospedaje de aplicaciones
 
+Si quieres hospedar tu aplicacion en Azure debes escoger si quieres contenedor o MV, aunque existe otra opción como Azure App Service.
+
+**Azure App Service** te permite creat y hostear aplicaciones webs, back-end, trabajos en segundo plano o APIs REST, disponibles para windows y linux, con despliegue automático desde GitHub, Azure DevOps o cualquier repositorio Git. Azure App Service es un servicio HTTP que mantiene lenguajes como  .NET, .NET Core, Java, Ruby, Node.js, PHP, o Python.
+
+**Aplicaciones Web** en los lenguajes anteriores
+
+**Aplicacones API** para montar servicios REST, si pinlicas tu API en _Azure Marketplace_ las aplicaciones utilizan HTTP o HTPPS
+
+**Trabajos web** donde puedes lanzar programas o scripts que puede ser programados para lanzarse automáticamente.
+
+**Aplicaciones móviles** que permiten crear para iOS y Android con base de datos SQL en la nube, Autentificaciones como google, twiter, etc. Notificaciones push y back-end en C# y Node.js
+
+## 5.8 DEscribir Azure Virtual Networking
+
