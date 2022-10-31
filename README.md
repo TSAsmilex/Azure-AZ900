@@ -34,3 +34,4 @@ Lecciones:
 
 ## Respuestas
 - [Todas las respuestas de Conceptos fundamentales Azure](./Recopilacion%20preguntas%20Azure.md)
+- [Preguntas de ejemplo con respuesta](https://learn.microsoft.com/en-us/certifications/resources/az-900-sample-questions)
