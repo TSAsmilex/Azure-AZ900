@@ -52,13 +52,15 @@ Los datos estan en la máquina fisica y las aplicaciones estan en la nube, por l
 
 ## 5.5 Describir contenedores Azure
 
-MV suponen una reducción del coste en hardware para la empresa, pero si quieres aumentar la productividad lanzando multiples instancas de una aplicación en una misma máquina virtual los contenedores son mejores.
+VM suponen una reducción del coste en hardware para la empresa, pero si quieres aumentar la productividad lanzando multiples instancas de una aplicación en una misma máquina virtual los contenedores son mejores.
 
-**¿Que son contenedores?** , son entornos virtualizados. En diferencia a las MV no gestionas el sistema operativo de un contenedor, ya que son ligeros se despliegan más rápido.
+**¿Qué son contenedores?**: son entornos virtualizados. A diferencia de las VMs, no virtualizan un hardware específico. Esto hace que sean más ligeros y se desplieguen más rápido.
 
-**MV vs Contenedores** MV es lo que es, una simulación de un ordenador completo, pero cada máquina virtual solo puede correr un único sistema operativo. El contenedor solo tiene una aplicación y sus dependencias, el host-container se encarga de controlar el SO de los contenedores. Los contenedores son ligeros y permiten mantener la separación entre ellos.
+**VM vs contenedor**: VM es lo que es, una simulación de un ordenador completo, pero cada máquina virtual solo puede correr un único sistema operativo. El contenedor solo tiene una aplicación y sus dependencias, el host-container se encarga de controlar el SO de los contenedores. Los contenedores son ligeros y permiten mantener la separación entre ellos.
 
-**Contenedores Azure**, son PaaS y te permite subir tus contenedores y Azure lanzara sus sercicios. Los contenedores son soluciones para la arquitectura de microservicios, donde se separa la solución en pequeñas e independientes piezas.
+**Contenedores Azure**: son PaaS y te permite subir tus contenedores y Azure lanzara sus sercicios. Los contenedores son soluciones para la arquitectura de microservicios, donde se separa la solución en pequeñas e independientes piezas.
+
+Si quieres aprender sobre las diferencias entre una máquina virtual y un contenedor, puedes mirar [este blog de Atlassian](https://www.atlassian.com/es/microservices/cloud-computing/containers-vs-vms).
 
 ## 5.6 Describir Azure Funtions
 
