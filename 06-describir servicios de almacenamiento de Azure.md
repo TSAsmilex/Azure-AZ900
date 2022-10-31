@@ -23,3 +23,23 @@ Accesible HTTP y HTTPS, tambien al crear una cuenta puedes escoger el nivel de r
 
 ## 6.3 Describir la redundancia de almacenamiento Azure
 
+Azure Storage guarda multiples copas de tus datos para estar protegido en caso de fallos. A la hora de escoger el nivel de redundancia debe ser un intermedio entre bajo coste y alta disponibilidad, además de factures como:
+1. Como tus datos se replican en tu región primaria
+2. Si tus datos se van a replicar a una segunda region geográficamente distinta.
+3. Si tu aplicación requiere acceso de lectura a la segunda región si la primera falla.
+
+**Redundacia en tu zona primaria** los datos se replican 3 veces en tu zona primaria, puede ser _locally redundant storage(LRS)_ ó _zone-redundant storage(ZRS)_
+
+Locally redundant storage, replica tres veces tus datos en un mismo centro de datos de tu region primaria, con una durabilidad de once nueves decimales(99,99999999%) de durabilidad de objetos sobre un mismo año. Esta es la versión más barata, pero si ocurre una catastrofe natura tus datos se perderan.
+
+Zone-redundant storage, similar al anterior pero utiliza 3 zonas de disponibilidada lo que proporciona doce nueves decimales de durabilidad sobre un mismo año.
+
+**Redundancia en una región secundaria** para aplicaciones de gran durabilidad se puede escoger tener una segunda region con copias a gran distancia de la region principal, protegiendolo incluso ante una catastrofe. 
+
+Geo-Redundant Storage (GRS) se copia de manera sincrona las tres copias de LRS, ofreciendo dieciseis nueves de decimales de durabilidad sobre un mismo año.
+
+Geo-zone-redundant Strorage (GZRS) realiza las copias de ZRS dando tambien dieciseis nueves de decimales de durabilidad sobre un mismo año.
+
+**Leer datos de la segunda región** debes de tener redundancia GRS o GZRS y Azure te permite leer de aquellos datos si el primario no esta disponible.
+
+## 5.4 Describir servicios de almacenamiento de Azure
