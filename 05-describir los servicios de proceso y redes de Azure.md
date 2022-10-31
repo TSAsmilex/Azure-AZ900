@@ -102,3 +102,41 @@ Son un recurso de Azure, que puede ser como una extensión de tu propia red de t
 **Filtrado de tráfico** puedes filtrar el tráfico pro tus subredes usando grupos de seguridad donde puedes establecer reglas sobre permitir o no el trábico, segun IP, puerto o protocolo. Redes virtuales de MV similar a una red física.
 
 **Conectar redes virtuarles** se puede hacer _Peering_ entre dos redes virtuales lo que permite conectarlas entre ellas, usando el red de Microsoft. Puedes tambien definir rutas de usuario  para tener mejor control de tu red virtual.
+
+## 5.9 Ejercicios
+
+## 5.10 Describir redes Azure privadas
+
+Virtual private network(VPN) que son usadas para conectar redes privadas a redes no privadas, el trafico esta encriptado para evitar ataques.
+
+**Puertas de enlace VPN** conéctar centro de datos fisicos con site-to-site, conectar dispositivos individuales con point-to-site o conectar redes con network-to-network. Toda la información esta encriptada por un tunel privado.
+
+Cuando estableces una puerta de enlace VPN debes establecer si estara basada en politicas o rutas. Basado en políticas establece IP estáticas de paquetes y el dispositivo evalía estos paquetes de IP para establecer el tunel por el que enviarlas. Basado en touter con IP dinámica o estática decide que interfaz de tunel sera la correcta para enviar el paquete, estos métodos son preferidos para dispositívios físicos.
+
+**Escenarios de alta disponibilidad** si usas tu VPN quieres tener seguridad y alta diponibilidad, hay métodos para ofrecer eso:
+1. Activo/espera
+2. Activo/activo
+3. Fallo _ExpressRoute_
+4. Puertas de entrada con redundacia de zona
+
+``` Más información sobre esta información VPN en el propio curso ```
+
+[VPN](https://learn.microsoft.com/en-us/training/modules/describe-azure-compute-networking-services/10-virtual-private-networks)
+
+## 5.11 Describir Azure ExpressRoute
+
+Es una conexión de tus dispositivos físicos con Microsoft Cloud y sus servicios, puede ser una conexión any-to-any, point-to-point o conexión cruzada virtual. Al no ir por redes públicas ofrece mayor velocidad y seguridad.
+
+**Beneficios de ExpressRoute** 
+1. Conexión de los servicios de Microsoft cloud en todas las regiones
+2. Conectividad global entre todas las regiones y sericios gracias a ExpressRoute Global
+3. Enlazado dinámico 
+4. Redundacia integrada
+
+**Modelos de conexión ExpressRoute**
+1. Localización contigua a un centro de datos de nube (co-location)
+2. Point-to-point
+3. Any-to-any
+4. Directamente desde lugares ExpressRoute
+
+Además se garantiza la seguridad desde todoas esta comunicaciones.
