@@ -23,3 +23,14 @@ Ofrece un windows accesible desde pc/ios/android en la nube para usarlo con la i
 **Mejora de seguridad** usando Azure Actuva Directory. Se puede estableces autentificadores "multifactor" y control de acceso por roles a los usuarios. Los datos estan en la máquina fisica y las aplicaciones estan en la nube, por lo que mejora el riesgo de perder datos confidenciales. Existen máquinas de Windows 10 y 11 que permiten multi-usuario en una sola máquina virtual.
 
 ## 5.5 Describir contenedores Azure
+
+MV suponen una reducción del coste en hardware para la empresa, pero si quieres aumentar la productividad lanzando multiples instancas de una aplicación en una misma máquina virtual los contenedores son mejores.
+
+**¿Que son contenedores?** , son entornos virtualizados. En diferencia a las MV no gestionas el sistema operativo de un contenedor, ya que son ligeros se despliegan más rápido. 
+
+**MV vs Contenedores** MV es lo que es, una simulación de un ordenador completo, pero cada máquina virtual solo puede correr un único sistema operativo. El contenedor solo tiene una aplicación y sus dependencias, el host-container se encarga de controlar el SO de los contenedores. Los contenedores son ligeros y permiten mantener la separación entre ellos. 
+
+**Contenedores Azure**, son PaaS y te permite subir tus contenedores y Azure lanzara sus sercicios. Los contenedores son soluciones para la arquitectura de microservicios, donde se separa la solución en pequeñas e independientes piezas.
+
+## 5.6 Describir las funciones de Azure
+
