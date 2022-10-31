@@ -36,11 +36,19 @@ Ejemplos comunes de cuándo es efectivo utilizar máquinas virtuales:
 
 ## 5.3 Ejercicio
 
+Trata sobre cómo utilizar los scripts de Azure para instalar Nginx en una VM de Ubuntu. No es especialmente interesante.
+
 ## 5.4 Describir el escritorio virtual de Azure
 
 Ofrece un windows accesible desde pc/ios/android en la nube para usarlo con la interfaz de usuario normal. Escalable como cualquier MV.
 
-**Mejora de seguridad** usando Azure Actuva Directory. Se puede estableces autentificadores "multifactor" y control de acceso por roles a los usuarios. Los datos estan en la máquina fisica y las aplicaciones estan en la nube, por lo que mejora el riesgo de perder datos confidenciales. Existen máquinas de Windows 10 y 11 que permiten multi-usuario en una sola máquina virtual.
+En el vídeo hacen publicidad sobre cómo los escritorios virtuales de Azure son absolutamente increíbles y nadie se dará cuenta de que son ventanas remotas.
+
+(*Pero es mentira. Mientras lo dicen enseñan que tienen una latencia de la hostia.*)
+
+Una de las ventajas de las que se habla es la **mejora de la seguridad**, obtenida gracias a  Azure Active Directory. Se puede establecer autentificadores "multifactor" (Estilo 2 Factor Authentication) y control de acceso por roles a los usuarios.
+
+Los datos estan en la máquina fisica y las aplicaciones estan en la nube, por lo que mejora el riesgo de perder datos confidenciales. Existen máquinas de Windows 10 y 11 que permiten multi-usuario en una sola máquina virtual.
 
 ## 5.5 Describir contenedores Azure
 
