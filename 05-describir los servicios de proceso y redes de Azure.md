@@ -32,5 +32,11 @@ MV suponen una reducción del coste en hardware para la empresa, pero si quieres
 
 **Contenedores Azure**, son PaaS y te permite subir tus contenedores y Azure lanzara sus sercicios. Los contenedores son soluciones para la arquitectura de microservicios, donde se separa la solución en pequeñas e independientes piezas.
 
-## 5.6 Describir las funciones de Azure
+## 5.6 Describir Azure Funtions
+
+Servicio _serverles computing_ que se encarga de mantener las MV y los contenedores activos. Ayudar a la gestion de un servidor, actualizaciones por ejemplo, evitando que solo tengas que centrarte en desarrollo. 
+
+**Beneficios de  Azure Funtions** son perfectos para cuando solo necesitas preocuparte de que tu código se encuentre ejecutandose. Azure Funtions escala automáticamente, tambien se encarga de lanzar los servicios Azure necesarios y de limpiar los recursos no usados, por lo que no te cobrarán extra. Funtions es esencial para el _serverless computing_ ya que peromite correr cualquier tipo de código sin necesidad de preparar un entorno.
+
+## 5.7 Describir las opciones de hospedaje de aplicaciones
 
