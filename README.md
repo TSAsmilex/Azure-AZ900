@@ -35,3 +35,6 @@ Lecciones:
 ## Respuestas
 - [Todas las respuestas de Conceptos fundamentales Azure](./Recopilacion%20preguntas%20Azure.md)
 - [Preguntas de ejemplo con respuesta](https://learn.microsoft.com/en-us/certifications/resources/az-900-sample-questions)
+- [Test Daypo con mayor numero de visitas INGLES](https://www.daypo.com/azure-az-900.html#informacion)
+- [Test Daypo con segundo mayor numero de visitas INGLES](https://www.daypo.com/exam-az-900-final.html)
+- [Test Daypo con mayor numero de visitas ESPAÑOL](https://www.daypo.com/az-900-espanol.html#informacion)
