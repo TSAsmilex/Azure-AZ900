@@ -24,3 +24,31 @@ Para entornos in situ, Azure AD funciona sobre _Windows Server_ y proporciona se
 - **_Online service subscribers_** como Micrisoft office ó Azure con una única cuenta.
 
 ### ¿Que hace Azure AD?
+
+- **Autentificación** incluye verificación de identidad para acceder a aplicaciones y recursos, tiene funcionalidades como lista de contraseñas prohibidas, _multifactor aauthentication_ , reseteo de contraseñas y servicios _smart lockout_.
+- **_Single sign-on_** (SSO) donde guardas un usuario y contraseña para acceder a multiples aplicaciones.
+- **Gestion de aplicacion** gestionar tus aplicaciones cloud e in situ usando Azure AD.
+- **Gestion de dispositivos** Azure AD permite registrar dispositivos lo que permite que sean gestionados a través de Microsoft Intune.
+
+### ¿Como puedo conectar mi AD in situ con Azure AD?
+
+Si tienes un entorno in situ con AD y Azure AD puedes conectarlos para no tener que duplicar identificaciones usando Azure AD Connect. Puedes usar funciones como SSO, _multifactor authentication_ y reseteo de contraseña para los dos sistemas.
+
+### ¿Que es Azure Active Directory Domain Services?
+
+Azure Active Directory Domain Services (Azure AD DS) es un servicio que proporciona gestion sobre servicios de dominio, como union de dominio, politicas de grupo, _lightweight directory access protocol_(LDAP) y autentificación Kerberos/NTLM. Con Azure AD DS tienes el beneficio de un servicio de dominios sin la necesidad de desplegarlo, gestionarlo y parchear el controlador de dominios(_domain controller or DCs_) en la nube. Azure AD DS gestion de dominios te permite ejecutar aplicaciones de legado en la nube que no pueden usar métodos modenos de autentificación, este cambio se puede hacer sin necesidad de gestionar el AD DS de la nube. Azure AD DS usa Azure AD tenant para tener SSO.
+
+### ¿Como funciona Azure AD DS?
+
+Cuando creas un dominio gestionado por Azure AD DS defines un espacio de nombres único ó nombre de dominio. Dos servidores controladores de dominos de windows se despliegan en tu region Azure sleccionada, posteriormente no necesitas hacer nada ya que la plataforma Azure se encarga de gestionarlo.
+
+### ¿Esta la información sincronizada?
+
+NO ༼ つ ◕_◕ ༽つ
+
+El dominio gestoniado realiza sincronización _one-way_ desde Azure AD hacia Azure AD DS y no a la inversa. Si estamos in situ, nuestro AD se conecta con Azure AD y después hacia Azure AD DS.
+
+![Sincronización](https://learn.microsoft.com/en-us/training/wwl-azure/describe-azure-identity-access-security/media/azure-active-directory-sync-topology-7359f2b8.png)
+
+## 7.3 Describir métodos de autentificación
+
