@@ -14,7 +14,7 @@ Lecciones:
 1. [Describir los componentes de la arquitectura del nucleo de azure](./04-describir%20los%20componentes%20de%20la%20arquitectura%20del%20nucleo%20de%20azure.md)
 2. [Describir los servicios de proceso y redes de Azure](./05-describir%20los%20servicios%20de%20proceso%20y%20redes%20de%20Azure.md)
 3. [Describir servicios de almacenamiento de Azure](./06-describir%20servicios%20de%20almacenamiento%20de%20Azure.md)
-4.
+4. [Describir la identidad, el acceso y la seguridad de Azure](./07-describir%20la%20identidad%2C%20el%20acceso%20y%20la%20seguridad%20de%20Azure.md)
 
 
 ### Conceptos Azure 3
