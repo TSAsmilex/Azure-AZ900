@@ -12,8 +12,9 @@ Lecciones:
 ### Conceptos Azure 2
 
 1. [Describir los componentes de la arquitectura del nucleo de azure](./04-describir%20los%20componentes%20de%20la%20arquitectura%20del%20nucleo%20de%20azure.md)
-2.
-3.
+2. [Describir los servicios de proceso y redes de Azure](./05-describir%20los%20servicios%20de%20proceso%20y%20redes%20de%20Azure.md)
+3. [Describir servicios de almacenamiento de Azure](./06-describir%20servicios%20de%20almacenamiento%20de%20Azure.md)
+4.
 
 
 ### Conceptos Azure 3
@@ -21,6 +22,7 @@ Lecciones:
 1.
 2.
 3.
+4.
 
 ## Guías
 
@@ -32,3 +34,7 @@ Lecciones:
 
 ## Respuestas
 - [Todas las respuestas de Conceptos fundamentales Azure](./Recopilacion%20preguntas%20Azure.md)
+- [Preguntas de ejemplo con respuesta](https://learn.microsoft.com/en-us/certifications/resources/az-900-sample-questions)
+- [Test Daypo con mayor numero de visitas INGLES](https://www.daypo.com/azure-az-900.html#informacion)
+- [Test Daypo con segundo mayor numero de visitas INGLES](https://www.daypo.com/exam-az-900-final.html)
+- [Test Daypo con mayor numero de visitas ESPAÑOL](https://www.daypo.com/az-900-espanol.html#informacion)

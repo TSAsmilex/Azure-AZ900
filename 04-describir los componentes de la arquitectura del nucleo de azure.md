@@ -8,3 +8,66 @@ Este módulo contiene describir, regiones de Azure, pares de regiones, regiones 
 
 Servicio de nube de Microsoft con Iaas, Paas y SaaS. Sigue los principios de la nube y sus funcionamientos, da más facilidades y configuración premontadas, tambien da acceso a docker y cubenetes. IA, IoT, base de datos, machine learning. Usan Azure portal, su web de control para azure.
 
+**Que puedo hacer con azure?** Azure ofrece más de 100 servicios que te permiten ejecutar tus aplizaciones para explorar nuevos paradigmas como bots inteligentes. Mucha gente mueve sus programas a una máquina virtual en Azure, aunque Azure es mucho más, ya que ofrece IA o ML(machine learning)
+
+## 4.3 Comienza con Azure accounts
+
+Necesitas uan subscripción Azure para para poder usar sus recursos, pero puedes usar un grupo "Azure sandbox" durante el periodo de aprendizaje con módulo. Puedes tener cuenta de empresa y separar subscripciones de empleados segun sus necesitades.
+
+[Resumen de cuentas Azure](https://learn.microsoft.com/en-us/training/wwl-azure/describe-core-architectural-components-of-azure/media/account-scope-levels-9ceb3abd.png)
+
+**Crear cuenta** en su web tienes la versión gratis con 12 meses y las aplicaciones mas populares. Tambien existe una cuenta estudiante con el nivel similar a la gratuita.
+
+## 4.4 Ejercicios de Learn Sandbox
+
+Puedes usar 10 sandboxes de 1 hora al día. Usan azure con poweshell, Azure esta hecho en python, la mitad de los comandos que te dicen probar no fufan 👍.
+
+## 4.5 Describir la infraestructura física de Azure
+
+La infraestructura se asemeja mucho a la de servidores tradicionales. Los centros de datos son prácticamente iguales a los de otros servidores corporativos clásicos.
+
+Empieza con centros de datos de gran tamaño, preparados en potencia, refrigeración y conexión. Se dividen estos centros en regiones (geográficas para mejor rendimiento y conexión). Dentro de cada Región existen zonas disponibles, que son centros de datos dentro de la misma región. Es posible replicar tu aplicacion en diferentes zonas diponibles pero con un coste asociado.
+
+Existen 3 categorías: servicio de zona (solo en una zona), servicios de zona redundantes (se puede replicar entre zonas) y servicios no regionales (sin zona asociada y siempre disponible). Existen pares de regiones dentro de la misma zona geográficas, que permiten tener más seguridad y mantenimiento de servicios.
+
+Por otra parte, algunas regiones no pareadas se encuentran aisladas. A estas se les denomina llamadas regiones sobrenas.
+
+## 4.6 Describir la gestion de la infraestructura de Azure
+
+### Recursos Azure y grupos de recursos
+
+Los recursos son las partes fundamentales de Azure. Todo lo que se pueda crear, provisionar es un recurso. Por ejemplo, las VMs, una red virtual...
+
+Los grupos de recursos son recursos que puedes agrupar en un paquete. Puedes mover recursos entre paquetes, pero un recurso no puede estar en más de un grupo.
+
+Se pueden aplicar acciones a un grupo, lo cual ejecutará la misma acción en todos los recursos: ejecutar, borrar, dar o quitar acceso a un recurso, entre otras. De esta idea surge la utilidad de los grupos de recursos.
+
+### Subscripciones Azure
+
+![Cuenta azure](https://learn.microsoft.com/en-us/training/wwl-azure/describe-core-architectural-components-of-azure/media/subscriptions-d415577b.png)
+
+Una cuenta Azure se identifica en Azure Active Directry, la cual proporciona acceso a servicios específicos de Azure. Cada cuenta puede tener multiples suscrupciones para manejar gestionar los recursos, servicios y productos a los que el usuario puede acceder. Se pueden separarl por foma de pago o establecer diferentes niveles de política de acceso.
+
+### Crear suscripciones adicionales de Azure
+
+Igual que los grupos de recuros  puedes dividir por funciones o acceso.
+
+Se menciona un ejemplo en particular, que consiste en tres divisiones:
+
+- **Por entorno**: subscripciones con desarrollo, testeo y seguridad
+- **Por organización estructural**: puedes dar a un departamento pocos recursos y al departamente IT todos.
+- **Por facturación**: separando costes y para tener un mejor control de los posibles costes
+
+## Grupos de gestión de Azure
+
+![Ejemplo de jerarquía de grupos](https://learn.microsoft.com/en-us/training/wwl-azure/describe-core-architectural-components-of-azure/media/management-groups-subscriptions-dfd5a108.png)
+
+El sistema tiene ciertas limitaciones:
+
+- Solo se permiten hasta 10000 grupos en un cierto directorio.
+- La jerarquía de grupos permite tener un arbol de hasta seis niveles de profundidad sin incluir el *root*.
+- Cada grupo gestionado solo permite un padre del que heredan su suscripción.
+
+## 4.8 Preguntas
+
+[Respuestas](./Recopilacion%20preguntas%20Azure.md)
