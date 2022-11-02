@@ -56,11 +56,11 @@ VM suponen una reducción del coste en hardware para la empresa, pero si quieres
 
 **¿Qué son contenedores?**: son entornos virtualizados. A diferencia de las VMs, no virtualizan un hardware específico. Esto hace que sean más ligeros y se desplieguen más rápido.
 
-**VM vs contenedor**: VM es lo que es, una simulación de un ordenador completo, pero cada máquina virtual solo puede correr un único sistema operativo. El contenedor solo tiene una aplicación y sus dependencias, el host-container se encarga de controlar el SO de los contenedores. Los contenedores son ligeros y permiten mantener la separación entre ellos.
+**VM vs contenedor**: una máquina virtual es una simulación de un ordenador completo, la cual solo puede correr un único sistema operativo. El contenedor solo tiene una aplicación y sus dependencias, el host-container se encarga de controlar el SO de los contenedores. Los contenedores son ligeros y permiten mantener la separación entre ellos.
 
 **Contenedores Azure**: son PaaS y te permite subir tus contenedores y Azure lanzara sus sercicios. Los contenedores son soluciones para la arquitectura de microservicios, donde se separa la solución en pequeñas e independientes piezas.
 
-Si quieres aprender sobre las diferencias entre una máquina virtual y un contenedor, puedes mirar [este blog de Atlassian](https://www.atlassian.com/es/microservices/cloud-computing/containers-vs-vms).
+> Si quieres aprender sobre las diferencias entre una máquina virtual y un contenedor, puedes mirar [este blog de Atlassian](https://www.atlassian.com/es/microservices/cloud-computing/containers-vs-vms). El artículo es considerablemente mejor que lo que hemos escrito aquí.
 
 ## 5.6 Describir Azure Funtions
 
@@ -99,18 +99,42 @@ Existen los diferentes tipos de servicios en App Service:
 
 Son un recurso de Azure, que puede ser como una extensión de tu propia red de tus ordenadores clientes.
 
-- **Aislamiento y segmentación**: se pueden crear múltiples redes virtuales, siendo capaces así de definir rangos de IP publicas y privadas o configurar un DNS.
-- **Comunicaciones de internet**: puedes proporcionar una IP pública a un recurso de Azure para así poder recibir comunicaciones desde internet.
-- **Comunicación entre recursos Azure**: se puede habilitar la comunicación entre dos recursos de Azure mediante dos mecanismos:
-  - Las redes virtuales se pueden conectar a otros recursos Azure, así como a otras VMs.
-  - Los endpoints de los servicios se pueden conectar a otro tipo de recursos. Esto te permite cnectar DB de Azure al servicio de almacenamento de cuentas de usuarios.
-- **Comunicaciones con recursos in-situ**: enlaza los propios servidores de la empresa con los de Azure. Mecanismos:
-  1. Conexión point-to-site: ordenadores de fuera de tu organización hacia la red corporativa. En este caso, se abre una VPN encriptada a la red de Azure.
-  2. Las site-to-site conectan tu VPN tus VPN in-situ a las de Azure, o una pasarela a la de Azure.
-  3. Azure EspressRoute: conectividad privada de Azure que no pasa a través de internet. Seguridad más estricta.
-- **Dirigir el tráfico de la red** puedes establer reglas sobre como este tráfico debe ser redirigido. Tamben puedes establez Border Gateway Protocol que funiona con todas las redes Azure.
-- **Filtrado de tráfico** puedes filtrar el tráfico pro tus subredes usando grupos de seguridad donde puedes establecer reglas sobre permitir o no el trábico, segun IP, puerto o protocolo. Redes virtuales de MV similar a una red física.
-- **Conectar redes virtuarles** se puede hacer _Peering_ entre dos redes virtuales lo que permite conectarlas entre ellas, usando el red de Microsoft. Puedes tambien definir rutas de usuario  para tener mejor control de tu red virtual.
+### Aislamiento y segmentación
+
+Se pueden crear múltiples redes virtuales, siendo capaces así de definir rangos de IP publicas y privadas o configurar un DNS.
+
+### Comunicaciones de internet
+
+Puedes proporcionar una IP pública a un recurso de Azure para así poder recibir comunicaciones desde internet.
+
+### Comunicación entre recursos Azure
+
+Se puede habilitar la comunicación entre dos recursos de Azure mediante dos mecanismos:
+- Las redes virtuales se pueden conectar a otros recursos Azure, así como a otras VMs.
+- Los endpoints de los servicios se pueden conectar a otro tipo de recursos. Esto te permite conectar DB de Azure al servicio de almacenamento de cuentas de usuarios.
+
+### Comunicaciones con recursos in-situ
+
+Enlaza los propios servidores de la empresa con los de Azure. Mecanismos:
+1. Conexión point-to-site: ordenadores de fuera de tu organización hacia la red corporativa. En este caso, se abre una VPN encriptada a la red de Azure.
+2. Las site-to-site conectan tu VPN tus VPN in-situ a las de Azure, o una pasarela a la de Azure.
+3. Azure EspressRoute: conectividad privada de Azure que no pasa a través de internet. Seguridad más estricta.
+
+### Direcciones del tráfico de la red
+
+Por defecto, Azure conecta subredes de las virtuales, redes de centros in-situ e internet. Además, puedes establer reglas sobre como este tráfico debe ser redirigido, definiendo específicamente cómo se redirigen los paquetes entre subredes. Las rutas BGP (_Border Gateway Protocol_) definidas en tus centros in-situ pueden extenderse a las redes de Azure.
+
+### Filtrado de tráfico
+
+Existen dos maneras diferentes de filtrar el tráfico en tus subredes:
+- Mediante grupos de seguridad donde puedes establecer reglas sobre permitir o no el tráfico, basándose en parámetros como la IP, puerto o protocolo.
+- _Network virtual appliances_: máquinas virtuales específicas que se asemejan a redes _appliance_ reforzadas. Estas redes llevan a cabo un propósito específico, como un firewall o un balanceador de carga.
+
+### Conectar redes virtuarles
+
+Se puede hacer _Peering_ entre dos redes virtuales, lo que las conecta  mediante la red de Microsoft, y no internet. Esto hace que el tráfico entre ellas sea privado.
+
+Puedes tambien definir rutas de usuario (UDR, _user defined routes_) para tener mejor control sobre el flujo de tu red.
 
 ## 5.9 Ejercicios
 
@@ -128,9 +152,9 @@ Cuando estableces una puerta de enlace VPN debes establecer si estara basada en 
 3. Fallo _ExpressRoute_
 4. Puertas de entrada con redundacia de zona
 
-``` Más información sobre esta información VPN en el propio curso ```
-
-[VPN](https://learn.microsoft.com/en-us/training/modules/describe-azure-compute-networking-services/10-virtual-private-networks)
+> Más información sobre esta información VPN en el propio curso:
+>
+> https://learn.microsoft.com/en-us/training/modules/describe-azure-compute-networking-services/10-virtual-private-networks
 
 ## 5.11 Describir Azure ExpressRoute
 
