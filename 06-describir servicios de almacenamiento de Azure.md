@@ -19,7 +19,7 @@ Accesible HTTP y HTTPS, tambien al crear una cuenta puedes escoger el nivel de r
 
 [Tipos de cuenta y sus niveles](https://learn.microsoft.com/en-us/training/modules/describe-azure-storage-services/2-accounts)
 
-**Cuentas de almacenamiento puntos finales** el beneficio de Azure Storage es tener unicamente un nombre para todos tus datos de Azure. El nombre sigue las reglas de 3 a 24 carácteres con mayusculas, minusculas y números, además de ser única. Los posibles puntos finales de Azure son, blob, data lake storage gen 2, azure files, queue Storage y table storage. Todos elos segun la url, htttps://nombre.tipodebasededatos.core.windows.net
+**Cuentas de almacenamiento puntos finales** el beneficio de Azure Storage es tener unicamente un nombre para todos tus datos de Azure. El nombre sigue las reglas de 3 a 24 carácteres con mayusculas, minusculas y números, además de ser única. Los posibles puntos finales de Azure son, blob, data lake storage gen 2, azure files, queue Storage y table storage. Todos elos segun la url, https://nombre.tipodebasededatos.core.windows.net
 
 ## 6.3 Describir la redundancia de almacenamiento Azure
 
@@ -43,3 +43,11 @@ Geo-zone-redundant Strorage (GZRS) realiza las copias de ZRS dando tambien dieci
 **Leer datos de la segunda región** debes de tener redundancia GRS o GZRS y Azure te permite leer de aquellos datos si el primario no esta disponible.
 
 ## 5.4 Describir servicios de almacenamiento de Azure
+
+Los servicios son:
+1. Blobs- objetos de almacenamiento amximos para texto y datos binarios.
+2. Files- compartir archivos
+3. Queues- Almacenamiento de mensajes 
+4. Disk- volumenes de almacenamiento al nivel de bloque
+
+****
