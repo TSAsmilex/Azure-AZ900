@@ -19,7 +19,10 @@ Accesible HTTP y HTTPS, tambien al crear una cuenta puedes escoger el nivel de r
 
 [Tipos de cuenta y sus niveles](https://learn.microsoft.com/en-us/training/modules/describe-azure-storage-services/2-accounts)
 
-**Cuentas de almacenamiento puntos finales** el beneficio de Azure Storage es tener unicamente un nombre para todos tus datos de Azure. El nombre sigue las reglas de 3 a 24 carácteres con mayusculas, minusculas y números, además de ser única. Los posibles puntos finales de Azure son, blob, data lake storage gen 2, azure files, queue Storage y table storage. Todos elos segun la url, https://nombre.tipodebasededatos.core.windows.net
+
+### Cuentas de almacenamiento puntos finales
+
+El beneficio de Azure Storage es tener unicamente un nombre para todos tus datos de Azure. El nombre sigue las reglas de 3 a 24 carácteres con mayusculas, minusculas y números, además de ser única. Los posibles puntos finales de Azure son, blob, data lake storage gen 2, azure files, queue Storage y table storage. Todos ellos segun la url, https://nombre.tipodebasededatos.core.windows.net
 
 ## 6.3 Describir la redundancia de almacenamiento Azure
 
@@ -36,6 +39,7 @@ Los datos se replican 3 veces en tu zona primaria, puede ser _locally redundant 
 **_Zone-redundant storage_**, similar al anterior pero utiliza 3 zonas de disponibilidada lo que proporciona doce nueves decimales de durabilidad sobre un mismo año.
 
 ### Redundancia en una región secundaria
+
 Para aplicaciones de gran durabilidad se puede escoger tener una segunda region con copias a gran distancia de la region principal, protegiendolo incluso ante una catastrofe. 
 
 **_Geo-Redundant Storage_** (GRS) se copia de manera sincrona las tres copias de LRS, ofreciendo dieciseis nueves de decimales de durabilidad sobre un mismo año.
@@ -43,6 +47,7 @@ Para aplicaciones de gran durabilidad se puede escoger tener una segunda region 
 **_Geo-zone-redundant Strorage_** (GZRS) realiza las copias de ZRS dando tambien dieciseis nueves de decimales de durabilidad sobre un mismo año.
 
 ### Leer datos de la segunda región
+
 Debes de tener redundancia GRS o GZRS y Azure te permite leer de aquellos datos si el primario no esta disponible.
 
 ## 5.4 Describir servicios de almacenamiento de Azure
@@ -54,8 +59,37 @@ Los servicios son:
 4. _Disk_- volumenes de almacenamiento al nivel de bloque
 
 ### Benefícios del almacenamiento Azure
-**Alta disponibilidad y durabilidad** gracias a la redundancia anteriormente vista, tener datos en diferentes regiones permite protegerlos, además estos datos replicados seguiran estando altamente disponibles.
+1. **Alta  isponibilidad y durabilidad** gracias a la redundancia anteriormente vista, tener datos en diferentes regiones permite protegerlos, además estos datos replicados seguiran estando altamente disponibles.
 
-**Seguros** los datos estan encryptados y sobre un control de acceso muy fino.
+2. **Seguros** los datos estan encryptados y sobre un control de acceso muy fino.
 
-**Escalable** 
+3. **Escalable** 
+
+4. **Gestionable** Azure lleva mantenimiento hardawre y actualizaciones por ti.
+
+5. **Accesible** utilizando HTTP y HTTPS. Ofrece clientes en multiples lenguajes además de REST API además de scripts en sus terminales Azure(Azure PowerShell y Azure CLI).
+
+### Almacenamiento de Blob
+Es la solución de Azure para el almacenamiento de objetos, sean texto o datos binarios (*Se considera dato binario archivos de video, imagen, ejecutables, etc*) por lo que no estan limitados a un formato de archivo. Este sistema Azure no esta estructurado por lo que permite un almacenamiento muy amplio.
+
+Los Blops son ideales para:
+- Ofrecer imágenes o documentos a un navegador
+- Almacenar archivos de acceso distribuido
+- _Streaming_ de video y audio
+- Almacenar y recuperar copias de seguridad
+- Almacenar datos de análisis realizados in situ o de servicios Azure.
+
+### _Tiers_ de almacenamiento Blob
+
+Debido a las diferentes frecuencias de acceso a los archivos, se generan estos _Tiers_
+- _Hot access tier_ para datos de acceso muy frecuente.
+- _Cool access tier_ para datos de poco acceso que son almacenados durante 30 días.
+- _Archive access tier_ para datos rara vez accedidos y almacenados durante 180 días con requisitos de latencia flexibles.
+
+Además, para la consideración de _tier_ se tiene también en cuenta lo siguiente.
+- Solo el _tier hot y cool_ pueden ser asignados a nivel de cuenta.
+- Los _tier_ puede sern puestos en un blob durante o después de ser subido a Azure.
+- Los datos _cool_ puede tener una menor disponibilidad que _hot_ pero el resto de características son similares. Una menor disponibilidada SLA(_Service-level agreement_) y un coste de acceso mayor permiten un coste de almacenaje bajo.
+- _Archive storage_ almacena datos_offline_ per tiene un mayor coste de acceso a los datos.
+
+### Archivos Azure
