@@ -41,3 +41,4 @@ Lecciones:
 
 ## Daypoos preparadas para el examen AZ-900
 - [Primer Daypoo Azure fundamentals](https://www.daypo.com/azure-az-900-1.html)
+- [Segundo Daypoo Azure fundamentals](https://www.daypo.com/azure-az-900-2.html)
