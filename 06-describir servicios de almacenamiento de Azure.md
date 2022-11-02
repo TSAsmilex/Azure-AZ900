@@ -50,7 +50,7 @@ Para aplicaciones de gran durabilidad se puede escoger tener una segunda region 
 
 Debes de tener redundancia GRS o GZRS y Azure te permite leer de aquellos datos si el primario no esta disponible.
 
-## 5.4 Describir servicios de almacenamiento de Azure
+## 6.4 Describir servicios de almacenamiento de Azure
 
 Los servicios son:
 1. _Blobs_- objetos de almacenamiento amximos para texto y datos binarios.
@@ -113,3 +113,9 @@ Es posible combinarlas con las funciones de Azure para que realicen una accióin
 ### Almacenamiento en disco
 
 Similar al almacenamiento en disco físico, pero de manera virtualizazda por Azure. Son volúmenes al nivel de bloque que ofrecen una gran resiliencia y disponibilidad (mayor que un disco físico).
+
+## 6.5 Ejercicio
+> Funciona la guía
+
+## 6.6 Opciones de migración Azure
+
