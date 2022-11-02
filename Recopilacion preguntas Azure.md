@@ -335,13 +335,13 @@ ______________________
 
     a) You must pay a fixed fee in advance for all Cloud services.
 
-    b) You rent compute power and storage from someone else's datacenter. 
+    __b) You rent compute power and storage from someone else's datacenter.__ 
 
     c) You rent physical hardware such as compute power and storage and maintain them within your own datacenter. (Esta NO)
 
     __d) You can immediately stop paying for resources that are no longer needed.__
 
-    __Anotación:__ (__d__)You can treat cloud resources like you would resources in your own datacenter. When you are finished using them, you give them back. You are only billed for what you use. (__c__) The cloud provider takes care of maintaining the underlying infrastructure for you. 
+    __Anotación:__ (__d__)You can treat cloud resources like you would resources in your own datacenter. When you are finished using them, you give them back. You are only billed for what you use. (__b__) You don't have to worry about if you have enough resources, you just rent from someone else. 
 
 3. Cloud Computing provides several benefits over a physical environment. Which of the following are benefits of cloud computing? *Select all options that apply.* (__1 / 1 punto__)
 
@@ -4163,3 +4163,472 @@ The following table shows the correct answers for the given statements.
 
     Besides traditional VMs, you could also choose the Azure Service Fabric option or Azure App Services.
 
+
+______________________
+______________________
+______________________
+
+# Video. Preparación Examen AZ 900 Teoria y Preguntas
+
+## Video 1
+
+1. Your company plans to migrate all its network resources to Azure. What should you create first of all?
+
+    __a) a subscription__
+
+    b) a resourde group
+
+    c) a virtual network
+
+    d) a management group
+
+2. A platform as services (PaaS) solution that hosts web apps in Azure provides full control of the operating systems that host applications.
+
+    a) Yes
+
+    __b) No__
+
+3. A platform as services (PaaS) solution that hosts web apps in Azure provides the ability to scale the platform automatically.
+
+    __a) Yes__
+
+    b) No
+
+4. A platform as services (PaaS) solution that hosts web apps in Azure provides professional development services to continuously add features to custom applications.
+
+    __a) Yes__
+
+    b) No 
+
+5. You plan to migrate a web application for Azure. The web application is accessed by external users. You need to recomend a cloud deployment solution to minimize the amount of administrative effort used to manage the web application. What should you include in the recommendation?
+
+    a) Software as a Service (Saas)
+
+    __b) Platform as a Service (Paas)__
+
+    c) Infrastructure as a Service (Iaas)
+
+    d) Database as a Service (Daas)
+
+6. An Azure web app that queries an on-premises Microsoft SQL server is an example of a _________ cloud.
+
+    __a) hybrid__
+
+    b) multi-vendor
+
+    c) private
+
+    d) public
+
+7. Match
+
+    __Public Cloud__ - No required capital expenditure
+
+    __Private Cloud__ - Provides complete control over security
+
+    __Hybrid Cloud__ - Provides a choice to use on-premises or cloud-based resources.
+
+8. You have 50 virtual machines hosted on-premises and 50 virtual machines hosted in Azure. The on-premises virtual machines and the Azure virtual machines connect to each other. Which type of cloud model is this?
+
+    __a) hybrid__
+
+    b) private 
+
+    c) public
+
+9. To which cloud models can you deploy physical servers?
+
+    __a) private cloud and hybrid cloud only__
+
+    b) private cloud only
+
+    c) private cloud, and hybrid cloud and public cloud
+
+    d) hybrid cloud only
+ 
+10. An Azure resource can have multiple Delete locks.
+
+    __a) Yes__
+
+    b) No
+
+11. An Azure resource inherits locks from its resource group.
+
+    __a) Yes__
+
+    b) No
+
+12. If an Azure resource has a Read-only lock, yo can add a Delete lock to the resource.
+
+    __a) Yes__
+
+    b) No
+
+    __*Anotacion:__ Delete es el mas restrictivo, no se podria hacer al revés, pero sí así.
+
+13. An organization that hosts its infrastructure _________ no longer requires a data center.
+
+    a) in a private cloud
+
+    b) in a hybrid cloud
+
+    __c) in a public cloud__
+
+    d) on a Hyper-V host
+    
+14. You need to prevent the accidentar deletion of the resources in RG1. Which setting should you use? To answer, select the appropiate setting in the answer area.
+
+    a) Quickstart
+
+    b) Resource costs
+
+    c) Deployments
+
+    d) Policies
+
+    e) Properties
+
+    __f) Locks__
+
+    g) Automation script
+
+15. An Azure Policy initiative definition is a _______________ .
+
+    __a) collection of policy definitions.__
+
+    b) Collection of Azure Policy definition assignments.
+
+    c) group of Azure Blueprints definitions.
+
+    d) group of role-based access control (RBAC) role assignments.
+
+16. Your company has 10 departments. The company plans to implement an Azure environment. You need to ensure that each department can use a different payment option for the Azure services it consumes. What should you create for each department?
+
+    a) a reservation
+
+    __b) a subscription__
+
+    c) a resource group
+
+    d) a container instance
+
+    __*Anotacion:__ una subscripcion por departamento. 
+
+17. __________ provide organizations with the ability to manage the compliance of Azure resources across multiple subscriptions.
+
+    a) Resource groups
+
+    b) Management groups
+
+    __c) Azure policies__
+
+    d) Azure app Service plans
+
+18. You can create a resource group inside of an other resource group.
+
+    a) Yes
+
+    __b) No__
+
+    __*Anotacion:__ No existe herencia de grupos de recursos
+
+19. An Azure virtual machine can be in multiple resource groups.
+
+    a) Yes
+
+    __b) No__
+
+20. A resource group can contain resources from multiple Azure regions.21. You have a resource group named RG1. You need to prevent the creation of virtual machines only in RG1. The solution must ensure that other objects can be created in RG1. What should you use?
+
+    a) a lock
+
+    b) an Azure role
+
+    c) a tag
+
+    __d) an Azure policy__
+
+    __*Anotacion:__ lock es para bloquear que un elemento se pueda eliminar o modificar, no para impedir la creacion de recursos. Con la politica podemos controlar qué queremos permitir o denegar en nuestro entorno.
+
+22. With software as a service (SaaS), you must apply software updates.
+
+    a) Yes
+
+    __b) No__
+
+24. With infrastructure as a service (IaaS), you must install the software you want to use.
+
+    __a) Yes__
+
+    b) No
+
+25. Azure Backup is an example of platform as a service (PaaS).
+
+    __a) Yes__
+
+    b) No
+
+26. Your company has an Azure subscription that contains resources in several regions. You need to ensure that administrators can only create resources in those reions. What should you use?
+
+    a) a read-only lock
+
+    __b) an Azure policy__
+
+    c) a management group
+
+    d) a reservation
+
+27. You plan to provision Infrastructure as a Service (Iaas) resources in Azure. Which resource is an example of Iaas?
+
+    a) an Azure web app
+
+    __b) an Azure virtual machine__
+
+    c) an Azure logic app
+
+    d) an Azure SQL database
+
+28. Your company has an Azure subscription that contains resources in several regions. A company policy states that administratos must only be allowed to create additionar Azure in a region in the country where their office is located. You need to create the Azure resource that must be used to meet the policy requirement. What should you create?
+
+    a) a read-only lock
+
+    __b) an Azure policy__
+
+    c) a management group
+
+    d) a reservation
+    
+29. In which type of cloud model are all the hardware resources owned by a third-party and shared between multiple tenants?
+
+    a) private
+
+    b) hybrid
+
+    __c) public__
+    
+30. Your company plans to migrate to Azure. The company has several departments. All the Azure resources used by each department will be managed by a department administrator. What are *two* possible techniques to segment Azure for the departments? Each correct answer presents a complete solution. NOTE: Each correct selection is worth one point.
+
+    __a) multiple subscriptions__
+
+    b) multiple Azure Active Directory (Azure AD) directories
+
+    c) multiple regions
+
+    __d) multiple resource groups__
+
+______________________
+
+## Video 2
+
+1. Azure provides flexibility between capital expenditure (CapEx) and operational expenditure (OpEx).
+    
+    __a) Yes__
+
+    b) No
+
+2. If you create two Azure virtual machines that use the B2S size, each virtual machine will always generate the same monthly costs.
+    
+    a) Yes
+
+    __b) No__
+
+    __*Anotacion:__ Pueden ser dos máquinas virtuales que utilicen discos de distintos tamaños y por tanto el coste será distinto.
+
+3. When an Azure virtual machine is stopped, you continue to pay storage costs associated to the virtual machine.
+    
+    __a) Yes__
+
+    b) No
+
+    __*Anotacion:__ Cuando se detiene una máquina virtual, no paga por la máquina, pero sí por los costos de almacenamiento asociados a la máquina virtual. Los costos de almacenamiento más comunes corresponden a discos conectados a las máquinas vituales. También hay otros costos de almacenamiento asociados a una máquina virtual, como el almacenamiento de datos de diagnóstico y copias de seguridad de máquinas virtuales.
+
+4. You have 1000 virtual machines hosted on the Hyper-V hostos in a data center. You plan to migrate all the virtual machines to an Azure pay-as-you-go subscription. You need to identify which expenditure model to use for the planned Azure solution. Which expenditure model should you identify?
+
+    __a) operational__
+
+    b) elastic
+
+    c) capital
+
+    d) scalable
+
+5. Azure Pay-As-You-Go pricing is an example of CapEx.
+
+    a) Yes
+
+    __b) No__
+
+6. Paying electricity for your data center is an example of OpEx.
+
+    a) Yes
+
+    __b) No__
+
+7. Deploying your own datacenter is an example of CapEx.
+
+    __a) Yes__
+
+    b) No
+
+8. Build a data center infrastructure is an example of operational expenditure (OpEx) costs.
+
+    a) Yes
+
+    __b) No__
+
+9. Monthly salaries for technical personnal are an example of operational expenditure (OpEx) costos
+
+    __a) Yes__
+
+    b) No
+
+10. Leasing software is an example of operational expenditure (OpEx) costs.
+
+    __a) Yes__
+
+    b) No
+
+11. You plan to deploy 20 virtual machines to an Azure environment. To ensure that a virtual machine named VM1 cannot connect to the ohter virtual machines, VM1 must _______________________________ .
+
+    __a) be deployed to a separate virtual network.__
+
+    b) run a different operating system than the other virtual machines.
+
+    c) be deployed to a separate resource group.
+
+    d) have two network interfaces
+
+12. You need to ensure that the services running on the virtual machines ares available if a single data center fails. 
+
+    1) Solution: You deploy the virtual machines to two or more resource groups. Does this meet the goal?
+
+        a) Yes
+
+        __b) No__
+
+    2) Solution: You deploy the virtual machines to two or more regions. Does this meet the goal?
+
+        a) Yes
+
+        __b) No__
+
+    3) Solution: You deploy the virtual machins to two or more availability zones.  Does this meet the goal?
+
+        a) Yes
+
+        __b) No__
+
+13. Availability zones can be implemented in all Azure regions.
+
+    a) Yes
+
+    __b) No__
+
+14. Only virtual machines that run Windows Server can be created in availability zones.
+
+    a) Yes
+
+    __b) No__
+
+15. Availability zones are used to replicate data and applications to multiple regions.
+
+    a) Yes
+
+    __b) No__
+
+16. North America is represented by a single Azure region.
+
+    a) Yes
+
+    __b) No__
+
+17. Every Azure region has multiple datacenters.
+
+    __a) Yes__
+
+    b) No
+
+18. Data transfers between Azure services located in different Azure regions are always free.
+
+    a) Yes
+
+    __b) No__
+
+    __*Anotacion:__ La transferencia de datos entrantes es gratuita, pero la transferencia de datos salientes tiene una tarifa.
+
+19. You can use Availability Zones in Azure to protect Azure virtual machines from a datacenter failure.
+
+    __a) Yes__
+
+    b) No
+
+20. You can use Availability Zones in Azure to protect Azure virtual machines from a region failure.
+
+    a) Yes
+
+    __b) No__
+
+21. You can use Availability Zones in Azure to protect Azure managed disks from a datacenter failure.
+
+    __a) Yes__
+
+    b) No
+
+22. An Availability Zone in Azure has physically separate locations _________________.
+
+    a) across two continents
+
+    __b) within a single Azure region__
+
+    c) within multiple Azure regions
+
+    d) within a single Azure datacenter
+    
+23. You need to identify the type of failure for which an Azure Availability Zone can be used to protect access to Azure services. What should you identify?
+
+    a) a physical server failure
+
+    b) an Azure region failure
+
+    c) a storage failure
+
+    __d) an Azure datacenter failure__
+    
+24. Data that is stored in an Azure Storage Account automatically has at least three copies.
+
+    __a) Yes__
+
+    b) No
+    
+25. All data that is copied to an Azure Storage account is backed up automatically to another Azure dataceneter.
+
+    a) Yes
+
+    __b) No__
+
+    __*Anotacion:__ deberiamos seleccionar redundancia por zonas para que esto ocurra.
+    
+26. An Azure Storage account can contain up to 2TB of data and up to one million files.
+
+    a) Yes
+
+    __b) No__
+
+    __*Anotacion:__ El limite de almacenamiento actual es de 2PB para EE.UU. y Europa, y de 500TB para el resto del mundo (incluido Reino Unido) sin límite de cantidad de archivos.
+    
+27. A company wants to try out some services which Azure is offering in Public Preview. Do the services in Public PReview in Azure come with an SLA?
+
+    a) True
+
+    __b) False__
+    
+28. A company wants to set up resources in Azure. They want a way to manage identities in Azure. Which of the following is used as an Identity Management solution in Azure?
+
+    __a) Azure AD__
+
+    b) Azure Advisor
+
+    c) Azure Security Center
+
+    d) Azure  Monitor
+    
