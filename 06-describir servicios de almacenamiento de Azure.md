@@ -93,3 +93,23 @@ Además, para la consideración de _tier_ se tiene también en cuenta lo siguien
 - _Archive storage_ almacena datos _offline_ pero tiene un mayor coste de acceso a los datos.
 
 ### Archivos Azure
+
+Utiliza protocolos estándar en la industria como _Server Message Block_ (SMB) ó _Network File System_ (NFS). Los recursos compartidos pueden ser montados in situ o en la nube. SBM esta diponible en Windows, Linux y macOS mientras que NFS no lo esta para windows.
+
+**Beneficios clave de archivos Azure**
+- **Acceso compartido**, usando los protocoles SMB Y NFS puedes modifiar tus recursos compartidos de in situ a la nube Azure sin problemas.
+- **Totalmente gestionado**,  los recursos compartidos de Azure no dependen del hardware o el sistema operativo.
+- **_Scripting and tooling_** los terminales azures pueden ser usados para administrar los recursos compartidos de Azure.
+- **Resiliencia** _Azure files_ ha sido diseñado para estar siempre disponible (*Propaganda*)
+[¿Que es resiliencia?](https://es.wikipedia.org/wiki/Resiliencia_(psicolog%C3%ADa))
+- **Programabilidad familiar**, los desarrolladores puede reutilizar su código exiistente gracias a las APIs _System IO_, las librerías Azure y el servicio REST.
+
+### _Queue storage_
+
+Es un servicio para almacenar grandes cantidades de mensajes, usando autentificacion HTTP y HTTPS. Una _queue_ puede almacenar tantos mensajes como tu almacenamiento ed cuenta, cada mensaje pesa 64KB y suelen usarse para crear backlog.
+
+Es posible combinarlas con las funciones de Azure para que realicen una accióin cuando se recibe un mensaje.
+
+### Almacenamiento en disco
+
+Similar al almacenamiento en disco físico, pero de manera virtualizazda por Azure. Son volúmenes al nivel de bloque que ofrecen una gran resiliencia y disponibilidad (mayor que un disco físico).
