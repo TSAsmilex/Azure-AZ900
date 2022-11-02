@@ -119,3 +119,67 @@ Similar al almacenamiento en disco físico, pero de manera virtualizazda por Azu
 
 ## 6.6 Opciones de migración Azure
 
+Azure permite migraciones en tiempo real o asíncronas usando Azure Data Box.
+
+### _Azure Migrate_
+
+Es un servicio de ayuda de migración in situ a la nube. Proporciona:
+- **Plataforma de migración unificada** (Azure Migrate)
+- **Variedad de herramientas** como _Discovery and assessment_ ó _Server Migration_. Además tiene integración con otros servicios Azure y con ISV (_Independent software vendor_).
+- **Evaluación y migracion** en el portal Azure Migrate puedes evaluar y migrar tu infraestructura in situ a Azure.
+
+### Herramientas integradas
+- **_Discovery and assessment_**, evalua y descrube servidores in situ o en máquinas virtuales.
+- **_Server Migration_** 
+- **_Data Migration Assistant_** es una herramienta independiente para verificar servidores SQL. Permite  detectar poblemas bloqueantes durante la migración, funcionalidades no soportadas o nuevas funcionalidades que puedan servir para después de la migración.
+- **_Azure Database Migration Service_** migración de base de datos in situ hacia Azure.
+- **_Webb app migration assistant_** herramienta independiente que evalua páginas webs in situ.
+- **_Azure Data Box_** permite mover grandes cantidades de datos offline hacia Azure.
+
+### _Azure Data Bax_
+
+Es un servicio de migración física que permite transferir grandes cantidades de datos de manera rápida, segura y barata. Te llevan un dispositivo de almacenamiento de 80 TB y lo recogen posteriormente para llevarlo a un centro de datos, se suben en cuanto Micrisoft obtenga la _Data Box_. Este dispositivo esta protegido por una carcasa resistente.
+
+**Casos de uso**
+
+Para transferencia de datos de más de 40 TB y/o con conexión limitada a la red. 
+
+Casos para enviar datos a Azure
+- **_Onetime migration_** mover gran cantidad de datos in situ hacia Azure.
+- **Mover bibiliotecas multimedia sin conexión.**
+- **Migrar MV, Serviores SQL y Aplicaciones.**
+- **Mover tu histórico de datos** hacia Azure para un análisis en profundidad y uso de HDInsight.
+- **_Initial bulk transfer_**, se usa una _Data Box_ inicial y después incrementos a través de la red.
+- **Actualziaciones periódicas**, si se generan gran cantidad de datos periodicamente que se necesitan enviar a Azure.
+
+Casos para traer datos desde Azure
+- **Recuperación de desastres**, recuperar una copia desde Azure para restablecer los dispositivos in situ.
+- **Requisitos de seguridad**, cuando debes exportar datos fuera de Azure debido a requisitos de seguridad del gobierno.
+- **Migración de vuelta a in situ**
+
+Todos los _Data Box_ son limpiados según el estándar NIST 800-88r1.
+
+## 6.7 Opciones de movimiento de archivos Azure
+
+Para cuando no es necesario _Data Box_
+
+### AzCopy
+
+Es una linea de comandos que permite copiar Blobs o archivos de tu cuenta. Puedes subir ficheros, descargar, copiar o sincronizar.
+
+- _Azure Storage Explorer_ Aplicación independiente que ofrece usar AzCopy con interfaz.
+
+### _Azure file Sync_
+
+Herramienta centrada en compartir archivos (*archivos Azure*) con flexibilidad, rendimiento y compatabilidada con el sistema de ficheros de windows.
+
+Con _Azure File Sync_ puedes:
+- Usar cualqueir protocolo en servidores Windows además de SMB, NFS y FTPS.(*Aparecen en el apartado 6.4, sub-apartado archivos de azure*)
+- Tener tantas cachés como necesites.
+- Remplazar servidores locados fallidos usando *Azure File Sync* en un nuevo servidor.
+- Configuración de _tier_ de archivos.
+
+## 6.8 Preguntas
+[Respuestas](./Recopilacion%20preguntas%20Azure.md)
+
+## 6.9 Recapitulación
