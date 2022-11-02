@@ -4,7 +4,7 @@
 
 Este módulo tiene 14 apartados, en los que se aprenderá de máquinas virtuales, Azure escritorio virtual, recursos requeridos para máquinas virtuales, Azure web Apps, re virtual y endpoints.
 
-## 5.2 Descripción de las máquinas virtuales de Azure
+## 5.2 Máquinas virtuales de Azure
 
 Las máquinas virtuales pertenecen a IaaS, con todo lo que ello conlleva. Son ideales cuando necesitas:
 
@@ -38,7 +38,7 @@ Ejemplos comunes de cuándo es efectivo utilizar máquinas virtuales:
 
 Trata sobre cómo utilizar los scripts de Azure para instalar Nginx en una VM de Ubuntu. No es especialmente interesante.
 
-## 5.4 Describir el escritorio virtual de Azure
+## 5.4 Escritorio virtual de Azure
 
 Ofrece un windows accesible desde pc/ios/android en la nube para usarlo con la interfaz de usuario normal. Escalable como cualquier MV.
 
@@ -50,7 +50,7 @@ Una de las ventajas de las que se habla es la **mejora de la seguridad**, obteni
 
 Los datos estan en la máquina fisica y las aplicaciones estan en la nube, por lo que mejora el riesgo de perder datos confidenciales. Existen máquinas de Windows 10 y 11 que permiten multi-usuario en una sola máquina virtual.
 
-## 5.5 Describir contenedores Azure
+## 5.5 Contenedores Azure
 
 VM suponen una reducción del coste en hardware para la empresa, pero si quieres aumentar la productividad lanzando multiples instancas de una aplicación en una misma máquina virtual los contenedores son mejores.
 
@@ -62,7 +62,7 @@ VM suponen una reducción del coste en hardware para la empresa, pero si quieres
 
 > Si quieres aprender sobre las diferencias entre una máquina virtual y un contenedor, puedes mirar [este blog de Atlassian](https://www.atlassian.com/es/microservices/cloud-computing/containers-vs-vms). El artículo es considerablemente mejor que lo que hemos escrito aquí.
 
-## 5.6 Describir Azure Funtions
+## 5.6 Azure Funtions
 
 Servicio _serverles computing_ que se encarga de mantener las VM y los contenedores activos. Ayudar a la gestion de un servidor, actualizaciones por ejemplo, evitando que solo tengas que centrarte en desarrollo.
 
@@ -72,7 +72,7 @@ Azure tiene sus propios servicios *serverless* denominados **Azure Funtions**. S
 
 Functions pueden ser *stateful* o *stateless*. Los *stateless* se comportan como si se levantaran por primera vez, aún habiéndose ejecutado con anterioridad. Cuando son *stateful* (denominados también *Durable Functions*), se les proporciona un contexto de ejecución para que puedan retomar su tarea.
 
-## 5.7 Describir las opciones de hospedaje de aplicaciones
+## 5.7 Opciones de hospedaje de aplicaciones
 
 Si quieres hospedar tu aplicacion en Azure debes escoger si quieres contenedor o VM.
 
@@ -93,7 +93,7 @@ Existen los diferentes tipos de servicios en App Service:
 - **Trabajos web** donde puedes lanzar programas o scripts que puede ser programados para lanzarse automáticamente.
 - **Aplicaciones móviles** que permiten crear para iOS y Android con base de datos SQL en la nube, autentificaciones con Google, Twitter, etc. Notificaciones push y back-end en C# y Node.js
 
-## 5.8 Describir Azure Virtual Networking
+## 5.8 Azure Virtual Networking
 
 > Nota del editor: hasta ahora, no hemos traducido propiamente *on premise*. A partir de ahora, se denominarán "in situ", haciéndose referencia a los servidores que una propia empresa posee.
 
@@ -175,7 +175,7 @@ Si usas tu VPN quieres tener seguridad y alta diponibilidad, hay métodos para o
 >
 > https://learn.microsoft.com/en-us/training/modules/describe-azure-compute-networking-services/10-virtual-private-networks
 
-## 5.11 Describir Azure ExpressRoute
+## 5.11 Azure ExpressRoute
 
 Es una conexión de tus dispositivos físicos con Microsoft Cloud y sus servicios, puede ser una conexión any-to-any, point-to-point o conexión cruzada virtual. Al no ir por redes públicas ofrece mayor velocidad y seguridad.
 
@@ -193,7 +193,7 @@ Es una conexión de tus dispositivos físicos con Microsoft Cloud y sus servicio
 
 Además se garantiza la seguridad desde todoas esta comunicaciones.
 
-## 5.12 Describir DNS Azure
+## 5.12 DNS Azure
 
 La descripción es tan increible como DNS de Azure y ya, puedes hacer cosas que hace una DNS.
 
@@ -209,5 +209,3 @@ Azure DNS no ofrece un nombre de dominio, debes de comprarlo desde la aplicació
 ## 5.13 Preguntas
 
 [Respuestas](./Recopilacion%20preguntas%20Azure.md)
-
-## 5.14 Sumario
