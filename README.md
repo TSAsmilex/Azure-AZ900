@@ -38,3 +38,6 @@ Lecciones:
 - [Test Daypo con mayor numero de visitas INGLES](https://www.daypo.com/azure-az-900.html#informacion)
 - [Test Daypo con segundo mayor numero de visitas INGLES](https://www.daypo.com/exam-az-900-final.html)
 - [Test Daypo con mayor numero de visitas ESPAÑOL](https://www.daypo.com/az-900-espanol.html#informacion)
+
+## Daypoos preparadas para el examen AZ-900
+- [Primer Daypoo Azure fundamentals](https://www.daypo.com/azure-az-900-1.html)

@@ -90,6 +90,6 @@ Además, para la consideración de _tier_ se tiene también en cuenta lo siguien
 - Solo el _tier hot y cool_ pueden ser asignados a nivel de cuenta.
 - Los _tier_ puede sern puestos en un blob durante o después de ser subido a Azure.
 - Los datos _cool_ puede tener una menor disponibilidad que _hot_ pero el resto de características son similares. Una menor disponibilidada SLA(_Service-level agreement_) y un coste de acceso mayor permiten un coste de almacenaje bajo.
-- _Archive storage_ almacena datos_offline_ per tiene un mayor coste de acceso a los datos.
+- _Archive storage_ almacena datos _offline_ pero tiene un mayor coste de acceso a los datos.
 
 ### Archivos Azure
