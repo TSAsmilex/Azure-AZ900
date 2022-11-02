@@ -335,13 +335,13 @@ ______________________
 
     a) You must pay a fixed fee in advance for all Cloud services.
 
-    b) You rent compute power and storage from someone else's datacenter. 
+    __b) You rent compute power and storage from someone else's datacenter.__ 
 
     c) You rent physical hardware such as compute power and storage and maintain them within your own datacenter. (Esta NO)
 
     __d) You can immediately stop paying for resources that are no longer needed.__
 
-    __Anotación:__ (__d__)You can treat cloud resources like you would resources in your own datacenter. When you are finished using them, you give them back. You are only billed for what you use. (__c__) The cloud provider takes care of maintaining the underlying infrastructure for you. 
+    __Anotación:__ (__d__)You can treat cloud resources like you would resources in your own datacenter. When you are finished using them, you give them back. You are only billed for what you use. (__b__) You don't have to worry about if you have enough resources, you just rent from someone else. 
 
 3. Cloud Computing provides several benefits over a physical environment. Which of the following are benefits of cloud computing? *Select all options that apply.* (__1 / 1 punto__)
 
