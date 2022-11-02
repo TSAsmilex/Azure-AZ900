@@ -671,14 +671,6 @@ ______________________
 
     __*Anotacion:__ Azure Database for PostgreSQL - Single Server deployment option delivers built-in high availability with no additional cost of 99.99% SLA.
 
-20. Tradewind Traders is planning to migrate to Azure cloud services. The majority of their IT department is more familiar with Linux environments than Windows. Will these users be able to continue using Bash commands to create resources such as Virtual Machines once the organization has migrated? 
-
-    __a) Yes__
-
-    b) No
-
-    __*Anotación:__ With Azure Cloud Shell, you can create virtual machines using Bash or PowerShell.
-
 21. Tradewind Traders is planning to migrate to Azure cloud services however management has asked you to research some of the main benefits of cloud services. Which of the following do you think are some of the benefits of cloud services? Select 2 options.
 
     Limited storage
