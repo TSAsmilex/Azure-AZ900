@@ -138,6 +138,8 @@ Puedes tambien definir rutas de usuario (UDR, _user defined routes_) para tener 
 
 ## 5.9 Ejercicios
 
+> Haz los dos ejercicios de este módulo seguidos, o si no, no funcionará el segundo.
+
 ## 5.10 Describir redes Azure privadas
 
 Virtual private network(VPN) que son usadas para conectar redes privadas a redes no privadas, el trafico esta encriptado para evitar ataques.
