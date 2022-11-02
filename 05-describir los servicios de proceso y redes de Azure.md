@@ -140,15 +140,28 @@ Puedes tambien definir rutas de usuario (UDR, _user defined routes_) para tener 
 
 > Haz los dos ejercicios de este módulo seguidos, o si no, no funcionará el segundo.
 
-## 5.10 Describir redes Azure privadas
+## 5.10 Redes privadas virtuales de Azure
 
-Virtual private network(VPN) que son usadas para conectar redes privadas a redes no privadas, el trafico esta encriptado para evitar ataques.
+Una *virtual private network* (VPN) utiliza un túnel encriptado en otro túnel. Suelen utilizarse para conectar dos o más redes privadas a través de redes no seguras, como puede ser internet. El tráfico es encriptado.
 
-**Puertas de enlace VPN** conéctar centro de datos fisicos con site-to-site, conectar dispositivos individuales con point-to-site o conectar redes con network-to-network. Toda la información esta encriptada por un tunel privado.
+### Puertas de enlace de una VPN
 
-Cuando estableces una puerta de enlace VPN debes establecer si estara basada en politicas o rutas. Basado en políticas establece IP estáticas de paquetes y el dispositivo evalía estos paquetes de IP para establecer el tunel por el que enviarlas. Basado en touter con IP dinámica o estática decide que interfaz de tunel sera la correcta para enviar el paquete, estos métodos son preferidos para dispositívios físicos.
+> Nota: recomiendo mirar lo que es una [_gateway_ (puerta de enlace)](https://www.wikiwand.com/en/Gateway_(telecommunications)) y un [proxy inverso](https://www.wikiwand.com/en/Reverse_proxy).
 
-**Escenarios de alta disponibilidad** si usas tu VPN quieres tener seguridad y alta diponibilidad, hay métodos para ofrecer eso:
+Las instancias de las VPN gateways se despliegan en una subred específica y conectan...
+
+- Centros de datos in-situ a redes virtuales (conexiones site-to-site)
+- Dispositivos individuales a redes virtuales (conexiones point-to-site)
+- Redes virtuales a otras redes virtuales (conexiones network-to-network).
+
+Cuando estableces una puerta de enlace VPN debes establecer si estara basada en políticas o rutas.
+
+- Basado en políticas establece IP estáticas de paquetes y el dispositivo evalúa estos paquetes de IP para establecer el tunel por el que enviarlas.
+- Basado en router con IP dinámica o estática decide qué interfaz de tunel será la correcta para enviar el paquete. Estos métodos son los preferidos para dispositivos físicos. Además, son los más resistentes a cambios en la topología de la red.
+
+### Escenarios de alta disponibilidad
+
+Si usas tu VPN quieres tener seguridad y alta diponibilidad, hay métodos para ofrecer eso:
 1. Activo/espera
 2. Activo/activo
 3. Fallo _ExpressRoute_
