@@ -150,14 +150,18 @@ Una *virtual private network* (VPN) utiliza un túnel encriptado en otro túnel.
 
 Las instancias de las VPN gateways se despliegan en una subred específica y conectan...
 
-- Centros de datos in-situ a redes virtuales (conexiones site-to-site)
-- Dispositivos individuales a redes virtuales (conexiones point-to-site)
+- Centros de datos in-situ a redes virtuales (conexiones site-to-site).
+- Dispositivos individuales a redes virtuales (conexiones point-to-site).
 - Redes virtuales a otras redes virtuales (conexiones network-to-network).
 
 Cuando estableces una puerta de enlace VPN debes establecer si estara basada en políticas o rutas.
 
 - Basado en políticas establece IP estáticas de paquetes y el dispositivo evalúa estos paquetes de IP para establecer el tunel por el que enviarlas.
-- Basado en router con IP dinámica o estática decide qué interfaz de tunel será la correcta para enviar el paquete. Estos métodos son los preferidos para dispositivos físicos. Además, son los más resistentes a cambios en la topología de la red.
+- Basado en rutas con IP dinámica o estática decide qué interfaz de tunel será la correcta para enviar el paquete. Estos métodos son los preferidos para dispositivos físicos. Además, son los más resistentes a cambios en la topología de la red. Recomendadas cuando quieres...
+  - Conexines entre redes virtuales.
+  - Conexiones punto a sitio.
+  - Conexiones multisitio.
+  - Coexistencia con una Azure ExpressRoute gateway.
 
 ### Escenarios de alta disponibilidad
 
