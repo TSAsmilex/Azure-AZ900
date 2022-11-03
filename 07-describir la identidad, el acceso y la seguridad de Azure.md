@@ -60,3 +60,29 @@ La autentificación es el proceso de establer la identidad de una persona, servi
 
 SSO permite al usuario loguearse una única vez y posteriormente utilizar esa credencial para acceder a multiples recursos y aplicaciones de diferentes proveedores. Más identificaciones suponen más contraseñas a recordar y cambiar, además que incrementa el riesgo de un incidente de seguridad relacionado con las credenciales.
 
+Con SSO el usuario debe recordar solo un ID y contraseña, por lo que no necesita encontrarse mensajes de loging en cada programa y simplifica el modelo de seguridad. SSO simplifica tambien la gesitón de usuarios e identificacioes, pero, SSO es solo tan seguro como su autentificador inicial ya que el resto de las conexiones posteriores se realizan en base a la seguridad de la inicial.
+
+### ¿Que es _Multifactor Authentication_ (MFA)?
+
+Consiste en pedir al usuario por un factor extra cuando intente acceder, lo que permite proteger un poco contra casos en los que la contraseña se ha visto comprometida.
+
+Existen 3 categorías:
+- Algo que el usuario sabe, una pregunta
+- Algo que el usuario tiene, un mensaje sms con código al móvil
+- Algo que el usuario es, detección biométrica
+
+MFA ayuda a incrementar la seguridad frente a robo de credenciales(ID + contraseña).
+
+**MFA en Azure AD** es lo mismo pero con propaganda.
+
+### ¿Que es _passwordless authentication_?
+
+Consiste en eliminar la contraseña y dejar solo los métodos de autentificacion MFA. Pero esta configuración debe ser establecida en tu dispositivo antes para que pueda funcionar. Azure ofrece 3 posibles occiones para este método:
+
+- **_Windows Hello for business_** diseñado para windows, donde se establece un pin y biométricas para un único usuario. Utiliza _public key infrastructure_ (PKI) y SSO.
+- **_Microsoft authenticator App_** aunque es un metrodo de MFA, puede usarse también eliminando la contraseña ya que convierte el móvil en una fuerte credencial, recibiendo un mensaje en el teléfono y usando sus biométricas o pin.
+- **_FIDO2 security keys_** Fast IDentity Online que promueve estándars de autentificacion y reduce el uso de contraseñas como método de autentificación. (FIDO2 pertenece al estandar de la autentificación web _WebAuthn_). Las claves de seguridad FIDO2 son típicamente pendrive USB, Bluetooth o NFC, por lo que usando un dispositivo físico no hay contraseña a ser expuesta.
+
+> Un ejemplo es nuestra tarjeta de identificacion del pc 
+
+## 7.4 Describir identificaciones externas en Azure
