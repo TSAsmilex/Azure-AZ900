@@ -130,3 +130,7 @@ Azure RBAC es jerarquico, los permisos a un alcance padre se dan a todos los alc
 
 ### ¿Como es Azure RBAC impuesta/aplicada?
 
+Se aplica en cualquier acción realziada dentro de los recursos Azure y que pasa por el gestor de recursos de Azure. Azure RBAC no lo gestiona por ti en tu aplicación. RBAC usa un modelo de permitir, por defecto no tienes permitido nada y se te aginan roles con permisos.
+
+
+
