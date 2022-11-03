@@ -1,4 +1,4 @@
-# Describir servicios de almacenamiento de Azure
+# Servicios de almacenamiento de Azure
 
 ## 6.1 Introducción
 
@@ -23,7 +23,7 @@ Accesible HTTP y HTTPS, tambien al crear una cuenta puedes escoger el nivel de r
 
 El beneficio de Azure Storage es tener unicamente un nombre para todos tus datos de Azure. El nombre sigue las reglas de 3 a 24 carácteres con mayusculas, minusculas y números, además de ser única. Los posibles puntos finales de Azure son, blob, data lake storage gen 2, azure files, queue Storage y table storage. Todos ellos segun la url, https://nombre.tipodebasededatos.core.windows.net
 
-## 6.3 Describir la redundancia de almacenamiento Azure
+## 6.3 Redundancia de almacenamiento Azure
 
 > Nota del editor: Esta sección entera puede resumirse con las imágenes que se encuentran en su [página web](https://learn.microsoft.com/en-us/training/modules/describe-azure-storage-services/3-redundancy).
 
@@ -119,36 +119,40 @@ Es posible combinarlas con las funciones de Azure para que realicen una accióin
 Similar al almacenamiento en disco físico, pero de manera virtualizazda por Azure. Son volúmenes al nivel de bloque que ofrecen una gran resiliencia y disponibilidad (mayor que un disco físico).
 
 ## 6.5 Ejercicio
+
 > Funciona la guía
 
 ## 6.6 Opciones de migración Azure
 
-Azure permite migraciones en tiempo real o asíncronas usando Azure Data Box.
+Azure permite migraciones en tiempo real o asíncronas usando dos servicios diferentes: Azure y Migrate y Azure Data Box.
 
-### _Azure Migrate_
+### Azure Migrate
 
-Es un servicio de ayuda de migración in situ a la nube. Proporciona:
-- **Plataforma de migración unificada** (Azure Migrate)
-- **Variedad de herramientas** como _Discovery and assessment_ ó _Server Migration_. Además tiene integración con otros servicios Azure y con ISV (_Independent software vendor_).
+Es un servicio de ayuda de migración de centros in-situ a la nube. Proporciona:
+
+- **Plataforma de migración unificada**.
+- **Variedad de herramientas** como _Azure Migration: Discovery and assessment_ ó _Azure Migration: Server Migration_. Además tiene integración con otros servicios Azure y con ISV (_Independent software vendor_).
 - **Evaluación y migracion** en el portal Azure Migrate puedes evaluar y migrar tu infraestructura in situ a Azure.
 
 ### Herramientas integradas
+
 - **_Discovery and assessment_**, evalua y descrube servidores in situ o en máquinas virtuales.
-- **_Server Migration_**
+- **_Server Migration_**: migra VMs de Hyper-V, VMware y servidores físicos a Azure.
 - **_Data Migration Assistant_** es una herramienta independiente para verificar servidores SQL. Permite  detectar poblemas bloqueantes durante la migración, funcionalidades no soportadas o nuevas funcionalidades que puedan servir para después de la migración.
-- **_Azure Database Migration Service_** migración de base de datos in situ hacia Azure.
-- **_Webb app migration assistant_** herramienta independiente que evalua páginas webs in situ.
+- **_Azure Database Migration Service_** migración de base de datos SQL a Azure.
+- **_Web app migration assistant_** herramienta independiente que evalua web apps hospedadas en servidores in-situ. Usada para migrar web apps de .NET y PHP a Azure.
 - **_Azure Data Box_** permite mover grandes cantidades de datos offline hacia Azure.
 
 ### _Azure Data Bax_
 
-Es un servicio de migración física que permite transferir grandes cantidades de datos de manera rápida, segura y barata. Te llevan un dispositivo de almacenamiento de 80 TB y lo recogen posteriormente para llevarlo a un centro de datos, se suben en cuanto Micrisoft obtenga la _Data Box_. Este dispositivo esta protegido por una carcasa resistente.
+Es un servicio de migración física que permite transferir grandes cantidades de datos de manera rápida, segura y barata. Te llevan un dispositivo de almacenamiento de 80 TB y lo recogen posteriormente para llevarlo a un centro de datos. Tu información se sube en cuanto Microsoft reciba la _Data Box_. Este dispositivo esta protegido por una carcasa resistente.
 
 **Casos de uso**
 
 Para transferencia de datos de más de 40 TB y/o con conexión limitada a la red.
 
 Casos para enviar datos a Azure
+
 - **_Onetime migration_** mover gran cantidad de datos in situ hacia Azure.
 - **Mover bibiliotecas multimedia sin conexión.**
 - **Migrar MV, Serviores SQL y Aplicaciones.**
@@ -157,25 +161,30 @@ Casos para enviar datos a Azure
 - **Actualziaciones periódicas**, si se generan gran cantidad de datos periodicamente que se necesitan enviar a Azure.
 
 Casos para traer datos desde Azure
+
 - **Recuperación de desastres**, recuperar una copia desde Azure para restablecer los dispositivos in situ.
 - **Requisitos de seguridad**, cuando debes exportar datos fuera de Azure debido a requisitos de seguridad del gobierno.
 - **Migración de vuelta a in situ**
 
 Todos los _Data Box_ son limpiados según el estándar NIST 800-88r1.
 
-## 6.7 Opciones de movimiento de archivos Azure
+## 6.7 Opciones de transferencia de archivos en Azure
 
 Para cuando no es necesario _Data Box_
 
 ### AzCopy
 
-Es una linea de comandos que permite copiar Blobs o archivos de tu cuenta. Puedes subir ficheros, descargar, copiar o sincronizar.
+Es una herramienta CLI que permite copiar Blobs o archivos desde o a tu cuenta. Puedes subir ficheros, descargar, copiar o sincronizar.
 
-- _Azure Storage Explorer_ Aplicación independiente que ofrece usar AzCopy con interfaz.
+### Azure Storage Explorer
 
-### _Azure file Sync_
+GUI para AzCopy.
 
-Herramienta centrada en compartir archivos (*archivos Azure*) con flexibilidad, rendimiento y compatabilidada con el sistema de ficheros de windows.
+### Azure File Sync
+
+Centraliza las comparticiones de archivos en tu Azure Files. Ofrece flexibilidad, rendimiento y compatibilidad.
+
+> Nota del editor: sin haberlo utilizado, me da la sensación de que es una aplicación estilo Dropbox, Syncthing o similares, pero focalizada para servidores.
 
 Con _Azure File Sync_ puedes:
 - Usar cualqueir protocolo en servidores Windows además de SMB, NFS y FTPS.(*Aparecen en el apartado 6.4, sub-apartado archivos de azure*)
