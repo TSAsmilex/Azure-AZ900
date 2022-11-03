@@ -86,3 +86,17 @@ Consiste en eliminar la contraseña y dejar solo los métodos de autentificacion
 > Un ejemplo es nuestra tarjeta de identificacion del pc 
 
 ## 7.4 Describir identificaciones externas en Azure
+
+Se entiende como identificación externa a aquella que esta fuera de tu organización, por lo tanto debe de ponerse algún medio para poder identificarse, ya sea con el propio Azure o _Business to business_ (B2B).
+
+![Imagen de identificación externa](https://learn.microsoft.com/en-us/training/wwl-azure/describe-azure-identity-access-security/media/azure-active-directory-external-identities-5a892021.png)
+
+- **_Business to business collaboration_ (B2B)** , usando identificaciones de otras aplicaciones Microsoft u otras aplicaciones empresariales. (Google, facebook)
+- **B2B conexión directa** , se establece conexión con otra organización Azure AD, lo que permite crear canales de equipos para compartir recursos con los usuarios externos. Los usuarios B2B no estan representados en tu directorio pero son administrados por el centro administrador de equipos.
+- **Azure AD _business to customer_ (B2C)**, para aplicaciones SaaS que permiten a los usuario registrarse en la app o consumir de la misma usando Azure AD B2C como servicio de acceso e identificacion. (*Es una conexión B2B colaborativa pero para una aplicación en concreto*).
+
+Usando Azure AD puedes gestionar los recursos y los límites de los usuarios invitados gracias a la incorporación der Azure AD B2B, pudiendo incluso preguntar directamente a los usuario o de manera automática para tener un meor control de acceso.
+> Nota para Andres: Esta ultima parte es un poco confusa porque esta propagando y texto mezclado, más o menso creo que resumen funciona, pero estoy confuso jajajajj
+
+## 7.5 Describis acceso condicional de Azure
+
