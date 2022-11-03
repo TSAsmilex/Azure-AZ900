@@ -154,3 +154,28 @@ Aqui solo explica que en vez de proteger con una VPN, el método _Zero Trust_ si
 
 ![Zero Trust](https://learn.microsoft.com/en-us/training/wwl-azure/describe-azure-identity-access-security/media/zero-trust-cf9202be.png)
 
+## 7.8 Describir _defense-in-depth_
+
+Es una estrategia de defensa que utiliza diferentes niveles y mecanismo para ralentizar el avance de un ataque no autorizado de acceso a datos.
+
+### Capas de _defense-in-depth_
+
+![Capas como las cebollas](https://learn.microsoft.com/en-us/training/wwl-azure/describe-azure-identity-access-security/media/defense-depth-486afc12.png)
+
+Cada capa ofrece protección, por loq ue si una capa es violada el resto esta preparada para prevenir que prosiga. Con ello se elimina tener la seguridad como una única capa y en cambio se opta por varias, las cuales son:
+
+- **Seguridad Física**, asegurando fisicamente el acceso al edificio y al hardware, con ello se puede prevenir robos o manipulaciones.
+
+- **Identificación y acceso**, SSO y MFA, además esta capa da control de acceso y necesita evento de auditoria y cambios.
+
+- **Perímetro** de red que protege frente ataques de red, identificando atacantes y eliminando su impacto. Como por ejemplo protección DDoS antes de que afecte a gran escala o usar cortafuesgos para identificar atacantes malicisioso.
+
+- **Red** limita las comunicaciones entre los recursos internos, deniega por defecto, restringe el acceso a través de intenet e implementa seguridad de coenxión en la red in situ.
+
+- **_Compute_**, Virus, sistemas sin parchar y sistemas no asegurados correctamente dejan hueco a ataques. Esta capa se centra en asegurar el acceso a máquinas virtuales e implementar protección _endpoint_ en dispositivos y mantener el systema actualizado y parcheado.
+
+- **Aplicación** integra la seguridad en el ciclo de desarrollo de una aplicación para asegurar que nuestra aplicación esta libre de vulnerabiidades, guarda apropiadamente secretos sensibles de la applicación y hace un desarrollo con la seguridad como requisito de diseño.
+
+- **Datos** aquello quebuscan los atacantes, debemos revisar la confidencialidad, integridad y disponibilidad de estos. Los atacantes generalmente buscan la base de adtos, el disco de las máquinas cirtuales, en servicios SaaS o datos de la nube.
+
+##
