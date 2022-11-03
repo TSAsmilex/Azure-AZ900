@@ -178,4 +178,18 @@ Cada capa ofrece protección, por loq ue si una capa es violada el resto esta pr
 
 - **Datos** aquello quebuscan los atacantes, debemos revisar la confidencialidad, integridad y disponibilidad de estos. Los atacantes generalmente buscan la base de adtos, el disco de las máquinas cirtuales, en servicios SaaS o datos de la nube.
 
-##
+## 7.9 Describir _Microsoft Defender for cloud_
+
+Es una herramienta de monitoreo para la seguridad. Monitorea tu nube, in situ, híbrido y multi nube. Proporciona herramientas para endurecer tus recursos, revisar tu postura de seguridad, protegerte contra ciber ataques y optimizar la gestion de seguridad.
+
+### Protección allí donde despliegues
+
+Defender es un servicio nativo de Azure por lo que puede ser usado sin necesidad de despliegue en servicios Azure, en caso de tener un centro tambien en otra nube o in situ no dará tan buen resultado. Cuando sea necesario Defender aplicará _Log Analytics_._Cloud security posture management_ (CSPM) se exitienden a multi nube.
+
+**Protecciones _Azure-native_**
+
+- _Azure PaaS service_- detecta amenzas en los servicios Azure y detecta anomalías en los logs Azure.
+- _Azure data services_- clasificación de datos en Azure SQL, además de asesorar sobre bulnerabilidades potenciales.
+- _Networks_- limita tu exposición a ataques de fuerza bruta y reduce el acceso a puertos de máquinas virtuales.
+
+**Defender tus recursos híbridos**
