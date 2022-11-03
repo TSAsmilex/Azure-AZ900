@@ -1,6 +1,6 @@
 # Describir la identidad, el acceso y la seguridad de Azure
 
-# 7.1 Introducción
+## 7.1 Introducción
 
 - Describir Azure Active Directory (AD) y Azure AD DS.
 - Describir los métodos de autenticación en Azure.
@@ -115,4 +115,18 @@ Siendo signal la locacion del usuario, el dispositivo o la aplicación a la inte
 - Bloquear acceso desde fuentes no fiables.
 
 ## 7.6 Describir el _Azure role-based access control_ RBAC
+
+El principio del mínimo privilegio explica que solo se debe dar acceso al minimo nivel necesario para completar una tarea.
+
+Gestionar permisos por usuario es complicado por lo que se establece control por roles y se asgina permisos de acceso a ese rol. Con Azure RBAC puedes usar roles predifinidos  o crear nuevos, incluso asignando a individuos y grupos uno o más roles.
+
+### ¿Como se aplica RBAC?
+
+El RBAC se aplica a un _scope_ (alcance), tal y como indica la tabla, saliendo el nivel de usuario sobre ese alcance.
+
+![Tabla RBAC](https://learn.microsoft.com/en-us/training/wwl-azure/describe-azure-identity-access-security/media/role-based-access-scope-4b12a8f3.png)
+
+Azure RBAC es jerarquico, los permisos a un alcance padre se dan a todos los alcances hijos.
+
+### ¿Como es Azure RBAC impuesta/aplicada?
 
