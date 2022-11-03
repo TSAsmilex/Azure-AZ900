@@ -105,16 +105,16 @@ Se entiende como identificación externa a aquella que esta fuera de tu organiza
 Usando Azure AD puedes gestionar los recursos y los límites de los usuarios invitados gracias a la incorporación der Azure AD B2B, pudiendo incluso preguntar directamente a los usuario o de manera automática para tener un meor control de acceso.
 > Nota para Andres: Esta ultima parte es un poco confusa porque esta propaganda y texto mezclado, más o menso creo que resumen funciona, pero estoy confuso jajajajj
 
-## 7.5 Describis acceso condicional de Azure
+## 7.5 Accesos condicionales en Azure
 
-Herramienta que permite o deniega acceso a recursos dependiendo del usuario. Ayuda a los administradores IT a autorizar usuarios a ser productoviso y proteger activos de la organización.
+Herramienta que permite o deniega acceso a recursos dependiendo del usuario. Ayuda a los administradores IT a autorizar diferentes usuarios y a proteger activos de la organización.
 
 Permite tambien cambiar el metodo de MFA según el usuario, del cual recolecta información para reforzar la decisión de permitir o rechazar un acceso.
 ![Diargama de ejemplo](https://learn.microsoft.com/en-us/training/wwl-azure/describe-azure-identity-access-security/media/conditional-access-9bd268b8.png)
 
 Siendo signal la locacion del usuario, el dispositivo o la aplicación a la intentan acceder. La decisión se toma si el usuario accede desde una localización conocida o no y posteriormente se le permite o deniega el acceso.
 
-### ¿Cuando usar el acceso condicional?
+### ¿Cuándo usar el acceso condicional?
 
 - MFA pero depende del rol, la localización o la red.
 - Establecer acceso a servicios solo desde clientes conocidos.
