@@ -138,3 +138,19 @@ Azure RBAC es jerarquico, los permisos a un alcance padre se dan a todos los alc
 ### ¿Como es Azure RBAC impuesta/aplicada?
 
 Se aplica en cualquier acción realziada dentro de los recursos Azure y que pasa por el gestor de recursos de Azure. Azure RBAC no lo gestiona por ti en tu aplicación. RBAC usa un modelo de permitir, por defecto no tienes permitido nada y se te aginan roles con permisos.
+
+## 7.7 Describir el modelo _zero trust_
+
+Es un modelo de seguridad que asume el peor escenario posble y protege los recursos. Asume que habrá una violación y por ello verifica cada petición originada en una red no controlada.
+
+Microsoft recomienda el modelo _Zero Trust_ proque:
+- **Verificación explicita**, siempre autentifica y autoriza en todos los puntos de datos disponibles.
+- **Privilegio mínimo** usando el modelo _Just-In-Time or Just-Enought-Access_ (JIT/JEA)
+- **Asumir violaciones** minimiza el daño y el acceso, verifica encriptación _end-to-end_ y usa analíticas para detección de amenazas y emjora de defensas.
+
+### Ajustando el _Zero Trust_
+
+Aqui solo explica que en vez de proteger con una VPN, el método _Zero Trust_ sigue desconfiando de ti y requiere autentificación.
+
+![Zero Trust](https://learn.microsoft.com/en-us/training/wwl-azure/describe-azure-identity-access-security/media/zero-trust-cf9202be.png)
+
