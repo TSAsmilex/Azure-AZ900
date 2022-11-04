@@ -43,3 +43,4 @@ Lecciones:
 - [Primer Daypoo Azure fundamentals](https://www.daypo.com/azure-az-900-1.html)
 - [Segundo Daypoo Azure fundamentals](https://www.daypo.com/azure-az-900-2.html)
 - [Tercer Daypoo Azure fundamentals](https://www.daypo.com/azure-az-900-3.html)
+- [Cuarto Daypoo Azure fundamentals](https://www.daypo.com/azure-az-900-4.html)
