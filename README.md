@@ -19,7 +19,7 @@ Lecciones:
 
 ### Conceptos Azure 3
 
-1.
+1. [Describir la administración de costes en Azure](./08-describir%20la%20administraci%C3%B3n%20de%20costes%20de%20Azure.md)
 2.
 3.
 4.
@@ -28,6 +28,7 @@ Lecciones:
 
 - [Conceptos fundamentales de Azure 1, describir conceptos cloud](https://learn.microsoft.com/es-es/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/).
 - [Conceptos fundamentales de Azure 2, describir servicios y arquitectura de Azure](https://learn.microsoft.com/en-us/training/paths/azure-fundamentals-describe-azure-architecture-services/). 
+- [Conceptos fundamentales de Azure 3, describir administración y gobierno de Azure](https://learn.microsoft.com/en-us/training/paths/describe-azure-management-governance/).
 - [Landing de Microsoft](https://esi.microsoft.com/landing). 
 
 ## Videos
