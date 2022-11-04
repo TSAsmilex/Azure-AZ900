@@ -186,10 +186,57 @@ Es una herramienta de monitoreo para la seguridad. Monitorea tu nube, in situ, h
 
 Defender es un servicio nativo de Azure por lo que puede ser usado sin necesidad de despliegue en servicios Azure, en caso de tener un centro tambien en otra nube o in situ no dará tan buen resultado. Cuando sea necesario Defender aplicará _Log Analytics_._Cloud security posture management_ (CSPM) se exitienden a multi nube.
 
-**Protecciones _Azure-native_**
+### Protecciones _Azure-native_
 
 - _Azure PaaS service_- detecta amenzas en los servicios Azure y detecta anomalías en los logs Azure.
 - _Azure data services_- clasificación de datos en Azure SQL, además de asesorar sobre bulnerabilidades potenciales.
 - _Networks_- limita tu exposición a ataques de fuerza bruta y reduce el acceso a puertos de máquinas virtuales.
 
-**Defender tus recursos híbridos**
+**Defender tus recursos híbridos**, puedes añadir _Defender for cloud_ para proteger tu nube híbria y tus servidores no Azure(usando Azure arc).
+
+**Defender recursos ejecutandose en otras nubes**
+- _Defender for cloud_ CSPM se extiende a tus _Amazon Web Services_ (AWS), siguiendo las recomendaciones de seguridad de AWS y estandares como AWS CIS, AWS PCI DSS y AWS _Fundaional Security Best Practices_.
+- _Microsoft defender for Kubernetes_ para defender tus _Amazon EKS Linux clusters_.
+- _Microsoft Defender for server_ con detencción de hilos y defensas avanzadas para instancias de Windows y Linux EC2.
+
+**Evalua, asegura y defiende**
+![Evalua, asegura y defiende](https://learn.microsoft.com/en-us/training/wwl-azure/describe-azure-identity-access-security/media/assess-secure-defend-46228306.png)
+
+### Evaluacióm continua 
+
+_Defender for cloud_ ayuda a evaluar continuamente tu entorno, con evaluación de vulnerabilidades para maquinas virtuales, contenedores de requistros y servidores SQL. _Microsoft defender for Endpoints_ tiene integración automática y busca vulnerabildidades.
+
+### Asegurar
+
+Usando métodos de autentifiacion, ya que para asegurar la nube debes tener claro que tus _workloads_ son seguros, usando toda la funcionalidad de Azure y Defender.
+
+Uno de los beneficios de la nube es la escalabilidad, se deben monitorear estos crecimientos y nuevos recursos antes de ser desplegados y que estos nuevos recursos cumplan con las practicas de seguridad, seríamos avisados en caso de que no. (Defender lo hace).
+
+(*Azure tiene Security Benchmark*)
+
+_Defender for cloud_ nos proporciona una vista sobre recomendaciones, porcentage de protección, recomendaciones y un indicador de salud.(-3 hp tras leer eso)
+
+![Defender for cloud puntuacion](https://learn.microsoft.com/en-us/training/wwl-azure/describe-azure-identity-access-security/media/defender-for-cloud-d47a71d8.png)
+
+### Defender
+
+Consiste en defender y dar avisos 👍
+
+### Alertas de seguridad
+
+Cuando se detecta una amenza se genera una alerta:
+- Describe detalles de los archivos afectados.
+- Sugiere pasos para solucionarlo.
+- Provee una opcion para lanzar una _logic app_ en respuesta.
+
+Sea cual sea la alerta _Defender_ lanzar análisis de _fusion kill-chain y cyber kill-chain_ para entronar la amenza y reducirla.
+
+### Protección avanzada de amenazas
+
+(*Propaganda de que Defender for cloud es muy bueno y lo protege todo*)
+
+## 7.10 Preguntas
+
+[Respuestas](./Recopilacion%20preguntas%20Azure.md)
+
+## 7.11 Sumario
