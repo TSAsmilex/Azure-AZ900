@@ -44,3 +44,33 @@ Niveles de pagar cosas
 Es la tienda para comprar soluciones Azure y servicios de terceros, se paga por el servicio del tercero y por los servicios Azure para mantenerlo.
 
 ## 8.3 Comparar las calculadoras _Pricing and Total Cost Ownership_
+
+### _Pricing calculator_
+
+El coste que te da sobres los recursos Azure, construir una solución o un ejemplo de escenario es un coste estimado y no real ya que es una herramienta informativa.
+
+### _TCO calculator_
+
+Sirve para comprovar costes de una infraestructura in situ comparada con la infraestructura de Azure Cloud, calcula el cambio y los costes asociados a ello.
+
+## 8.4 Ejericio Pricing
+
+> Simplemente seguirlo y ver el precio
+
+## 8.5 Ejercicio TCO
+
+> Simplemente seguirlo y ver el precio
+
+## 8.6 Describir las herramientas de gestios de coste de Azure
+
+Gestionar los recursos no usados para liberarlos y no encontrar costes no deseados.
+
+### ¿Que es gestion de costes?
+
+La gestion de coste provee la habilidad de rápidamente comprobar los costes de los recursos Azure, crear alertas de gastos y generar presupuestos. Con _Cost analisys_ puedes ver una vista global rápida.
+
+### Alerta de costes
+
+Pueden ser de:
+
+- **Presupuesto:** 
