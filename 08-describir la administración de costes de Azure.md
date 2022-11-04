@@ -42,4 +42,5 @@ Niveles de pagar cosas
 ### Azure Marketplace
 
 Es la tienda para comprar soluciones Azure y servicios de terceros, se paga por el servicio del tercero y por los servicios Azure para mantenerlo.
+
 ## 8.3 Comparar las calculadoras _Pricing and Total Cost Ownership_
