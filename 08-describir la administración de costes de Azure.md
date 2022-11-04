@@ -10,3 +10,36 @@
 ## 8.2 Describir factores que afectan a los costes en Azure
 
 ¿Cuanto cuesta Azure?, pues depende de cuanto le pidas. Usando TCO puedes entender cuanto sería poner en la nube tu servidor in situ, y el _pricing calculator_ para poder ver que soluciones hay para tu presupuesto actual. Además Azure Advisor te permite visualizar tu coste actual.
+
+Los coste de azure aparecen del mantenimiento de las infraestructuras y el alquilar estas a los usuarios, siendo asi la suma de _capital expense_ (CapEx) y _operational expense_ (OpEx) respectivamente.
+
+### Tipo de recursos
+
+Hay numerosos factores que influyen al coste de recursos Azure.  Como el tipo de recurso, la configuración o la región Azure, además del uso que tiene ese recurso.
+
+>Hay un ejemplo en la página sobre el tamaño de un blob, pero no es de interés para los resúmenes
+
+### Consumo
+
+_Pay-as-you-go_ o paga por lo que usas, es el modelo de pago por tu factura. Si usas más este mes pues te cobran mas, si usas menos pues te cobran menos. Sin embargo se pueden pre-reservar esos recursos para recibir descuento. 
+
+### Mantenimeinto
+
+La flexibilidad de la nube permite ajustar recursos rapidamente, por ello es importante mantenerlos organizados y mantener tu entorno de nube. Por ejemplo si una MV no se vigila puede consumer más recursos de manera no intencional. 
+
+### Geografía
+
+Los recursos Azure requieren que se defina en que región desplegarlos, aunque la infraestructura Azure es global desplegar en zonas donde los costes son mayores puede incrementar el precio de mantener dichos recursos.
+
+### Trafico de red
+
+El ancho de banda (entrada y salida de datos), la trasferencia de datos es gratis, la salida depende de la zona. 
+
+### Tipo de subscripción
+
+Niveles de pagar cosas 
+
+### Azure Marketplace
+
+Es la tienda para comprar soluciones Azure y servicios de terceros, se paga por el servicio del tercero y por los servicios Azure para mantenerlo.
+## 8.3 Comparar las calculadoras _Pricing and Total Cost Ownership_
