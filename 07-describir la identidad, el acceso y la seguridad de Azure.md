@@ -121,11 +121,11 @@ Siendo signal la locacion del usuario, el dispositivo o la aplicación a la inte
 - Establecer acceso solo desde dispositivos gestionados.
 - Bloquear acceso desde fuentes no fiables.
 
-## 7.6 Describir el _Azure role-based access control_ RBAC
+## 7.6 Azure role-based access control (RBAC)
 
-El principio del mínimo privilegio explica que solo se debe dar acceso al minimo nivel necesario para completar una tarea.
+El principio del mínimo privilegio explica que solo se debe dar acceso al mínimo nivel necesario para completar una tarea.
 
-Gestionar permisos por usuario es complicado por lo que se establece control por roles y se asgina permisos de acceso a ese rol. Con Azure RBAC puedes usar roles predifinidos  o crear nuevos, incluso asignando a individuos y grupos uno o más roles.
+Gestionar permisos por usuario es complicado por lo que se establece control por roles y se asigna permisos de acceso a ese rol. Con Azure RBAC puedes usar roles predifinidos o crear nuevos, incluso asignando a individuos y grupos uno o más roles.
 
 ### ¿Como se aplica RBAC?
 
@@ -133,32 +133,34 @@ El RBAC se aplica a un _scope_ (alcance), tal y como indica la tabla, saliendo e
 
 ![Tabla RBAC](https://learn.microsoft.com/en-us/training/wwl-azure/describe-azure-identity-access-security/media/role-based-access-scope-4b12a8f3.png)
 
-Azure RBAC es jerarquico, los permisos a un alcance padre se dan a todos los alcances hijos.
+Azure RBAC es jerárquico, los permisos a un alcance padre se dan a todos los alcances hijos.
 
-### ¿Como es Azure RBAC impuesta/aplicada?
+### ¿Cómo es Azure RBAC impuesta/aplicada?
 
-Se aplica en cualquier acción realziada dentro de los recursos Azure y que pasa por el gestor de recursos de Azure. Azure RBAC no lo gestiona por ti en tu aplicación. RBAC usa un modelo de permitir, por defecto no tienes permitido nada y se te aginan roles con permisos.
+Se aplica en cualquier acción realizada dentro de los recursos Azure y que pasa por el gestor de recursos de Azure. Azure RBAC no lo gestiona por ti en tu aplicación. RBAC usa un modelo de permitir, por defecto no tienes permitido nada y se te aginan roles con permisos.
 
-## 7.7 Describir el modelo _zero trust_
+## 7.7 Modelo _zero trust_
+
+> "Nunca confíes, verifica siempre".
 
 Es un modelo de seguridad que asume el peor escenario posble y protege los recursos. Asume que habrá una violación y por ello verifica cada petición originada en una red no controlada.
 
 Microsoft recomienda el modelo _Zero Trust_ proque:
 - **Verificación explicita**, siempre autentifica y autoriza en todos los puntos de datos disponibles.
-- **Privilegio mínimo** usando el modelo _Just-In-Time or Just-Enought-Access_ (JIT/JEA)
-- **Asumir violaciones** minimiza el daño y el acceso, verifica encriptación _end-to-end_ y usa analíticas para detección de amenazas y emjora de defensas.
+- **Privilegio mínimo** usando el modelo _Just-In-Time_ (JIT) o _Just-Enought-Access_ (JEA)
+- **Asumir brechas** minimiza el daño y el acceso, verifica encriptación _end-to-end_ y usa analíticas para detección de amenazas y emjora de defensas.
 
-### Ajustando el _Zero Trust_
+### Ajustándose al _Zero Trust_
 
 Aqui solo explica que en vez de proteger con una VPN, el método _Zero Trust_ sigue desconfiando de ti y requiere autentificación.
 
 ![Zero Trust](https://learn.microsoft.com/en-us/training/wwl-azure/describe-azure-identity-access-security/media/zero-trust-cf9202be.png)
 
-## 7.8 Describir _defense-in-depth_
+## 7.8 Defensa en profundidad
 
-Es una estrategia de defensa que utiliza diferentes niveles y mecanismo para ralentizar el avance de un ataque no autorizado de acceso a datos.
+Es una estrategia de defensa que utiliza diferentes niveles y mecanismos para ralentizar el avance de un ataque no autorizado de acceso a datos.
 
-### Capas de _defense-in-depth_
+### Capasde defensa
 
 ![Capas como las cebollas](https://learn.microsoft.com/en-us/training/wwl-azure/describe-azure-identity-access-security/media/defense-depth-486afc12.png)
 
@@ -176,9 +178,9 @@ Cada capa ofrece protección, por loq ue si una capa es violada el resto esta pr
 
 - **Aplicación** integra la seguridad en el ciclo de desarrollo de una aplicación para asegurar que nuestra aplicación esta libre de vulnerabiidades, guarda apropiadamente secretos sensibles de la applicación y hace un desarrollo con la seguridad como requisito de diseño.
 
-- **Datos** aquello quebuscan los atacantes, debemos revisar la confidencialidad, integridad y disponibilidad de estos. Los atacantes generalmente buscan la base de adtos, el disco de las máquinas cirtuales, en servicios SaaS o datos de la nube.
+- **Datos** aquello que buscan los atacantes. Debemos revisar la confidencialidad, integridad y disponibilidad de estos. Los atacantes generalmente buscan la base de datos, el disco de las máquinas virtuales, en servicios SaaS o datos de la nube.
 
-## 7.9 Describir _Microsoft Defender for cloud_
+## 7.9 Microsoft Defender for cloud
 
 Es una herramienta de monitoreo para la seguridad. Monitorea tu nube, in situ, híbrido y multi nube. Proporciona herramientas para endurecer tus recursos, revisar tu postura de seguridad, protegerte contra ciber ataques y optimizar la gestion de seguridad.
 
@@ -202,7 +204,7 @@ Defender es un servicio nativo de Azure por lo que puede ser usado sin necesidad
 **Evalua, asegura y defiende**
 ![Evalua, asegura y defiende](https://learn.microsoft.com/en-us/training/wwl-azure/describe-azure-identity-access-security/media/assess-secure-defend-46228306.png)
 
-### Evaluacióm continua 
+### Evaluacióm continua
 
 _Defender for cloud_ ayuda a evaluar continuamente tu entorno, con evaluación de vulnerabilidades para maquinas virtuales, contenedores de requistros y servidores SQL. _Microsoft defender for Endpoints_ tiene integración automática y busca vulnerabildidades.
 
