@@ -20,3 +20,18 @@ Cada componente de un _blueprint_. Puede tener o no parámetros adicionales, lla
 Azure Blueprint es "versisonable", ya que puedes modificar la configuración inicial e irla incrementando conjunto a tu aplicación. Azure Blueprint tiene su propio "Git", es decir, tiene sistema de versionado.
 
 ## 9.3 Describir el propósito de Azure Policy
+
+Permiten crear, asignar y gestionar políticas de control(como reglas de configuración) o auditar recursos.
+
+### ¿Como Azure Policy define políticas?
+
+Puedes definir políticas individuales o grupos relacionados a políticas, conocidos como iniciativas. Las políticas asociadas a grupos pueden establecerse a diferentes niveles, grupos, recursos, subscripciones, etc. Tiene definiciones ya predeterminadas, además que evalua las máquinas virtuales y las monitorea, también en algunos casos Azure Policy puede automaticamente controlar recursos con compulados y configuraciones para verificar la integridad de los recursos. Esta integrado con Azure DevOps para aplicar integración continua.
+
+### ¿Que son las iniciativas Azure Policy?
+
+Es una manera de agrupar políticas relacionadas juntas, algunas definiciones incluidas son:
+- **Monitorear en el centro ede seguridad bases de datos SQL no encriptadas**
+- **Monitorear vulnerabilidades del sistema oeprativo en el centro de seguridad**
+- **Monitorea _Endpoint protection_ perdidos en el centro de seguridad**
+
+## 9.4 Describir el proposito de los cerrojos de recursos.
