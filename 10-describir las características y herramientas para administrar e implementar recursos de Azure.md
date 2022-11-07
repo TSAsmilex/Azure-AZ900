@@ -41,3 +41,17 @@ Es un shell para desarrolladores, DevOps y profesionales IT para que ejecuten co
 Es un equivalente a Azure PowerShell pero con diferencia de sintaxis, ya que utiliza comandos bash en vez de los propios de Azure.
 
 ## 10.3 Describir el propósito de Azure Arc
+
+Gestionar entornos de multiples nubes o nubes híbridas puede ser complicado. Azure Arc te permite extenden tus monitoreos y conformidades Azure hacia tu nube híbrida o multinube. Azure Arc proporcina una manera centralizada y unificada de:
+
+- Gestionar tus entornos conjuntamente proyectoando tus recursos no Azure en Azure Resource Manager (ARM).
+- Gestionar multinubes e híbridas maquinas vituales, Kubernetes y bases de datos como si estuviesen siendo ejecutadas en Azure.
+- Usar serivicios familiares de Azure.
+- Usar ITOps tradicionales mientras introduces prácticas DevOps.
+- Configurar localizaciones como una capa de abstracción encima de la extensión Azure Arc Kubernetes y cluster.
+
+**¿Que hace Azure Arc fuera de Azure?**
+Permite Gestionar Servidores, _Kubernetes cluster_, servicios de datos Azure, Servidores SQL y máquinas virtuales.
+
+## 10.4 Describir Azure Resource Manager y Azure ARM templates
+
