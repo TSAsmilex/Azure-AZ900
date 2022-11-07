@@ -73,4 +73,25 @@ La gestion de coste provee la habilidad de rápidamente comprobar los costes de 
 
 Pueden ser de:
 
-- **Presupuesto:** 
+- **Presupuesto:** alertas sobre el gasto cuando alcanza o excede una cantidad definida. El presupuesto se define en un coste, puede ser presupuestos basados en coste o en uso y darána visos respectivod.
+- **Créditos** avisos de cuando tu saldo Azure se gasta, por defecto avisos al 90% y 100%.
+- **GAstos de departamento** cuando un departamento alcanza el límite fijado de uso, ya sea de recursos o enconómicos.
+
+## 8.7 Describir el propósito de las etiquetas
+
+Las etiquetas de recursos son otra manera de organizar tus recursos, ya que proporcionan más información sobre los recursos como:
+- **Gestión de recursos** permite conocer su localización y uso de unos recursos en función de si entorno.
+- **Gestión de coste y optimización** puede establecer presupuestos a una etiqueta.
+- **Gestión de operaciones** permite agrupar recursos según que tan crítica es su disponibilidad para el negocio, ayuda a formular los _service.level agreements_ (SLAs).
+- **Seguridad** nivel de seguridad publica o confidencial.
+- **Regulaciones del gobierno** te permite  identificar recurso que deben de seguir unos requisitos (como una ISO) o deben ser reportados al gobierno.
+- **Optimización del trabajo y automitzación** te permite ver recursos que participan en despliegues complejos.
+
+### ¿Como gestiono las etiquetas de recursos?
+
+Basicamente para resumir, puede usar Windows Powershel, Azure CLI, Azure Resource Manager templates, la API REST o el portal azure para gestionar tus etiquetas, es decir, cualquier aplicación que te permite gestiona recursos.
+
+## 8.8 Preguntas
+[Respuetas](./Recopilacion%20preguntas%20Azure.md)
+
+## 8.9 Sumario
