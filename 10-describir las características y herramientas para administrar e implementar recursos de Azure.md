@@ -55,3 +55,34 @@ Permite Gestionar Servidores, _Kubernetes cluster_, servicios de datos Azure, Se
 
 ## 10.4 Describir Azure Resource Manager y Azure ARM templates
 
+ARM es un servicio de gestión y despliegue de Azure, proporciona gestion de capas que te permite crear, actualizar y borrar recursos, todo lo que haga con Azure pasa por ARM. Si es la API un SDK sigue pasando por ARM ya que se encarga de gestionar la petición y autentificaciones.
+
+### Beneficios de Azure Resource Manager
+
+- Gestionar tus infraestructuras a través de _templates_ en lugar de _scripts_, usando JSON.
+- Desplegar, gestionar y monitorear tus recursos en grupos.
+- Re-desplegar soluciones a través del ciclo de desarrollo.
+- Definir dependencias entre recursos para ser desplegadas en el orden correcto.
+- Aplicar control de acceso RBAC.
+- Aplicar etiquetas a los recursos.
+- Clarificar los gastos de tu organización y sus facturas.
+
+El video explica que ARM tiene organización de recursos automatica para que sea más sencillo.
+
+### ARM templates
+
+Es una descripción declarativa en formato JSON donde se establece que recursos quieres usar y esta lista se revisa antes de cada despliegue para comprobar que todos los recursos estan disponibles y serán creados correctamente. Los desarrolladores, profesionales DevOps y profesiones IT necesitan definir la configuracion de recurosos solo en el ARM _template_ y esta se encargará de todo.(Los _templates_ puede ejecutar código PowerShell y Bash).
+
+**Beneficiones de usar ARM templates**
+
+- **Sintaxis declarativa**  te permiten desplegar infraestructuras Azure declarativamente, es decir, declaras que quieres desplegarla pero no necesitas escribir toda la programación de comandos.
+- **Resultados repetibles** , puedes usar el mismo ARM _template_ si sabes que tienen el mismo entorno.
+- **Orquestación** para no tener que preocuparse de la complejidad de ordenacion de operaciones, ya que ARM lo hará por nosotros.
+- **Archivos modulares** puedes dividir ARM _templates_ en piezas más pequeñas y reutilizarlas o incluso enlazarlar entre ellas.
+- **Extensibilidad** puede incluir código PowerShell o Bash a tu _template_ para dotarlo de más poder.
+
+## 10.5 Preguntas
+
+[Respuestas](./Recopilacion%20preguntas%20Azure.md)
+
+## 10.6 Sumario
