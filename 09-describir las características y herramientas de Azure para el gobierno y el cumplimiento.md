@@ -35,3 +35,36 @@ Es una manera de agrupar políticas relacionadas juntas, algunas definiciones in
 - **Monitorea _Endpoint protection_ perdidos en el centro de seguridad**
 
 ## 9.4 Describir el proposito de los cerrojos de recursos.
+
+Los cerrojos protegen de ser borrados o cambiados accidentalmente, ya que incluso con Azure RBAC existe el reisgo de que recursos críticos sean borrados o cambiados, se pueden aplicar a grupos, individualmente o a subscripciones.
+
+### Tipos de cerrojos de recursos
+
+- Borrado, se puede leer y modificar
+- Solo lectura, pues eso, solo lectura 😆
+
+### ¿Como gestiono los cerrojos de recursos?
+
+Desde Azure portal, PowerShell, the Azure CLI o Azure Resource Manager template.
+
+### ¿Como borro o cambia un cerrojo?
+
+No se modificar un cerrojo directamente, debe borrarse y reaplicarse de nuevo.
+
+## 9.5 Ejercicio
+
+> No lo he realizado porque es desde Azure Portal y esta a nivel de saber leer español básico para poder hacerlo
+
+## 9.6 Descrubir el propósito de _Microsoft Service Trust portal_
+
+Es un portal que proporciona contenido, herramientas y otros recursos de Microsoft seguridad, privacidad y practicas de conformidad. Básicamente es un portal para conocer la manera de implementar de Microsoft y seguir sus practicas.
+
+### Acceder a _Service Trust Portal_
+
+Propaganda con proganada en tu propaganda. Simplemente te dice donde pulsar en su portal.
+
+## 9.7 Preguntas
+
+[Respuesta](./Recopilacion%20preguntas%20Azure.md)
+
+## 9.8 Sumario
