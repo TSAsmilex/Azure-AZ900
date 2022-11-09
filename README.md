@@ -22,7 +22,7 @@ Lecciones:
 1. [Describir la administración de costes en Azure](./08-describir%20la%20administraci%C3%B3n%20de%20costes%20de%20Azure.md)
 2. [Describir las características y herramientas de Azure para el gobierno y el cumplimiento](./09-describir%20las%20caracter%C3%ADsticas%20y%20herramientas%20de%20Azure%20para%20el%20gobierno%20y%20el%20cumplimiento.md)
 3. [Describir las características y herramientas para administrar e implementar recursos de Azure](./10-describir%20las%20caracter%C3%ADsticas%20y%20herramientas%20para%20administrar%20e%20implementar%20recursos%20de%20Azure.md)
-4. 
+4. [Describir las herramientas de supervisión en Azure](./11-describir%20las%20herramientas%20de%20supervisi%C3%B3n%20en%20Azure.md)
 
 ## Guías
 
