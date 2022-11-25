@@ -24,6 +24,9 @@ Lecciones:
 3. [Describir las características y herramientas para administrar e implementar recursos de Azure](./10-describir%20las%20caracter%C3%ADsticas%20y%20herramientas%20para%20administrar%20e%20implementar%20recursos%20de%20Azure.md)
 4. [Describir las herramientas de supervisión en Azure](./11-describir%20las%20herramientas%20de%20supervisi%C3%B3n%20en%20Azure.md)
 
+### Información extra
+1. [Información extra](./Informaci%C3%B3nExtra.md)
+
 ## Guías
 
 - [Conceptos fundamentales de Azure 1, describir conceptos cloud](https://learn.microsoft.com/es-es/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/).
